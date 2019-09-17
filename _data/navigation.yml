@@ -2,8 +2,12 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Data Wrangling Projects"
-    url: /data-wrangling/
+  - title: "Data Science & Machine Learning Projects"
+    url: /data-science/
+  - title: "Quantitative & Algorithmic Trading"
+    url: /trading/
+  - title: "Services"
+    url: /services/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
