@@ -4,5 +4,5 @@ permalink: /trading/
 title: "Quantitative Trading"
 author_profile: true
 header:
-  image: "/images/fort point.png"
+  image: "/images/quant_trading_header_image.jpg"
 ---
