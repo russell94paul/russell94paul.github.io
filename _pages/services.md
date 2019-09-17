@@ -1,10 +1,8 @@
 ---
 layout: posts
-permalink: /data-wrangling/
-title: "Data Science & Machine Learning Projects"
+permalink: /services/
+title: "Services"
 author_profile: true
 header:
   image: "/images/fort point.png"
 ---
-
-
