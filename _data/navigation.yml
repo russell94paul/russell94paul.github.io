@@ -4,7 +4,7 @@ main:
     url: /about/
   - title: "Data Science & Machine Learning Projects"
     url: /data-science/
-  - title: "Quantitative & Algorithmic Trading"
+  - title: "Quantitative Trading"
     url: /trading/
   - title: "Services"
     url: /services/
