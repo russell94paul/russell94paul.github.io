@@ -1,0 +1,112 @@
+{
+  "schemaVersion": "2.0.0",
+  "outcomes": [
+    {
+      "id": "OUT-RESEARCH-01",
+      "label": "Research that can be reviewed",
+      "beneficiary": "Research lead and reviewer",
+      "mechanism": "Inputs, method, outputs and review remain linked",
+      "metric": "accepted_current_experiments / current_experiments",
+      "denominatorZero": "Not measured",
+      "sourceFunction": "metrics(state)",
+      "status": "DEMO_STATE_ONLY",
+      "realBusinessBenefit": "Not measured",
+      "statement": "Research that can be reviewed",
+      "beneficiaryRole": "Research lead and reviewer",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "nodeRefs": [],
+      "unit": "See metric definition",
+      "period": "Current fictional session or explicitly observed usability session",
+      "scope": "Synthetic demo; no realized business benefit claim",
+      "dataSource": "metrics(state)",
+      "numerator": null,
+      "denominator": null,
+      "fixtureBaseline": null,
+      "expectedDirection": "Fewer unresolved handoff/evidence issues; measured pilot required",
+      "measurementStatus": "DEMO_STATE_ONLY",
+      "limits": "Fixture mechanics do not prove real operational benefit.",
+      "validationExperiment": "Ask the user to complete a second related task without guidance; record success, errors and assistance."
+    },
+    {
+      "id": "OUT-RESEARCH-02",
+      "label": "Avoid reusing stale acceptance",
+      "beneficiary": "Research team",
+      "mechanism": "A dataset revision clears current reviews while retaining historical records",
+      "metric": "current dossier count after dataset replacement",
+      "expected": 0,
+      "status": "DETERMINISTIC_INVARIANT",
+      "realBusinessBenefit": "Not measured",
+      "statement": "Avoid reusing stale acceptance",
+      "beneficiaryRole": "Research team",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "nodeRefs": [],
+      "unit": "See metric definition",
+      "period": "Current fictional session or explicitly observed usability session",
+      "scope": "Synthetic demo; no realized business benefit claim",
+      "dataSource": "Proposed observation protocol",
+      "numerator": null,
+      "denominator": null,
+      "fixtureBaseline": null,
+      "expectedDirection": "Fewer unresolved handoff/evidence issues; measured pilot required",
+      "measurementStatus": "DETERMINISTIC_INVARIANT",
+      "limits": "Fixture mechanics do not prove real operational benefit.",
+      "validationExperiment": "Ask the user to complete a second related task without guidance; record success, errors and assistance."
+    },
+    {
+      "id": "OUT-LEARNING-01",
+      "label": "User can build a second workflow",
+      "beneficiary": "New researcher",
+      "metric": "Unassisted task completion; number of facilitator interventions; errors classified",
+      "baseline": null,
+      "target": "Acceptance target to evaluate with participants; not an observed result",
+      "status": "USER_TEST_NOT_RUN",
+      "statement": "User can build a second workflow",
+      "beneficiaryRole": "New researcher",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "nodeRefs": [],
+      "unit": "See metric definition",
+      "period": "Current fictional session or explicitly observed usability session",
+      "scope": "Synthetic demo; no realized business benefit claim",
+      "dataSource": "Proposed observation protocol",
+      "numerator": null,
+      "denominator": null,
+      "fixtureBaseline": null,
+      "expectedDirection": "Fewer unresolved handoff/evidence issues; measured pilot required",
+      "measurementStatus": "USER_TEST_NOT_RUN",
+      "limits": "Fixture mechanics do not prove real operational benefit.",
+      "validationExperiment": "Ask the user to complete a second related task without guidance; record success, errors and assistance."
+    },
+    {
+      "id": "OUT-LOGISTICS-01",
+      "label": "Reduce coordination uncertainty",
+      "beneficiary": "Owner/team lead/employee/customer",
+      "mechanism": "Shared work state and explicit handoffs",
+      "metric": "Use original logistics reducer metrics with exact definitions; do not substitute research metrics",
+      "status": "PROPOSED_BUSINESS_VALUE",
+      "realBusinessBenefit": "Not measured",
+      "statement": "Reduce coordination uncertainty",
+      "beneficiaryRole": "Owner/team lead/employee/customer",
+      "workflowRefs": [
+        "LOGISTICS-WF-01"
+      ],
+      "nodeRefs": [],
+      "unit": "See metric definition",
+      "period": "Current fictional session or explicitly observed usability session",
+      "scope": "Synthetic demo; no realized business benefit claim",
+      "dataSource": "Proposed observation protocol",
+      "numerator": null,
+      "denominator": null,
+      "fixtureBaseline": null,
+      "expectedDirection": "Fewer unresolved handoff/evidence issues; measured pilot required",
+      "measurementStatus": "PROPOSED_BUSINESS_VALUE",
+      "limits": "Fixture mechanics do not prove real operational benefit.",
+      "validationExperiment": "Ask the user to complete a second related task without guidance; record success, errors and assistance."
+    }
+  ]
+}

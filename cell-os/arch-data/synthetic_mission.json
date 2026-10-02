@@ -1,0 +1,82 @@
+{
+  "fixture_id": "SYNTHETIC-ARCH-REPORT-01",
+  "kind": "DESIGN_DEMONSTRATION_ONLY",
+  "execution": "NONE",
+  "network_calls": false,
+  "authority": "NONE; this file grants no permissions",
+  "mission": "Prepare an evidence-backed explanation of a fictional data feed, without contacting a system or changing data.",
+  "inputs": [
+    {
+      "id": "SOURCE-A-v1",
+      "label": "Fictional schema notes",
+      "content": "The source timestamp field is missing from the summary."
+    },
+    {
+      "id": "SOURCE-B-v1",
+      "label": "Fictional permitted field glossary",
+      "content": "The timestamp is named observed_at."
+    }
+  ],
+  "protected_fields": [
+    "objective",
+    "acceptance_criteria",
+    "authority_ceiling",
+    "approved_dag_revision"
+  ],
+  "baseline": {
+    "dag_revision": "DEMO-DAG-v1",
+    "context_refs": [
+      "SOURCE-A-v1"
+    ],
+    "membership": [
+      "research",
+      "review",
+      "assembly"
+    ]
+  },
+  "scenes": [
+    {
+      "step": 1,
+      "event": "DIAGNOSTIC_RESULT",
+      "label": "The summary lacks the timestamp field definition.",
+      "result_id": "DEMO-OBS-01",
+      "evidence_refs": [
+        "SOURCE-A-v1"
+      ]
+    },
+    {
+      "step": 2,
+      "event": "CHECK_APPLICABILITY",
+      "label": "Validate observation, current source access and allowed context-selection scope."
+    },
+    {
+      "step": 3,
+      "event": "CONTEXT_BRANCH",
+      "label": "Select already permitted SOURCE-B-v1. No new access and no DAG change.",
+      "context_after": [
+        "SOURCE-A-v1",
+        "SOURCE-B-v1"
+      ],
+      "dag_revision": "DEMO-DAG-v1"
+    },
+    {
+      "step": 4,
+      "event": "PROTECTED_CHANGE_ALTERNATIVE",
+      "label": "An additional external investigation would require a new proposal; this demo does not perform it.",
+      "state": "WAITING_FOR_SEPARATE_DECISION",
+      "dag_revision": "DEMO-DAG-v1"
+    },
+    {
+      "step": 5,
+      "event": "EVIDENCE_REVIEW",
+      "label": "Reviewer checks the draft; the public example does not issue a real approval."
+    }
+  ],
+  "failure_variants": {
+    "stale_source": "Hold selection and show stale evidence.",
+    "revoked_scope": "Block release and request an authorized correction.",
+    "duplicate_observation": "Do not apply the same logical delta twice.",
+    "missing_evidence": "Keep result unsupported; do not mark success."
+  },
+  "benefit": "Hypothesis only. No model/runtime experiment or performance measurement was performed."
+}

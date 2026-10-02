@@ -1,0 +1,334 @@
+{
+  "status": "CANDIDATE_PRESENTATION_TAXONOMY",
+  "source_refs": [
+    "S01",
+    "S02",
+    "S05",
+    "S06",
+    "P01"
+  ],
+  "note": "Roles, mechanisms, topologies, scope and mutability are independent dimensions, not mutually exclusive approved classes. Deterministic Worker is not silently relabeled as an LLM Operative.",
+  "facets": {
+    "operative": {
+      "role": [
+        "researcher",
+        "planner",
+        "producer",
+        "synthesizer",
+        "reviewer / Guardian",
+        "supervisor / coordinator",
+        "diagnostic"
+      ],
+      "activation": [
+        "on request",
+        "event-driven",
+        "scheduled",
+        "reactive"
+      ],
+      "cognition": [
+        "single model",
+        "model routing",
+        "sequential refinement",
+        "heterogeneous ensemble"
+      ],
+      "configuration": [
+        "versioned declaration",
+        "resolved exact configuration"
+      ],
+      "mutability": [
+        "named fields locked",
+        "bounded per-run adaptation",
+        "across-run candidate evolution"
+      ],
+      "lifetime": [
+        "one task",
+        "one Mission",
+        "persistent service role"
+      ],
+      "authority": [
+        "advisory only",
+        "scoped permitted operations",
+        "human-gated transitions"
+      ]
+    },
+    "cell": {
+      "purpose": [
+        "research",
+        "review / assurance",
+        "assembly / synthesis",
+        "planning",
+        "diagnostic",
+        "integration / transformation",
+        "monitoring"
+      ],
+      "composition": [
+        "Operatives",
+        "deterministic Workers",
+        "mixed"
+      ],
+      "topology": [
+        "solo-wrapper candidate",
+        "pipeline",
+        "parallel",
+        "supervised branches",
+        "review pair",
+        "diagnostic branch"
+      ],
+      "mutability": [
+        "fixed membership and links",
+        "bounded context changes",
+        "bounded membership / topology proposals"
+      ],
+      "lifetime": [
+        "ephemeral task",
+        "Mission-bounded",
+        "persistent service candidate"
+      ]
+    },
+    "mesh": {
+      "scope": [
+        "O-MESH candidate view",
+        "C-MESH local",
+        "T-MESH temporary Mission/team",
+        "OS-MESH organization",
+        "cross-organization federation"
+      ],
+      "topology": [
+        "direct",
+        "pipeline / DAG",
+        "fork-join",
+        "hub-and-spoke",
+        "hierarchy / holarchy",
+        "reviewer ring",
+        "sparse mesh",
+        "full mesh",
+        "blackboard / global workspace",
+        "publish-subscribe",
+        "federated / polycentric",
+        "swarm / stigmergic",
+        "hybrid"
+      ],
+      "composition": [
+        "homogeneous",
+        "heterogeneous"
+      ],
+      "population": [
+        "fixed",
+        "bounded elastic"
+      ],
+      "configuration": [
+        "versioned",
+        "locked subset"
+      ],
+      "adaptation": [
+        "off",
+        "context-only",
+        "membership",
+        "links",
+        "resources",
+        "model routing"
+      ],
+      "learning": [
+        "off",
+        "offline candidates requiring promotion"
+      ],
+      "overlay": [
+        "organization",
+        "work",
+        "communication",
+        "knowledge/evidence",
+        "capability",
+        "authority/trust",
+        "resources/health",
+        "temporal lineage"
+      ]
+    }
+  },
+  "link_types": [
+    {
+      "id": "LK01",
+      "label": "Data / artifact handoff",
+      "category": "MESSAGE_OR_REFERENCE",
+      "purpose": "Carries allowed data or a versioned artifact reference.",
+      "required_contract_details": "Schema, classification, permitted endpoints, integrity, retention, release authorization.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK02",
+      "label": "Invocation / result",
+      "category": "INTERACTION",
+      "purpose": "Requests one declared capability and returns a typed result.",
+      "required_contract_details": "Operation identity, preconditions, effects, correlation, idempotency, timeout and uncertain-result policy.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK03",
+      "label": "Work dependency",
+      "category": "RECORD_RELATIONSHIP",
+      "purpose": "States an output or prerequisite needed by another DAG node.",
+      "required_contract_details": "Exact DAG revision, acyclicity and required acceptance; not necessarily a message route.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK04",
+      "label": "Delegation",
+      "category": "AUTHORITY_OR_OBLIGATION_RECORD",
+      "purpose": "Assigns bounded work or explicitly attenuated permission.",
+      "required_contract_details": "Issuer, subject, exact obligation, scope ceiling, time and budget; no authority by implication.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK05",
+      "label": "Supervision / hierarchy",
+      "category": "CONTROL_RELATIONSHIP",
+      "purpose": "Describes lifecycle responsibility or organizational reporting.",
+      "required_contract_details": "Owner, permitted lifecycle controls and separate current grants.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK06",
+      "label": "Membership",
+      "category": "RECORD_RELATIONSHIP",
+      "purpose": "Associates a participant with a Cell/team and role.",
+      "required_contract_details": "Scope, validity interval and handoff duties; not access permission.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK07",
+      "label": "Resource binding / lease",
+      "category": "RESOURCE_RELATIONSHIP",
+      "purpose": "References or reserves use of an owned resource.",
+      "required_contract_details": "Owner rules, quantity, expiry, capacity, contention and recovery.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK08",
+      "label": "Context / knowledge reference",
+      "category": "RECORD_OR_READ_INTERACTION",
+      "purpose": "Selects a permitted source or knowledge package for a step.",
+      "required_contract_details": "Version, rights, freshness, inclusion reason and provenance.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK09",
+      "label": "Evidence / provenance",
+      "category": "RECORD_RELATIONSHIP",
+      "purpose": "Connects support, contradiction, derivation and source lineage.",
+      "required_contract_details": "Relation meaning, exact subject/source versions and applicability.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK10",
+      "label": "Event subscription",
+      "category": "INTERACTION",
+      "purpose": "Describes interest in specified event kinds and delivery.",
+      "required_contract_details": "Topic/profile, release and receive policy, ordering, duplicates, replay and expiry.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK11",
+      "label": "Approval / policy binding",
+      "category": "AUTHORITY_RECORD_REFERENCE",
+      "purpose": "Binds a transition to required decisions and enforcement rules.",
+      "required_contract_details": "Exact action/version, current validity, decision maker and deterministic enforcement.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    },
+    {
+      "id": "LK12",
+      "label": "Federation / exchange agreement",
+      "category": "CROSS_BOUNDARY_CONTRACT",
+      "purpose": "Connects independently governed participants.",
+      "required_contract_details": "Identity mapping, data rights, locally enforceable constraints, failures, exit and revocation.",
+      "status": "CANDIDATE_SEMANTIC_GROUPING",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "P01"
+      ]
+    }
+  ],
+  "golden_cell": {
+    "classification": "DIAGNOSTIC_RESEARCH_HYPOTHESIS",
+    "mechanism": [
+      "diagnostic",
+      "observation",
+      "trigger policy",
+      "gate",
+      "permitted transition or protected revision proposal",
+      "evidence and acceptance"
+    ],
+    "not": [
+      "a certification level",
+      "necessarily a full Cell",
+      "an automatic authority source",
+      "a demonstrated performance improvement"
+    ]
+  }
+}

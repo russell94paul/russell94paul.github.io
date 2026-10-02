@@ -1,0 +1,159 @@
+{
+  "fixtureId": "CELL-Q-SYNTHETIC-PARCELS-01",
+  "status": "CANDIDATE_DEMO_ONLY",
+  "business": "Example Research Studio (fictional)",
+  "clock": "2026-09-19T09:00:00Z",
+  "dataset": {
+    "id": "DATA-PARCELS",
+    "version": 1,
+    "label": "Synthetic daily parcel volumes",
+    "unit": "parcels per day",
+    "source": "Hand-authored educational fixture; not observed business or market data",
+    "rows": [
+      {
+        "day": "2026-08-01",
+        "value": 20
+      },
+      {
+        "day": "2026-08-02",
+        "value": 22
+      },
+      {
+        "day": "2026-08-03",
+        "value": 21
+      },
+      {
+        "day": "2026-08-04",
+        "value": 24
+      },
+      {
+        "day": "2026-08-05",
+        "value": 23
+      },
+      {
+        "day": "2026-08-06",
+        "value": 25
+      },
+      {
+        "day": "2026-08-07",
+        "value": 24
+      },
+      {
+        "day": "2026-08-08",
+        "value": 27
+      },
+      {
+        "day": "2026-08-09",
+        "value": 26
+      },
+      {
+        "day": "2026-08-10",
+        "value": 28
+      },
+      {
+        "day": "2026-08-11",
+        "value": 27
+      },
+      {
+        "day": "2026-08-12",
+        "value": 29
+      },
+      {
+        "day": "2026-08-13",
+        "value": 28
+      },
+      {
+        "day": "2026-08-14",
+        "value": 30
+      },
+      {
+        "day": "2026-08-15",
+        "value": 29
+      },
+      {
+        "day": "2026-08-16",
+        "value": 31
+      },
+      {
+        "day": "2026-08-17",
+        "value": 30
+      },
+      {
+        "day": "2026-08-18",
+        "value": 32
+      },
+      {
+        "day": "2026-08-19",
+        "value": 31
+      },
+      {
+        "day": "2026-08-20",
+        "value": 33
+      }
+    ]
+  },
+  "study": {
+    "id": "Q-STUDY-01",
+    "version": 1,
+    "question": "Which of two predeclared simple methods has lower one-day-ahead absolute error on this synthetic parcel series?",
+    "trainEnd": 12,
+    "validationEnd": 16,
+    "horizon": 1,
+    "candidates": [
+      "previous_observation",
+      "trailing_three_mean"
+    ],
+    "selectionMetric": "validation_mae",
+    "tieBreak": "previous_observation"
+  },
+  "actors": [
+    {
+      "id": "lead-01",
+      "role": "research_lead",
+      "label": "Research lead (demo)"
+    },
+    {
+      "id": "researcher-01",
+      "role": "researcher",
+      "label": "Researcher (demo)"
+    },
+    {
+      "id": "steward-01",
+      "role": "data_steward",
+      "label": "Data steward (demo)"
+    },
+    {
+      "id": "reviewer-01",
+      "role": "reviewer",
+      "label": "Independent reviewer (demo)"
+    }
+  ],
+  "snapshotDay": "2026-09-19",
+  "snapshotNote": "One fictional business morning with an embedded historical synthetic dataset.",
+  "workItems": [
+    {
+      "id": "TASK-Q-01",
+      "label": "Check the parcel dataset",
+      "ownerRole": "data_steward",
+      "state": "READY"
+    },
+    {
+      "id": "TASK-Q-02",
+      "label": "Submit the fixed study plan",
+      "ownerRole": "researcher",
+      "state": "WAITING_FOR_DATA_CHECK"
+    },
+    {
+      "id": "TASK-Q-03",
+      "label": "Review the study scope",
+      "ownerRole": "research_lead",
+      "state": "WAITING_FOR_SUBMISSION"
+    },
+    {
+      "id": "TASK-Q-04",
+      "label": "Independently review result evidence",
+      "ownerRole": "reviewer",
+      "state": "WAITING_FOR_EXPERIMENT"
+    }
+  ]
+}

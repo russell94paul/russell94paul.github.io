@@ -1,0 +1,79 @@
+{
+  "id": "cell-q-research",
+  "label": "CELL-Q // OS \u2014 Research Lab",
+  "version": "1.0.0",
+  "status": "CANDIDATE_DEMO_ONLY",
+  "scope": "Educational quantitative research, nonfinancial synthetic data and evidence review",
+  "business": "Example Research Studio (fictional)",
+  "roles": [
+    "research_lead",
+    "researcher",
+    "data_steward",
+    "reviewer"
+  ],
+  "sections": [
+    "Today",
+    "Team Studio",
+    "Workflows",
+    "Models & Experiments",
+    "Data & Evidence",
+    "Review & Library",
+    "User guide"
+  ],
+  "secondarySections": [
+    "Business value",
+    "How CELL works"
+  ],
+  "runtime": "Pure local reducer reference; no network or persistence",
+  "integration": "Requires explicit host adapter and research views; registry entry alone does not integrate this pack",
+  "notIncluded": [
+    "brokerage",
+    "trade execution",
+    "trading signals",
+    "financial backtesting",
+    "portfolio management",
+    "real customer records",
+    "production authorization"
+  ],
+  "files": {
+    "fixtures": "fixtures.json",
+    "workflows": "workflows.json",
+    "model": "../reference/demo_model.mjs"
+  },
+  "notes": [
+    "Role selection is a demo view, not authenticated identity.",
+    "Synthetic forecasting error is not evidence of financial performance.",
+    "No spatial map is required."
+  ],
+  "currency": null,
+  "currencyNote": "No monetary values in this educational research domain",
+  "timezone": "Etc/UTC",
+  "mode": "simulation",
+  "featureStage": "END_STATE_CONCEPT",
+  "approvalStatus": "CANDIDATE",
+  "implementationStatus": "REFERENCE_ONLY_HOST_INTEGRATION_PENDING",
+  "verificationStatus": "SEE_VERIFICATION_RECEIPT",
+  "primaryUserGoal": "Build a research workflow, inspect its models and produce a reviewed dossier",
+  "extensions": {
+    "profile": "END_STATE_DEMO_V2",
+    "files": {
+      "roleGuides": "data/role_guides.json",
+      "workflowTemplates": "data/workflow_templates.json",
+      "cellFeatureMap": "data/cell_feature_map.json",
+      "businessOutcomeDefinitions": "evidence/business_outcome_definitions.json",
+      "modelCatalogue": "data/model_catalogue.json",
+      "teamBlueprint": "data/team_blueprint.json"
+    },
+    "schemaVersion": "2.0.0"
+  },
+  "productOutcome": "Create a bounded research workflow, inspect methods/results and produce a reviewed research dossier.",
+  "sampleDeliverables": [
+    "Study plan",
+    "Team/workflow draft",
+    "Model comparison",
+    "Review record",
+    "Research dossier"
+  ],
+  "clockPolicy": "Presentation/event timestamp clock only; no freshness-expiry enforcement in this reference.",
+  "resetPolicy": "Reducer reset discards session research state. The standalone reference has separately labelled persistent preferences and local draft history; use its reset/settings controls as described."
+}

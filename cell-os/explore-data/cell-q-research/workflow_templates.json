@@ -1,0 +1,200 @@
+{
+  "schemaVersion": "2.0.0",
+  "note": "Local draft contracts only. A structurally valid workflow grants no runtime authority. The reference reducer executes its fixed safe action set; arbitrary generated nodes have no implementation.",
+  "templates": [
+    {
+      "id": "TPL-Q-RESEARCH-01",
+      "version": 1,
+      "label": "Question to reviewed research dossier",
+      "domainId": "cell-q-research",
+      "status": "CANDIDATE_TEMPLATE",
+      "graph": {
+        "nodes": [
+          {
+            "id": "step-1",
+            "actionId": "validate_data",
+            "roleId": "data_steward",
+            "inputs": [
+              {
+                "type": "DatasetSnapshot",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "DataCheck"
+              }
+            ],
+            "dependencies": [],
+            "reviewPolicy": {
+              "humanDecision": false,
+              "independentOfProducer": false
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          },
+          {
+            "id": "step-2",
+            "actionId": "submit_study",
+            "roleId": "researcher",
+            "inputs": [
+              {
+                "type": "DataCheck",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "StudyCandidate"
+              }
+            ],
+            "dependencies": [
+              "step-1"
+            ],
+            "reviewPolicy": {
+              "humanDecision": false,
+              "independentOfProducer": false
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          },
+          {
+            "id": "step-3",
+            "actionId": "approve_study",
+            "roleId": "research_lead",
+            "inputs": [
+              {
+                "type": "StudyCandidate",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "StudyApproval"
+              }
+            ],
+            "dependencies": [
+              "step-2"
+            ],
+            "reviewPolicy": {
+              "humanDecision": true,
+              "independentOfProducer": false
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          },
+          {
+            "id": "step-4",
+            "actionId": "run_experiment",
+            "roleId": "researcher",
+            "inputs": [
+              {
+                "type": "StudyApproval",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "ExperimentRecord"
+              }
+            ],
+            "dependencies": [
+              "step-3"
+            ],
+            "reviewPolicy": {
+              "humanDecision": false,
+              "independentOfProducer": false
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          },
+          {
+            "id": "step-5",
+            "actionId": "review_experiment",
+            "roleId": "reviewer",
+            "inputs": [
+              {
+                "type": "ExperimentRecord",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "ReviewRecord"
+              }
+            ],
+            "dependencies": [
+              "step-4"
+            ],
+            "reviewPolicy": {
+              "humanDecision": true,
+              "independentOfProducer": true
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          },
+          {
+            "id": "step-6",
+            "actionId": "assemble_dossier",
+            "roleId": "research_lead",
+            "inputs": [
+              {
+                "type": "ReviewRecord",
+                "required": true
+              }
+            ],
+            "outputs": [
+              {
+                "type": "ResearchDossier"
+              }
+            ],
+            "dependencies": [
+              "step-5"
+            ],
+            "reviewPolicy": {
+              "humanDecision": false,
+              "independentOfProducer": false
+            },
+            "mode": "DETERMINISTIC_SIMULATION"
+          }
+        ],
+        "edges": [
+          {
+            "from": "step-1",
+            "to": "step-2",
+            "type": "artifact",
+            "contract": "DataCheck"
+          },
+          {
+            "from": "step-2",
+            "to": "step-3",
+            "type": "artifact",
+            "contract": "StudyCandidate"
+          },
+          {
+            "from": "step-3",
+            "to": "step-4",
+            "type": "artifact",
+            "contract": "StudyApproval"
+          },
+          {
+            "from": "step-4",
+            "to": "step-5",
+            "type": "artifact",
+            "contract": "ExperimentRecord"
+          },
+          {
+            "from": "step-5",
+            "to": "step-6",
+            "type": "artifact",
+            "contract": "ReviewRecord"
+          }
+        ]
+      },
+      "acceptance": [
+        "Every required artifact has a producer or declared dataset input",
+        "Dataset check precedes study acceptance and experiment",
+        "Independent review precedes dossier assembly",
+        "No cycles or unsupported actions",
+        "Each node has a valid demo role"
+      ],
+      "refusalPath": "Save an invalid draft with issues; do not label it dry-run ready.",
+      "revisionRules": "Edits create a new draft revision and clear prior validation/review for that revision."
+    }
+  ]
+}

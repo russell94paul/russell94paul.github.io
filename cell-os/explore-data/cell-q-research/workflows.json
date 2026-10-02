@@ -1,0 +1,97 @@
+{
+  "status": "CANDIDATE_DEMO_ONLY",
+  "workflows": [
+    {
+      "id": "Q-WF-01",
+      "title": "From research question to reviewed dossier",
+      "businessGoal": "Make research decisions reproducible and easier to review",
+      "trigger": "New bounded question",
+      "interactive": true,
+      "implementation": "reference/demo_model.mjs; host wiring remains to be implemented",
+      "steps": [
+        {
+          "id": "validate_data",
+          "role": "data_steward",
+          "title": "Check dataset",
+          "action": "Validate timestamps, counts and chronological boundaries.",
+          "output": "Data-quality record",
+          "exampleRefusal": "DUPLICATE_DAY",
+          "humanDecision": false
+        },
+        {
+          "id": "submit_study",
+          "role": "researcher",
+          "title": "Declare the study",
+          "action": "Fix question, split and comparison before results are calculated.",
+          "output": "Study candidate",
+          "exampleRefusal": "DATA_NOT_READY",
+          "humanDecision": false
+        },
+        {
+          "id": "approve_study",
+          "role": "research_lead",
+          "title": "Accept the study plan",
+          "action": "Review the fixed experiment scope in this demo.",
+          "output": "Plan review record",
+          "exampleRefusal": "WRONG_ROLE",
+          "humanDecision": true
+        },
+        {
+          "id": "run_experiment",
+          "role": "researcher",
+          "title": "Compare the methods",
+          "action": "Calculate local synthetic forecast errors and retain exact inputs.",
+          "output": "EXP-01",
+          "exampleRefusal": "PLAN_NOT_APPROVED",
+          "humanDecision": false
+        },
+        {
+          "id": "review_experiment",
+          "role": "reviewer",
+          "title": "Review evidence",
+          "action": "Check scope, provenance, held-out partition and result limitations.",
+          "output": "Review decision",
+          "exampleRefusal": "SELF_REVIEW",
+          "humanDecision": true
+        },
+        {
+          "id": "assemble_dossier",
+          "role": "research_lead",
+          "title": "Prepare the dossier",
+          "action": "Assemble accepted evidence with its limitations; no publication action.",
+          "output": "REPORT-01",
+          "exampleRefusal": "REVIEW_REQUIRED",
+          "humanDecision": false
+        }
+      ],
+      "refusalPath": "Keep the failing transition unchanged, show error code/reason and route to the responsible role.",
+      "outcome": "A synthetic reviewed dossier, with no claim of real-world predictive performance.",
+      "priority": 1,
+      "humanDecisions": [
+        "approve_study",
+        "review_experiment"
+      ]
+    },
+    {
+      "id": "Q-WF-02",
+      "title": "Data revision invalidates current evidence",
+      "interactive": true,
+      "implementation": "replace_dataset action",
+      "steps": [
+        {
+          "id": "replace_dataset",
+          "role": "data_steward",
+          "title": "Revise the synthetic data"
+        }
+      ],
+      "humanDecisions": [
+        "New study review and independent result review are required"
+      ],
+      "refusalPath": "Old runs remain historical; revised data is unchecked and current approvals are cleared.",
+      "outcome": "No stale result presented as accepted current evidence.",
+      "priority": 2,
+      "businessGoal": "Keep review decisions tied to the exact current evidence.",
+      "trigger": "A data steward supplies a revised synthetic dataset."
+    }
+  ]
+}

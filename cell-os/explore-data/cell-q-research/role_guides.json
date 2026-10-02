@@ -1,0 +1,489 @@
+{
+  "schemaVersion": "2.0.0",
+  "guides": [
+    {
+      "id": "GUIDE-Q-research_lead",
+      "domainId": "cell-q-research",
+      "roleId": "research_lead",
+      "title": "Your work as research lead",
+      "objective": "Choose a useful research question and assess evidence for a decision.",
+      "entryRoute": {
+        "section": "Today",
+        "actionId": "approve_study"
+      },
+      "stateKey": [
+        "domainId",
+        "scenarioId",
+        "roleId",
+        "workflowId",
+        "workflowRevision",
+        "stepId"
+      ],
+      "workflowId": "Q-WF-01",
+      "workflowRevision": 1,
+      "steps": [
+        {
+          "stepId": "step-1",
+          "actionId": "validate_data",
+          "responsibleRole": "data_steward",
+          "whatYouDo": "Read the data steward\u2019s issues; ask for correction if the input is unsuitable.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "DataCheck",
+          "nextOwner": "researcher",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-2",
+          "actionId": "submit_study",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Read the researcher\u2019s question, comparison and output; identify scope changes before approval.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyCandidate",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-3",
+          "actionId": "approve_study",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Confirm the exact question, data revision and split; accept this bounded study in the demo.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyApproval",
+          "nextOwner": "researcher",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-4",
+          "actionId": "run_experiment",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Inspect the run status and recorded configuration; leave calculation to the supported worker.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ExperimentRecord",
+          "nextOwner": "reviewer",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-5",
+          "actionId": "review_experiment",
+          "responsibleRole": "reviewer",
+          "whatYouDo": "Read the independent reviewer\u2019s reason and unresolved limitations.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ReviewRecord",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-6",
+          "actionId": "assemble_dossier",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Assemble the accepted synthetic evidence into REPORT-01; inspect its limitations and creation trail.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ResearchDossier",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Avoid decisions based on work whose purpose or evidence is unclear.",
+          "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        }
+      ],
+      "additionalLessons": [
+        "Create and validate a new workflow draft",
+        "Inspect a model recipe and dataset version",
+        "Compare validation errors and inspect held-out errors",
+        "Trace a result to its creation workflow",
+        "Revise data and observe review invalidation"
+      ],
+      "manual": "../guides/02_CELL_Q_ROLE_GUIDE.md",
+      "guideId": "GUIDE-Q-research_lead",
+      "version": 1,
+      "purpose": "Choose what is worth researching and review the exact scope before work proceeds.",
+      "scopeSummary": "Fictional demo perspective; role switching is not authenticated identity.",
+      "dailyRoutine": [
+        "Review unresolved research decisions",
+        "Open the current study and its data checks",
+        "Inspect the finished evidence packet and limitations"
+      ],
+      "evidenceToInspect": "Exact study version, data check, independent review and final dossier",
+      "businessValue": "Avoid decisions based on work whose purpose or evidence is unclear.",
+      "manualLink": "../guides/02_CELL_Q_ROLE_GUIDE.md"
+    },
+    {
+      "id": "GUIDE-Q-researcher",
+      "domainId": "cell-q-research",
+      "roleId": "researcher",
+      "title": "Your work as researcher",
+      "objective": "Build a bounded study, compare methods and explain the result.",
+      "entryRoute": {
+        "section": "Today",
+        "actionId": "submit_study"
+      },
+      "stateKey": [
+        "domainId",
+        "scenarioId",
+        "roleId",
+        "workflowId",
+        "workflowRevision",
+        "stepId"
+      ],
+      "workflowId": "Q-WF-01",
+      "workflowRevision": 1,
+      "steps": [
+        {
+          "stepId": "step-1",
+          "actionId": "validate_data",
+          "responsibleRole": "data_steward",
+          "whatYouDo": "Inspect DATA-PARCELS quality and ask the steward to resolve any issue.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "DataCheck",
+          "nextOwner": "researcher",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-2",
+          "actionId": "submit_study",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Review the fixed 12/4/4 split and two declared methods, then submit Q-STUDY-01 for scope review.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyCandidate",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-3",
+          "actionId": "approve_study",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Inspect the lead\u2019s scope decision; do not treat submission as acceptance.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyApproval",
+          "nextOwner": "researcher",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-4",
+          "actionId": "run_experiment",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Run the two supported nonfinancial methods; inspect validation selection, held-out errors and the exact recipe.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ExperimentRecord",
+          "nextOwner": "reviewer",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-5",
+          "actionId": "review_experiment",
+          "responsibleRole": "reviewer",
+          "whatYouDo": "Hand off EXP-01 with data/configuration references and wait for independent review; answer any finding with a new proposal.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ReviewRecord",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-6",
+          "actionId": "assemble_dossier",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Inspect the assembled report to confirm the claim matches the selected run; do not silently edit accepted evidence.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ResearchDossier",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Make an experiment understandable and repeatable by someone else.",
+          "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        }
+      ],
+      "additionalLessons": [
+        "Create and validate a new workflow draft",
+        "Inspect a model recipe and dataset version",
+        "Compare validation errors and inspect held-out errors",
+        "Trace a result to its creation workflow",
+        "Revise data and observe review invalidation"
+      ],
+      "manual": "../guides/02_CELL_Q_ROLE_GUIDE.md",
+      "guideId": "GUIDE-Q-researcher",
+      "version": 1,
+      "purpose": "Turn a question into a reproducible study and explain the model comparison.",
+      "scopeSummary": "Fictional demo perspective; role switching is not authenticated identity.",
+      "dailyRoutine": [
+        "Open the assigned study",
+        "Check whether data is ready",
+        "Prepare the next experiment and its evidence handoff"
+      ],
+      "evidenceToInspect": "Input version, method recipe, chronological partitions, per-point errors and run reference",
+      "businessValue": "Make an experiment understandable and repeatable by someone else.",
+      "manualLink": "../guides/02_CELL_Q_ROLE_GUIDE.md"
+    },
+    {
+      "id": "GUIDE-Q-data_steward",
+      "domainId": "cell-q-research",
+      "roleId": "data_steward",
+      "title": "Your work as data steward",
+      "objective": "Provide a checked, versioned input that others can reproduce.",
+      "entryRoute": {
+        "section": "Today",
+        "actionId": "validate_data"
+      },
+      "stateKey": [
+        "domainId",
+        "scenarioId",
+        "roleId",
+        "workflowId",
+        "workflowRevision",
+        "stepId"
+      ],
+      "workflowId": "Q-WF-01",
+      "workflowRevision": 1,
+      "steps": [
+        {
+          "stepId": "step-1",
+          "actionId": "validate_data",
+          "responsibleRole": "data_steward",
+          "whatYouDo": "Inspect the twenty daily counts and timestamps, then run the data check. Fix issues through a new dataset revision.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "DataCheck",
+          "nextOwner": "researcher",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-2",
+          "actionId": "submit_study",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Provide the checked dataset reference to the researcher; do not accept the research question for them.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyCandidate",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-3",
+          "actionId": "approve_study",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Check which dataset version the approved scope names.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyApproval",
+          "nextOwner": "researcher",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-4",
+          "actionId": "run_experiment",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Inspect input provenance and the data-check record; experiment details belong to the researcher/reviewer view.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ExperimentRecord",
+          "nextOwner": "reviewer",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-5",
+          "actionId": "review_experiment",
+          "responsibleRole": "reviewer",
+          "whatYouDo": "Supply quality evidence to the reviewer and explain any source limitation.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ReviewRecord",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-6",
+          "actionId": "assemble_dossier",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Confirm the dossier names the correct input revision; a later correction must invalidate current downstream evidence.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ResearchDossier",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+          "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        }
+      ],
+      "additionalLessons": [
+        "Create and validate a new workflow draft",
+        "Inspect a model recipe and dataset version",
+        "Compare validation errors and inspect held-out errors",
+        "Trace a result to its creation workflow",
+        "Revise data and observe review invalidation"
+      ],
+      "manual": "../guides/02_CELL_Q_ROLE_GUIDE.md",
+      "guideId": "GUIDE-Q-data_steward",
+      "version": 1,
+      "purpose": "Give the study a valid, versioned input and make changes visible.",
+      "scopeSummary": "Fictional demo perspective; role switching is not authenticated identity.",
+      "dailyRoutine": [
+        "Inspect the selected source and current revision",
+        "Run data-quality checks",
+        "Review requested corrections and their effect on prior evidence"
+      ],
+      "evidenceToInspect": "Dataset rows, source note, exact dates, quality issue codes and revision history",
+      "businessValue": "Prevent unreviewed or stale inputs from being mistaken for checked evidence.",
+      "manualLink": "../guides/02_CELL_Q_ROLE_GUIDE.md"
+    },
+    {
+      "id": "GUIDE-Q-reviewer",
+      "domainId": "cell-q-research",
+      "roleId": "reviewer",
+      "title": "Your work as reviewer",
+      "objective": "Check independently whether the claim is supported by the exact experiment.",
+      "entryRoute": {
+        "section": "Today",
+        "actionId": "review_experiment"
+      },
+      "stateKey": [
+        "domainId",
+        "scenarioId",
+        "roleId",
+        "workflowId",
+        "workflowRevision",
+        "stepId"
+      ],
+      "workflowId": "Q-WF-01",
+      "workflowRevision": 1,
+      "steps": [
+        {
+          "stepId": "step-1",
+          "actionId": "validate_data",
+          "responsibleRole": "data_steward",
+          "whatYouDo": "Inspect the quality summary and named input revision; request missing evidence rather than mark the dataset checked.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "DataCheck",
+          "nextOwner": "researcher",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-2",
+          "actionId": "submit_study",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Read the predeclared question and comparison to know what the experiment may claim.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyCandidate",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-3",
+          "actionId": "approve_study",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Inspect the recorded scope acceptance separately from result review.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "StudyApproval",
+          "nextOwner": "researcher",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-4",
+          "actionId": "run_experiment",
+          "responsibleRole": "researcher",
+          "whatYouDo": "Inspect the recipe, validation selection and held-out errors from the recorded run.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ExperimentRecord",
+          "nextOwner": "reviewer",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-5",
+          "actionId": "review_experiment",
+          "responsibleRole": "reviewer",
+          "whatYouDo": "Accept or reject EXP-01 with a reason. The producer identity cannot be its own independent reviewer.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ReviewRecord",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": true,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        },
+        {
+          "stepId": "step-6",
+          "actionId": "assemble_dossier",
+          "responsibleRole": "research_lead",
+          "whatYouDo": "Confirm your exact review is carried into the dossier and that assembly grants no new acceptance.",
+          "whatTheSystemDoes": "Uses the local reference rule or shows a clearly marked concept preview.",
+          "produces": "ResearchDossier",
+          "nextOwner": "research_lead",
+          "whyItMatters": "Keep successful execution separate from justified conclusions.",
+          "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+          "performedByYou": false,
+          "onRefusal": "Read the code and reason; preserve state and open the responsible role\u2019s task. Do not bypass the gate."
+        }
+      ],
+      "additionalLessons": [
+        "Create and validate a new workflow draft",
+        "Inspect a model recipe and dataset version",
+        "Compare validation errors and inspect held-out errors",
+        "Trace a result to its creation workflow",
+        "Revise data and observe review invalidation"
+      ],
+      "manual": "../guides/02_CELL_Q_ROLE_GUIDE.md",
+      "guideId": "GUIDE-Q-reviewer",
+      "version": 1,
+      "purpose": "Assess whether the current research claim is supported independently of its producer.",
+      "scopeSummary": "Fictional demo perspective; role switching is not authenticated identity.",
+      "dailyRoutine": [
+        "Open the evidence queue",
+        "Inspect the exact run, dataset and study references",
+        "Record an explicit reason for acceptance or rejection"
+      ],
+      "evidenceToInspect": "Exact run reference, comparison basis, error table, limitations and review history",
+      "businessValue": "Keep successful execution separate from justified conclusions.",
+      "manualLink": "../guides/02_CELL_Q_ROLE_GUIDE.md"
+    }
+  ]
+}

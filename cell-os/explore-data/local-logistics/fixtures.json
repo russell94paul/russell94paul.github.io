@@ -1,0 +1,1204 @@
+{
+  "meta": {
+    "packId": "cell-os-local-logistics-demo",
+    "version": "1.0.0",
+    "mode": "simulation",
+    "currency": "CAD",
+    "timezone": "America/Vancouver",
+    "clockIso": "2026-09-12T14:00:00-07:00",
+    "allOperationalDataSynthetic": true,
+    "noRealAccountsOrConnections": true
+  },
+  "policy": {
+    "stalePositionSeconds": 120,
+    "eventFreshnessSeconds": 3600,
+    "displaySuppressionCount": 5,
+    "thresholdStatus": "PROPOSED_DEMO_DEFAULTS_NOT_VALIDATED",
+    "campaignSlotsByZone": {
+      "west": 10,
+      "central": 8,
+      "east": 6,
+      "south": 4
+    }
+  },
+  "catalogue": [
+    {
+      "id": "SKU-NOTE",
+      "name": "A5 notebook",
+      "unitPriceMinor": 1200,
+      "currency": "CAD"
+    },
+    {
+      "id": "SKU-PEN",
+      "name": "Pen pack",
+      "unitPriceMinor": 500,
+      "currency": "CAD"
+    },
+    {
+      "id": "SKU-FOLDER",
+      "name": "Document folder",
+      "unitPriceMinor": 800,
+      "currency": "CAD"
+    },
+    {
+      "id": "SKU-ENV",
+      "name": "Envelope pack",
+      "unitPriceMinor": 400,
+      "currency": "CAD"
+    }
+  ],
+  "teams": [
+    {
+      "id": "team-west",
+      "zoneId": "west",
+      "name": "West team",
+      "coverageLabel": "Kitsilano / Fairview — illustrative",
+      "leadId": "lead-west",
+      "approvedOverflowZoneIds": [
+        "central"
+      ]
+    },
+    {
+      "id": "team-central",
+      "zoneId": "central",
+      "name": "Central team",
+      "coverageLabel": "Downtown / West End — illustrative",
+      "leadId": "lead-central",
+      "approvedOverflowZoneIds": [
+        "west"
+      ]
+    },
+    {
+      "id": "team-east",
+      "zoneId": "east",
+      "name": "East team",
+      "coverageLabel": "Mount Pleasant / Grandview-Woodland — illustrative",
+      "leadId": "lead-east",
+      "approvedOverflowZoneIds": []
+    },
+    {
+      "id": "team-south",
+      "zoneId": "south",
+      "name": "South team",
+      "coverageLabel": "Marpole / Sunset — illustrative",
+      "leadId": "lead-south",
+      "approvedOverflowZoneIds": []
+    }
+  ],
+  "teamLeads": [
+    {
+      "id": "lead-west",
+      "label": "West team lead (demo)",
+      "teamId": "team-west",
+      "zoneId": "west"
+    },
+    {
+      "id": "lead-central",
+      "label": "Central team lead (demo)",
+      "teamId": "team-central",
+      "zoneId": "central"
+    },
+    {
+      "id": "lead-east",
+      "label": "East team lead (demo)",
+      "teamId": "team-east",
+      "zoneId": "east"
+    },
+    {
+      "id": "lead-south",
+      "label": "South team lead (demo)",
+      "teamId": "team-south",
+      "zoneId": "south"
+    }
+  ],
+  "workers": [
+    {
+      "id": "worker-01",
+      "label": "West employee 1 (demo)",
+      "teamId": "team-west",
+      "primaryZoneId": "west",
+      "allowedZoneIds": [
+        "west",
+        "central"
+      ],
+      "status": "BREAK",
+      "capacity": 2,
+      "position": {
+        "x": 220,
+        "y": 330,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 2,
+        "central": 6,
+        "east": 17,
+        "south": 25
+      }
+    },
+    {
+      "id": "worker-02",
+      "label": "West employee 2 (demo)",
+      "teamId": "team-west",
+      "primaryZoneId": "west",
+      "allowedZoneIds": [
+        "west",
+        "central"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 320,
+        "y": 350,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 6,
+        "central": 4,
+        "east": 13,
+        "south": 21
+      }
+    },
+    {
+      "id": "worker-03",
+      "label": "Central employee 1 (demo)",
+      "teamId": "team-central",
+      "primaryZoneId": "central",
+      "allowedZoneIds": [
+        "central",
+        "west"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 495,
+        "y": 140,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 4,
+        "central": 4,
+        "east": 15,
+        "south": 23
+      }
+    },
+    {
+      "id": "worker-04",
+      "label": "Central employee 2 (demo)",
+      "teamId": "team-central",
+      "primaryZoneId": "central",
+      "allowedZoneIds": [
+        "central",
+        "west"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 565,
+        "y": 180,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 8,
+        "central": 6,
+        "east": 11,
+        "south": 19
+      }
+    },
+    {
+      "id": "worker-05",
+      "label": "East employee 1 (demo)",
+      "teamId": "team-east",
+      "primaryZoneId": "east",
+      "allowedZoneIds": [
+        "east"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 780,
+        "y": 315,
+        "observedAt": "2026-09-12T13:52:00-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 12,
+        "central": 10,
+        "east": 7,
+        "south": 15
+      }
+    },
+    {
+      "id": "worker-06",
+      "label": "East employee 2 (demo)",
+      "teamId": "team-east",
+      "primaryZoneId": "east",
+      "allowedZoneIds": [
+        "east"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 830,
+        "y": 340,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 16,
+        "central": 14,
+        "east": 5,
+        "south": 11
+      }
+    },
+    {
+      "id": "worker-07",
+      "label": "South employee 1 (demo)",
+      "teamId": "team-south",
+      "primaryZoneId": "south",
+      "allowedZoneIds": [
+        "south"
+      ],
+      "status": "OFF_DUTY",
+      "capacity": 2,
+      "position": null,
+      "travelMinutesByZone": {
+        "west": 25,
+        "central": 23,
+        "east": 14,
+        "south": 8
+      }
+    },
+    {
+      "id": "worker-08",
+      "label": "South employee 2 (demo)",
+      "teamId": "team-south",
+      "primaryZoneId": "south",
+      "allowedZoneIds": [
+        "south"
+      ],
+      "status": "AVAILABLE",
+      "capacity": 2,
+      "position": {
+        "x": 620,
+        "y": 540,
+        "observedAt": "2026-09-12T13:59:30-07:00",
+        "accuracyLabel": "Illustrative zone-level marker"
+      },
+      "travelMinutesByZone": {
+        "west": 22,
+        "central": 20,
+        "east": 11,
+        "south": 5
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "DEMO-1001",
+      "customerId": "customer-01",
+      "customerLabel": "Demo customer 01",
+      "zoneId": "west",
+      "destinationLabel": "Demo destination West-01; not a real address",
+      "state": "DRAFT",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-NOTE",
+          "quantity": 1,
+          "unitPriceMinor": 1200
+        }
+      ],
+      "submittedAt": null,
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "NONE",
+      "paymentOutcome": "NOT_RUN",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1002",
+      "customerId": "customer-02",
+      "customerLabel": "Demo customer 02",
+      "zoneId": "west",
+      "destinationLabel": "Demo destination West-02; not a real address",
+      "state": "READY",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-PEN",
+          "quantity": 1,
+          "unitPriceMinor": 500
+        }
+      ],
+      "submittedAt": "2026-09-12T11:02:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1003",
+      "customerId": "customer-03",
+      "customerLabel": "Demo customer 03",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-03; not a real address",
+      "state": "PICKING",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-FOLDER",
+          "quantity": 2,
+          "unitPriceMinor": 800
+        }
+      ],
+      "submittedAt": "2026-09-12T11:03:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1004",
+      "customerId": "customer-04",
+      "customerLabel": "Demo customer 04",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-04; not a real address",
+      "state": "ASSIGNED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-ENV",
+          "quantity": 1,
+          "unitPriceMinor": 400
+        }
+      ],
+      "submittedAt": "2026-09-12T11:04:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": "worker-03",
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1005",
+      "customerId": "customer-05",
+      "customerLabel": "Demo customer 05",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-05; not a real address",
+      "state": "IN_TRANSIT",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-NOTE",
+          "quantity": 1,
+          "unitPriceMinor": 1200
+        }
+      ],
+      "submittedAt": "2026-09-12T11:05:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": "worker-03",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1006",
+      "customerId": "customer-06",
+      "customerLabel": "Demo customer 06",
+      "zoneId": "west",
+      "destinationLabel": "Demo destination West-06; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-PEN",
+          "quantity": 2,
+          "unitPriceMinor": 500
+        }
+      ],
+      "submittedAt": "2026-09-12T11:06:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:22:00-07:00",
+      "assignedWorkerId": "worker-02",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1007",
+      "customerId": "customer-07",
+      "customerLabel": "Demo customer 07",
+      "zoneId": "east",
+      "destinationLabel": "Demo destination East-07; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-FOLDER",
+          "quantity": 1,
+          "unitPriceMinor": 800
+        }
+      ],
+      "submittedAt": "2026-09-12T11:07:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:25:00-07:00",
+      "assignedWorkerId": "worker-06",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1008",
+      "customerId": "customer-08",
+      "customerLabel": "Demo customer 08",
+      "zoneId": "south",
+      "destinationLabel": "Demo destination South-08; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-ENV",
+          "quantity": 1,
+          "unitPriceMinor": 400
+        }
+      ],
+      "submittedAt": "2026-09-12T11:08:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:28:00-07:00",
+      "assignedWorkerId": "worker-08",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1009",
+      "customerId": "customer-09",
+      "customerLabel": "Demo customer 09",
+      "zoneId": "west",
+      "destinationLabel": "Demo destination West-09; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-NOTE",
+          "quantity": 2,
+          "unitPriceMinor": 1200
+        }
+      ],
+      "submittedAt": "2026-09-12T11:09:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:47:00-07:00",
+      "assignedWorkerId": "worker-02",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1010",
+      "customerId": "customer-10",
+      "customerLabel": "Demo customer 10",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-10; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-PEN",
+          "quantity": 1,
+          "unitPriceMinor": 500
+        }
+      ],
+      "submittedAt": "2026-09-12T11:10:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:32:00-07:00",
+      "assignedWorkerId": "worker-04",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1011",
+      "customerId": "customer-11",
+      "customerLabel": "Demo customer 11",
+      "zoneId": "south",
+      "destinationLabel": "Demo destination South-11; not a real address",
+      "state": "CANCELLED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-FOLDER",
+          "quantity": 1,
+          "unitPriceMinor": 800
+        }
+      ],
+      "submittedAt": "2026-09-12T11:11:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "NONE",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1012",
+      "customerId": "customer-12",
+      "customerLabel": "Demo customer 12",
+      "zoneId": "east",
+      "destinationLabel": "Demo destination East-12; not a real address",
+      "state": "STOCK_EXCEPTION",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-ENV",
+          "quantity": 2,
+          "unitPriceMinor": 400
+        }
+      ],
+      "submittedAt": "2026-09-12T11:12:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "NONE",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": "STOCK_REVIEW_REQUIRED"
+    },
+    {
+      "id": "DEMO-1013",
+      "customerId": "customer-13",
+      "customerLabel": "Demo customer 13",
+      "zoneId": "east",
+      "destinationLabel": "Demo destination East-13; not a real address",
+      "state": "READY",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-NOTE",
+          "quantity": 1,
+          "unitPriceMinor": 1200
+        }
+      ],
+      "submittedAt": "2026-09-12T11:13:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1014",
+      "customerId": "customer-14",
+      "customerLabel": "Demo customer 14",
+      "zoneId": "south",
+      "destinationLabel": "Demo destination South-14; not a real address",
+      "state": "DELIVERY_EXCEPTION",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-PEN",
+          "quantity": 1,
+          "unitPriceMinor": 500
+        }
+      ],
+      "submittedAt": "2026-09-12T11:14:00-07:00",
+      "promiseStart": "2026-09-12T13:00:00-07:00",
+      "promiseEnd": "2026-09-12T13:45:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": "worker-08",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": "CUSTOMER_UNAVAILABLE"
+    },
+    {
+      "id": "DEMO-1015",
+      "customerId": "customer-15",
+      "customerLabel": "Demo customer 15",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-15; not a real address",
+      "state": "DRAFT",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-FOLDER",
+          "quantity": 2,
+          "unitPriceMinor": 800
+        }
+      ],
+      "submittedAt": null,
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "NONE",
+      "paymentOutcome": "NOT_RUN",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1016",
+      "customerId": "customer-16",
+      "customerLabel": "Demo customer 16",
+      "zoneId": "east",
+      "destinationLabel": "Demo destination East-16; not a real address",
+      "state": "DELIVERED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-ENV",
+          "quantity": 1,
+          "unitPriceMinor": 400
+        }
+      ],
+      "submittedAt": "2026-09-12T11:16:00-07:00",
+      "promiseStart": "2026-09-12T12:00:00-07:00",
+      "promiseEnd": "2026-09-12T12:40:00-07:00",
+      "deliveredAt": "2026-09-12T12:37:00-07:00",
+      "assignedWorkerId": "worker-06",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1017",
+      "customerId": "customer-17",
+      "customerLabel": "Demo customer 17",
+      "zoneId": "south",
+      "destinationLabel": "Demo destination South-17; not a real address",
+      "state": "PICKING",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-NOTE",
+          "quantity": 1,
+          "unitPriceMinor": 1200
+        }
+      ],
+      "submittedAt": "2026-09-12T11:17:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1018",
+      "customerId": "customer-18",
+      "customerLabel": "Demo customer 18",
+      "zoneId": "central",
+      "destinationLabel": "Demo destination Central-18; not a real address",
+      "state": "ASSIGNED",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-PEN",
+          "quantity": 2,
+          "unitPriceMinor": 500
+        }
+      ],
+      "submittedAt": "2026-09-12T11:18:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": "worker-04",
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1019",
+      "customerId": "customer-19",
+      "customerLabel": "Demo customer 19",
+      "zoneId": "east",
+      "destinationLabel": "Demo destination East-19; not a real address",
+      "state": "IN_TRANSIT",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-FOLDER",
+          "quantity": 1,
+          "unitPriceMinor": 800
+        }
+      ],
+      "submittedAt": "2026-09-12T11:19:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": "worker-06",
+      "reservationStatus": "CONSUMED",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    },
+    {
+      "id": "DEMO-1020",
+      "customerId": "customer-20",
+      "customerLabel": "Demo customer 20",
+      "zoneId": "south",
+      "destinationLabel": "Demo destination South-20; not a real address",
+      "state": "READY",
+      "revision": 1,
+      "items": [
+        {
+          "skuId": "SKU-ENV",
+          "quantity": 1,
+          "unitPriceMinor": 400
+        }
+      ],
+      "submittedAt": "2026-09-12T11:20:00-07:00",
+      "promiseStart": "2026-09-12T14:00:00-07:00",
+      "promiseEnd": "2026-09-12T14:50:00-07:00",
+      "deliveredAt": null,
+      "assignedWorkerId": null,
+      "reservationStatus": "HELD",
+      "paymentOutcome": "SIMULATED_AUTHORIZED",
+      "exceptionReason": null
+    }
+  ],
+  "inventory": {
+    "SKU-NOTE": {
+      "onHand": 50,
+      "reserved": 2
+    },
+    "SKU-PEN": {
+      "onHand": 50,
+      "reserved": 3
+    },
+    "SKU-FOLDER": {
+      "onHand": 50,
+      "reserved": 2
+    },
+    "SKU-ENV": {
+      "onHand": 50,
+      "reserved": 2
+    }
+  },
+  "events": [
+    {
+      "id": "EVENT-DEMO-01",
+      "title": "Demo paper-goods community day (fictional)",
+      "zoneId": "west",
+      "status": "SCHEDULED",
+      "startsAt": "2026-09-12T15:00:00-07:00",
+      "endsAt": "2026-09-12T18:00:00-07:00",
+      "checkedAt": "2026-09-12T13:55:00-07:00",
+      "sourceType": "SYNTHETIC_FIXTURE",
+      "realEvent": false
+    },
+    {
+      "id": "EVENT-DEMO-02",
+      "title": "Demo local stationery fair (fictional; cancelled)",
+      "zoneId": "east",
+      "status": "CANCELLED",
+      "startsAt": "2026-09-12T16:00:00-07:00",
+      "endsAt": "2026-09-12T19:00:00-07:00",
+      "checkedAt": "2026-09-12T13:50:00-07:00",
+      "sourceType": "SYNTHETIC_FIXTURE",
+      "realEvent": false
+    },
+    {
+      "id": "EVENT-DEMO-03",
+      "title": "Demo neighbourhood pop-up (fictional; unverified)",
+      "zoneId": "south",
+      "status": "SCHEDULED",
+      "startsAt": "2026-09-13T14:00:00-07:00",
+      "endsAt": "2026-09-13T18:00:00-07:00",
+      "checkedAt": "2026-09-10T12:00:00-07:00",
+      "sourceType": "SYNTHETIC_FIXTURE",
+      "realEvent": false
+    }
+  ],
+  "campaign": {
+    "id": "CAMPAIGN-DEMO-01",
+    "state": "DRAFT",
+    "revision": 1,
+    "approvedRevision": null,
+    "skuId": "SKU-NOTE",
+    "zoneId": "west",
+    "unitsCap": 8,
+    "discountBps": 500,
+    "budgetMinor": 2000,
+    "eventId": "EVENT-DEMO-01",
+    "audiencePermissionSummary": {
+      "eligible": 8,
+      "optedOut": 3,
+      "unknown": 2
+    },
+    "effect": "PREVIEW_ONLY_NO_SEND"
+  },
+  "suppliers": [
+    {
+      "id": "SUP-DEMO-01",
+      "label": "Example paper supplier A",
+      "illustrativeLeadDays": 3
+    },
+    {
+      "id": "SUP-DEMO-02",
+      "label": "Example stationery supplier B",
+      "illustrativeLeadDays": 5
+    }
+  ],
+  "historicalDemand": [
+    {
+      "date": "2026-09-05",
+      "zoneId": "west",
+      "submitted": 12,
+      "completed": 10,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 11000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-05",
+      "zoneId": "central",
+      "submitted": 15,
+      "completed": 12,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 15000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-05",
+      "zoneId": "east",
+      "submitted": 18,
+      "completed": 14,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 19600,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-05",
+      "zoneId": "south",
+      "submitted": 21,
+      "completed": 19,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 29450,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-06",
+      "zoneId": "west",
+      "submitted": 14,
+      "completed": 11,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 12100,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-06",
+      "zoneId": "central",
+      "submitted": 17,
+      "completed": 13,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 16250,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-06",
+      "zoneId": "east",
+      "submitted": 20,
+      "completed": 18,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 25200,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-06",
+      "zoneId": "south",
+      "submitted": 23,
+      "completed": 20,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 31000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-07",
+      "zoneId": "west",
+      "submitted": 16,
+      "completed": 12,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 13200,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-07",
+      "zoneId": "central",
+      "submitted": 19,
+      "completed": 17,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 21250,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-07",
+      "zoneId": "east",
+      "submitted": 22,
+      "completed": 19,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 26600,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-07",
+      "zoneId": "south",
+      "submitted": 25,
+      "completed": 21,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 32550,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-08",
+      "zoneId": "west",
+      "submitted": 18,
+      "completed": 16,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 17600,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-08",
+      "zoneId": "central",
+      "submitted": 21,
+      "completed": 18,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 22500,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-08",
+      "zoneId": "east",
+      "submitted": 24,
+      "completed": 20,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 28000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-08",
+      "zoneId": "south",
+      "submitted": 27,
+      "completed": 25,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 38750,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-09",
+      "zoneId": "west",
+      "submitted": 13,
+      "completed": 10,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 11000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-09",
+      "zoneId": "central",
+      "submitted": 16,
+      "completed": 12,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 15000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-09",
+      "zoneId": "east",
+      "submitted": 19,
+      "completed": 17,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 23800,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-09",
+      "zoneId": "south",
+      "submitted": 22,
+      "completed": 19,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 29450,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-10",
+      "zoneId": "west",
+      "submitted": 15,
+      "completed": 11,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 12100,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-10",
+      "zoneId": "central",
+      "submitted": 18,
+      "completed": 16,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 20000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-10",
+      "zoneId": "east",
+      "submitted": 21,
+      "completed": 18,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 25200,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-10",
+      "zoneId": "south",
+      "submitted": 24,
+      "completed": 20,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 31000,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-11",
+      "zoneId": "west",
+      "submitted": 17,
+      "completed": 15,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 300,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 16500,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-11",
+      "zoneId": "central",
+      "submitted": 20,
+      "completed": 17,
+      "cancelled": 1,
+      "unresolved": 2,
+      "coverageMinutes": 325,
+      "stockoutMinutes": 15,
+      "deliveredMerchandiseMinor": 21250,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-11",
+      "zoneId": "east",
+      "submitted": 23,
+      "completed": 19,
+      "cancelled": 1,
+      "unresolved": 3,
+      "coverageMinutes": 350,
+      "stockoutMinutes": 30,
+      "deliveredMerchandiseMinor": 26600,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    },
+    {
+      "date": "2026-09-11",
+      "zoneId": "south",
+      "submitted": 26,
+      "completed": 24,
+      "cancelled": 1,
+      "unresolved": 1,
+      "coverageMinutes": 375,
+      "stockoutMinutes": 0,
+      "deliveredMerchandiseMinor": 37200,
+      "sourceType": "SYNTHETIC_AGGREGATE"
+    }
+  ],
+  "audit": [],
+  "processedCommands": {}
+}

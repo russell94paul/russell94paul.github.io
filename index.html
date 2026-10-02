@@ -1,6 +1,135 @@
----
-layout: home
-author_profile: true
-header:
-  image: "/images/waterfront.jpg"
----
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Paul Russell — Data engineering &amp; markets research</title>
+<meta name="description" content="Paul Russell: data engineer and independent markets researcher. SIHRE, CELL // OS and evidence-gated research.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#0e0e10}
+body{font-family:"Source Sans 3",system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:#eceae6}
+*{box-sizing:border-box}
+a{color:#9db2cc;text-decoration:none} a:hover{color:#cdd5e2;text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #bcd8ff;outline-offset:2px}
+::selection{background:rgba(210,210,216,.4);color:#fff}
+@keyframes cellosglow{0%,100%{text-shadow:0 0 4px rgba(158,205,255,.7),0 0 12px rgba(94,163,255,.45),0 0 26px rgba(74,138,255,.26)}50%{text-shadow:0 0 7px rgba(198,228,255,1),0 0 21px rgba(124,182,255,.9),0 0 44px rgba(92,152,255,.6)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important}.wm-sl{animation:none!important}}
+.wrap{min-height:100vh;background:#0e0e10;padding:0 28px 110px}.col{max-width:1100px;margin:0 auto}
+.skip{position:absolute;left:-999px;top:8px;background:#1b1c21;color:#eceae6;padding:10px 14px;border-radius:8px}.skip:focus{left:12px}
+.wm{font-family:'Archivo',sans-serif;font-weight:700;letter-spacing:-.03em;white-space:nowrap;line-height:1;margin:0 .14em}
+.wm-c{background:linear-gradient(168deg,#f3f6fa 4%,#c3c9d4 26%,#8d94a1 48%,#6e757f 58%,#b9c0cb 78%,#e6eaf1 96%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.55))}
+.wm-sl{color:#bcd8ff;padding:0 .2em;animation:cellosglow 2.9s ease-in-out infinite}
+.wm-os{background:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{padding-top:22px}
+.idcard{border:1px solid #454a55;border-radius:11px;background:linear-gradient(152deg,#31333b,#24262c 58%,#1f2126);box-shadow:inset 0 1px 0 rgba(255,255,255,.11),0 0 0 1px rgba(157,178,204,.1),0 0 22px -6px rgba(124,182,255,.34),0 8px 22px -12px rgba(0,0,0,.85)}
+.idcard-top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:13px 20px 12px;border-bottom:1px solid rgba(157,178,204,.18);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0))}
+.idcard-l{display:flex;align-items:center;gap:18px}
+.idcard-home{display:flex;align-items:center;padding-right:18px;border-right:1px solid rgba(157,178,204,.18);font-size:26px;text-decoration:none!important}
+.idcard-name{font-family:'Archivo';font-weight:500;font-size:14.5px;color:#e7e5e0;line-height:1.2}
+.idcard-desc{font-size:12px;color:#a2a7b0;line-height:1.3;margin-top:2px}
+.led{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#a2a7b0}.led::before{content:"";width:6px;height:6px;border-radius:50%;background:#9aab97}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap;padding:9px 12px}
+.nav-l{display:flex;gap:2px;flex-wrap:wrap}
+.nav a.ni{display:inline-flex;align-items:center;min-height:44px;border:1px solid transparent;border-radius:8px;padding:0 13px;font-family:'Archivo';font-weight:700;letter-spacing:-.02em;font-size:15px;line-height:1;white-space:nowrap;background-image:linear-gradient(168deg,#f3f6fa 4%,#c3c9d4 26%,#8d94a1 48%,#6e757f 58%,#b9c0cb 78%,#e6eaf1 96%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.55))}
+.nav a.ni:hover,.nav a.ni[aria-current]{background-image:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);border-color:rgba(188,216,255,.5);text-decoration:none}
+.cta{display:inline-flex;align-items:center;gap:8px;min-height:44px;border:1px solid rgba(188,216,255,.55);border-radius:9px;padding:0 16px;font-family:'Archivo';font-weight:700;letter-spacing:-.02em;font-size:15px;color:#eceae6;background:linear-gradient(150deg,rgba(30,155,255,.16),rgba(123,92,255,.14) 55%,rgba(224,57,159,.1))}
+.cta:hover{text-decoration:none;color:#fff}.cta i{font-style:normal;font-family:'IBM Plex Mono';color:#bcd8ff}
+section{padding:96px 0 0;scroll-margin-top:20px}.hero{padding-top:70px}
+.eyerow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;line-height:1.7;color:#97979d;text-transform:uppercase}
+.rule{width:32px;height:2px;border-radius:2px;background:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);margin-bottom:18px}
+h1{font-family:'Archivo';font-weight:600;font-size:52px;line-height:1.03;letter-spacing:-.035em;margin:0 0 20px;max-width:24ch;text-wrap:balance}
+h2{font-family:'Archivo';font-weight:600;font-size:clamp(30px,3.4vw,42px);line-height:1.06;letter-spacing:-.025em;margin:0 0 20px;max-width:28ch;text-wrap:balance}
+h3{font-family:'Archivo';font-weight:600;font-size:19px;letter-spacing:-.01em;margin:0 0 8px;color:#eceae6}
+p,li{font-size:17px;line-height:1.68;color:#bfc4cd;text-wrap:pretty}p{max-width:76ch;margin:0 0 14px}
+.lead{font-size:20px;line-height:1.6;color:#cfd3da;max-width:66ch}
+b,strong{color:#eceae6;font-weight:600}
+ul{padding-left:20px;margin:0 0 14px}li{margin-bottom:6px;max-width:74ch}li::marker{color:#7b5cff}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{border:1px solid #232327;border-radius:11px;background:#131316;padding:18px 20px}
+.card p,.card li{font-size:15.5px;line-height:1.6}.card p:last-child{margin-bottom:0}
+a.card{display:block;color:inherit}a.card:hover{border-color:rgba(188,216,255,.5);box-shadow:inset 0 0 0 100px rgba(214,224,240,.05);text-decoration:none}
+.stat{font-family:'Archivo';font-weight:600;font-size:38px;letter-spacing:-.03em;line-height:1;margin:6px 0 8px}
+.stat.s-good{color:#9aab97}.stat.s-bad{color:#cf9a9a}.stat.s-blue{color:#7cb6ff}.stat.s-amber{color:#d9bd82}
+.small{font-size:14px;line-height:1.55;color:#a2a7b0}
+.chip{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border:1px solid;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase}
+.c-designed{color:#a2a2aa;border-color:rgba(140,140,148,.5)}
+.c-implemented{color:#eceae6;border-color:rgba(242,242,244,.42);background:rgba(242,242,244,.13)}
+.c-validated{color:#9aab97;border-color:rgba(169,201,184,.36);background:rgba(169,201,184,.10)}
+.c-refused{color:#d8b0b0;border-color:rgba(207,154,154,.38);background:rgba(207,154,154,.08)}
+.c-research{color:#cba3b8;border-color:rgba(203,163,184,.36);background:rgba(203,163,184,.07)}
+.c-measured{color:#9db2cc;border-color:rgba(163,182,207,.38);background:rgba(163,182,207,.08)}
+.c-author{color:#eceae6;border-color:rgba(236,236,240,.4);background:rgba(255,255,255,.04);border-radius:4px;letter-spacing:.16em}
+table{width:100%;border-collapse:collapse;font-size:15px;font-feature-settings:"tnum" 1}
+th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#97979d;font-weight:500;padding:10px 12px;border-bottom:1px solid #454a55}
+td{padding:11px 12px;border-bottom:1px solid #232327;color:#bfc4cd;vertical-align:top}td.n,th.n{text-align:right}
+tr.hl td{color:#eceae6;background:rgba(124,182,255,.06)}tr.ctl td{color:#8d8d96;font-style:italic}
+.tablewrap{border:1px solid #232327;border-radius:11px;background:#131316;overflow-x:auto}
+figure{margin:18px 0 0;border:1px solid #232327;border-radius:11px;background:#131316;padding:14px 14px 10px}
+figure img{width:100%;display:block;border-radius:6px}figcaption{font-size:14px;color:#a2a7b0;margin-top:8px;line-height:1.5}
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:8px 0 6px}
+.step{flex:1 1 150px;border:1px solid #232327;border-radius:10px;background:#131316;padding:12px 14px}
+.step .k{font-family:'IBM Plex Mono';font-size:12px;letter-spacing:.12em;color:#97979d;text-transform:uppercase}
+.step .v{font-family:'Archivo';font-weight:600;font-size:16px;margin-top:4px;color:#eceae6}.step .d{font-size:14px;color:#a2a7b0;line-height:1.5;margin-top:4px}
+.arrow{align-self:center;color:#7b5cff;font-family:'IBM Plex Mono'}
+.note{border-left:2px solid #7b5cff;padding:4px 0 4px 16px;margin:18px 0}
+.verdict{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.v-yes{color:#9aab97}.v-no{color:#cf9a9a}.v-flag{color:#d9bd82}
+footer{margin-top:96px;padding:36px 0 40px;border-top:1px solid #232327;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 32px}
+footer p{font-size:14px;line-height:1.55;color:#a2a7b0;max-width:52ch}footer nav a{min-height:44px;padding:0 10px;color:#cdd5e2;font-size:14.5px;font-weight:600;display:inline-flex;align-items:center}
+@media(max-width:860px){.grid3,.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.chip{white-space:normal;min-height:0;padding:4px 9px;line-height:1.4}.idcard-desc{display:none}.led{display:none}table{font-size:14px}th,td{padding:9px 8px}.stat{font-size:32px}.wrap{padding:0 16px 80px}h1{font-size:36px}.grid2,.grid3,.grid4{grid-template-columns:minmax(0,1fr)}.arrow{display:none}.idcard-home{font-size:21px}}
+
+.name{font-family:'Archivo';font-weight:700;font-size:60px;letter-spacing:-.04em;line-height:1;margin:0}
+.role{font-family:'Archivo';font-weight:500;font-size:20px;color:#9db2cc;margin:12px 0 0}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #454a55;border-radius:9px;color:#eceae6;font-family:'Archivo';font-weight:600;font-size:15px}
+.btn:hover{border-color:rgba(188,216,255,.6);text-decoration:none;color:#fff}
+.tl{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 24px;padding:16px 0;border-top:1px solid rgba(255,255,255,.07)}
+.tl .when{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.06em;color:#97979d;padding-top:3px}
+.tl h3{margin:0 0 4px;font-size:17px}.tl p{margin:0;font-size:15.5px}
+@media(max-width:620px){.name{font-size:42px}.tl{grid-template-columns:minmax(0,1fr)}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a><div class="wrap"><div class="col"><main id="main">
+<section class="hero" style="padding-top:64px">
+ <div class="eyerow"><span class="eyebrow">Vancouver, BC · Data engineering · Markets research · Applied AI</span></div>
+ <h1 class="name">Paul Russell</h1>
+ <p class="role">Data engineer and independent markets researcher</p>
+ <p class="lead" style="margin-top:22px">I build governed data systems, and I research how to make machine reasoning trustworthy. That means seven years of production data engineering, a funded futures-trading practice since 2025, and an independent research programme in which every claim has to carry its evidence, or say that it has none.</p>
+ <div class="links"><a class="btn" href="https://www.linkedin.com/in/paul-russell-dataeng/">LinkedIn ↗</a><a class="btn" href="https://github.com/russell94paul">GitHub ↗</a><a class="btn" href="research/signal-governance-note.pdf">Research note (PDF)</a></div>
+</section>
+
+<section id="research">
+ <div class="eyerow"><span class="eyebrow">Research</span></div><div class="rule"></div>
+ <h2>Recent independent work</h2>
+ <div class="grid2">
+  <a class="card" href="cell-os/sihre.html"><span class="chip c-measured">Measured · pre-registered</span><h3 style="margin-top:12px">SIHRE: governing a committee of signals</h3><p>A framework I originated for trusting different reasoning methods by their measured reliability. Its first out-of-sample test, 1975–2026, is net of costs: trust lifted the Sharpe ratio from −0.02 to <b>0.30</b> against equal weighting (95% CI of the gain [0.12, 0.58]). The abstention component was falsified, and the page says so.</p></a>
+  <a class="card" href="cell-os/index.html"><span class="chip c-research">Research · design candidate</span><h3 style="margin-top:12px"><span class="wm"><span class="wm-c">CELL</span><span class="wm-sl">//</span><span class="wm-os">OS</span></span>: a governed operating system for AI-agent work</h3><p>The product vision and research programme. It shows how teams of AI agents could run under human authority, with replayable evidence. Every capability is labelled Implemented, Demonstrated, Designed or Research, with interactive demos on fictional data.</p></a>
+  <a class="card" href="cell-os/evidence.html"><span class="chip c-validated">Method</span><h3 style="margin-top:12px">Evidence: how a result is allowed to count</h3><p>Pre-registered gates, negative controls, one-factor fault isolation and independent replication. Results include a 1,000-test controlled verification and 1,400+ automated tests.</p></a>
+  <a class="card" href="research/signal-governance-note.pdf"><span class="chip c-designed">Research note · PDF</span><h3 style="margin-top:12px">Governing a Committee of Signals</h3><p>The full write-up of the SIHRE study: design, pre-registration, results, controls, limits and next steps, including the test I designed badly.</p></a>
+ </div>
+</section>
+
+<section id="how">
+ <div class="eyerow"><span class="eyebrow">How I work</span></div><div class="rule"></div>
+ <h2>Evidence before claims</h2>
+ <div class="grid3">
+  <div class="card"><h3>Decide what would count, first</h3><p>Pass criteria, holdouts and stop rules are fixed before the run, and hashed where it matters, so the result can't shape the test.</p></div>
+  <div class="card"><h3>Prove the instrument can see</h3><p>A check must fail on a known-bad case before its pass means anything. A zero from a blind instrument is never reported as a zero.</p></div>
+  <div class="card"><h3>Report the failures</h3><p>Falsified ideas and flawed tests stay in the record. They are the most useful part of it.</p></div>
+ </div>
+</section>
+
+<section id="experience">
+ <div class="eyerow"><span class="eyebrow">Experience</span></div><div class="rule"></div>
+ <h2>Where I've done it</h2>
+ <div class="tl"><div class="when">2026 – now</div><div><h3>Lead Data Platform Engineer, Analytic Labs</h3><p>Governed Snowflake warehouses, Power BI semantic models and finance-grade reporting for e-commerce and media clients; evidence-gated release standards.</p></div></div>
+ <div class="tl"><div class="when">2025 – now</div><div><h3>Proprietary Futures Trader, Take Profit Trader</h3><p>Funded account ($50K evaluation passed), trading Nasdaq and S&amp;P 500 futures under defined risk limits; Python backtests and indicators.</p></div></div>
+ <div class="tl"><div class="when">2021 – 2024</div><div><h3>Data / Machine Learning Engineer, lululemon</h3><p>PySpark and Airflow pipelines feeding the demand-forecasting engine; Bayesian forecasting models (PyMC3); started an AWS Glue → Databricks migration.</p></div></div>
+ <div class="tl"><div class="when">2022 – 2023</div><div><h3>Junior Proprietary Trader, Alphachain Capital</h3><p>Part-time quantitative research and trading; Algorithmic Trader Programme.</p></div></div>
+ <div class="tl"><div class="when">2019</div><div><h3>Associate Data Engineer, Fidelity Investments</h3><p>Stored procedures and ETL for client loan data; on-premise to AWS migration.</p></div></div>
+ <div class="tl"><div class="when">2013 – 2017</div><div><h3>BSc (Hons) Computer Science &amp; IT, NUI Galway</h3><p>Including Linear Algebra, Discrete Mathematics, Statistics &amp; Probability and Systems Modelling &amp; Simulation. Industry placement at Amazon Web Services.</p></div></div>
+</section>
+</main>
+<footer><div><p style="margin:0">© Paul Russell. Research pages are built with AI agents under my direction and labelled by maturity; nothing here is a customer outcome or investment advice.</p></div>
+<nav aria-label="Footer"><a href="cell-os/sihre.html">SIHRE</a><a href="cell-os/index.html">CELL // OS</a><a href="cell-os/evidence.html">Evidence</a><a href="https://www.linkedin.com/in/paul-russell-dataeng/">LinkedIn</a></nav></footer>
+</div></div></body></html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evidence — CELL // OS</title><meta name="description" content="How claims are proven, and what has been measured">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#0e0e10}
+body{font-family:"Source Sans 3",system-ui,sans-serif;-webkit-font-smoothing:antialiased;color:#eceae6}
+*{box-sizing:border-box}
+a{color:#9db2cc;text-decoration:none} a:hover{color:#cdd5e2;text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #bcd8ff;outline-offset:2px}
+::selection{background:rgba(210,210,216,.4);color:#fff}
+@keyframes cellosglow{0%,100%{text-shadow:0 0 4px rgba(158,205,255,.7),0 0 12px rgba(94,163,255,.45),0 0 26px rgba(74,138,255,.26)}50%{text-shadow:0 0 7px rgba(198,228,255,1),0 0 21px rgba(124,182,255,.9),0 0 44px rgba(92,152,255,.6)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.001ms!important;animation-iteration-count:1!important}.wm-sl{animation:none!important}}
+.wrap{min-height:100vh;background:#0e0e10;padding:0 28px 110px}.col{max-width:1100px;margin:0 auto}
+.skip{position:absolute;left:-999px;top:8px;background:#1b1c21;color:#eceae6;padding:10px 14px;border-radius:8px}.skip:focus{left:12px}
+.wm{font-family:'Archivo',sans-serif;font-weight:700;letter-spacing:-.03em;white-space:nowrap;line-height:1;margin:0 .14em}
+.wm-c{background:linear-gradient(168deg,#f3f6fa 4%,#c3c9d4 26%,#8d94a1 48%,#6e757f 58%,#b9c0cb 78%,#e6eaf1 96%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.55))}
+.wm-sl{color:#bcd8ff;padding:0 .2em;animation:cellosglow 2.9s ease-in-out infinite}
+.wm-os{background:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);-webkit-background-clip:text;background-clip:text;color:transparent}
+header{padding-top:22px}
+.idcard{border:1px solid #454a55;border-radius:11px;background:linear-gradient(152deg,#31333b,#24262c 58%,#1f2126);box-shadow:inset 0 1px 0 rgba(255,255,255,.11),0 0 0 1px rgba(157,178,204,.1),0 0 22px -6px rgba(124,182,255,.34),0 8px 22px -12px rgba(0,0,0,.85)}
+.idcard-top{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:13px 20px 12px;border-bottom:1px solid rgba(157,178,204,.18);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,0))}
+.idcard-l{display:flex;align-items:center;gap:18px}
+.idcard-home{display:flex;align-items:center;padding-right:18px;border-right:1px solid rgba(157,178,204,.18);font-size:26px;text-decoration:none!important}
+.idcard-name{font-family:'Archivo';font-weight:500;font-size:14.5px;color:#e7e5e0;line-height:1.2}
+.idcard-desc{font-size:12px;color:#a2a7b0;line-height:1.3;margin-top:2px}
+.led{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:#a2a7b0}.led::before{content:"";width:6px;height:6px;border-radius:50%;background:#9aab97}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:6px;flex-wrap:wrap;padding:9px 12px}
+.nav-l{display:flex;gap:2px;flex-wrap:wrap}
+.nav a.ni{display:inline-flex;align-items:center;min-height:44px;border:1px solid transparent;border-radius:8px;padding:0 13px;font-family:'Archivo';font-weight:700;letter-spacing:-.02em;font-size:15px;line-height:1;white-space:nowrap;background-image:linear-gradient(168deg,#f3f6fa 4%,#c3c9d4 26%,#8d94a1 48%,#6e757f 58%,#b9c0cb 78%,#e6eaf1 96%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.55))}
+.nav a.ni:hover,.nav a.ni[aria-current]{background-image:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);border-color:rgba(188,216,255,.5);text-decoration:none}
+.cta{display:inline-flex;align-items:center;gap:8px;min-height:44px;border:1px solid rgba(188,216,255,.55);border-radius:9px;padding:0 16px;font-family:'Archivo';font-weight:700;letter-spacing:-.02em;font-size:15px;color:#eceae6;background:linear-gradient(150deg,rgba(30,155,255,.16),rgba(123,92,255,.14) 55%,rgba(224,57,159,.1))}
+.cta:hover{text-decoration:none;color:#fff}.cta i{font-style:normal;font-family:'IBM Plex Mono';color:#bcd8ff}
+section{padding:96px 0 0;scroll-margin-top:20px}.hero{padding-top:70px}
+.eyerow{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;line-height:1.7;color:#97979d;text-transform:uppercase}
+.rule{width:32px;height:2px;border-radius:2px;background:linear-gradient(96deg,#1e9bff,#7b5cff 48%,#e0399f);margin-bottom:18px}
+h1{font-family:'Archivo';font-weight:600;font-size:52px;line-height:1.03;letter-spacing:-.035em;margin:0 0 20px;max-width:24ch;text-wrap:balance}
+h2{font-family:'Archivo';font-weight:600;font-size:clamp(30px,3.4vw,42px);line-height:1.06;letter-spacing:-.025em;margin:0 0 20px;max-width:28ch;text-wrap:balance}
+h3{font-family:'Archivo';font-weight:600;font-size:19px;letter-spacing:-.01em;margin:0 0 8px;color:#eceae6}
+p,li{font-size:17px;line-height:1.68;color:#bfc4cd;text-wrap:pretty}p{max-width:76ch;margin:0 0 14px}
+.lead{font-size:20px;line-height:1.6;color:#cfd3da;max-width:66ch}
+b,strong{color:#eceae6;font-weight:600}
+ul{padding-left:20px;margin:0 0 14px}li{margin-bottom:6px;max-width:74ch}li::marker{color:#7b5cff}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.grid4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{border:1px solid #232327;border-radius:11px;background:#131316;padding:18px 20px}
+.card p,.card li{font-size:15.5px;line-height:1.6}.card p:last-child{margin-bottom:0}
+a.card{display:block;color:inherit}a.card:hover{border-color:rgba(188,216,255,.5);box-shadow:inset 0 0 0 100px rgba(214,224,240,.05);text-decoration:none}
+.stat{font-family:'Archivo';font-weight:600;font-size:38px;letter-spacing:-.03em;line-height:1;margin:6px 0 8px}
+.stat.s-good{color:#9aab97}.stat.s-bad{color:#cf9a9a}.stat.s-blue{color:#7cb6ff}.stat.s-amber{color:#d9bd82}
+.small{font-size:14px;line-height:1.55;color:#a2a7b0}
+.chip{display:inline-flex;align-items:center;min-height:24px;padding:0 9px;border:1px solid;border-radius:6px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;white-space:nowrap;text-transform:uppercase}
+.c-designed{color:#a2a2aa;border-color:rgba(140,140,148,.5)}
+.c-implemented{color:#eceae6;border-color:rgba(242,242,244,.42);background:rgba(242,242,244,.13)}
+.c-validated{color:#9aab97;border-color:rgba(169,201,184,.36);background:rgba(169,201,184,.10)}
+.c-refused{color:#d8b0b0;border-color:rgba(207,154,154,.38);background:rgba(207,154,154,.08)}
+.c-research{color:#cba3b8;border-color:rgba(203,163,184,.36);background:rgba(203,163,184,.07)}
+.c-measured{color:#9db2cc;border-color:rgba(163,182,207,.38);background:rgba(163,182,207,.08)}
+.c-author{color:#eceae6;border-color:rgba(236,236,240,.4);background:rgba(255,255,255,.04);border-radius:4px;letter-spacing:.16em}
+table{width:100%;border-collapse:collapse;font-size:15px;font-feature-settings:"tnum" 1}
+th{text-align:left;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#97979d;font-weight:500;padding:10px 12px;border-bottom:1px solid #454a55}
+td{padding:11px 12px;border-bottom:1px solid #232327;color:#bfc4cd;vertical-align:top}td.n,th.n{text-align:right}
+tr.hl td{color:#eceae6;background:rgba(124,182,255,.06)}tr.ctl td{color:#8d8d96;font-style:italic}
+.tablewrap{border:1px solid #232327;border-radius:11px;background:#131316;overflow-x:auto}
+figure{margin:18px 0 0;border:1px solid #232327;border-radius:11px;background:#131316;padding:14px 14px 10px}
+figure img{width:100%;display:block;border-radius:6px}figcaption{font-size:14px;color:#a2a7b0;margin-top:8px;line-height:1.5}
+.flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin:8px 0 6px}
+.step{flex:1 1 150px;border:1px solid #232327;border-radius:10px;background:#131316;padding:12px 14px}
+.step .k{font-family:'IBM Plex Mono';font-size:12px;letter-spacing:.12em;color:#97979d;text-transform:uppercase}
+.step .v{font-family:'Archivo';font-weight:600;font-size:16px;margin-top:4px;color:#eceae6}.step .d{font-size:14px;color:#a2a7b0;line-height:1.5;margin-top:4px}
+.arrow{align-self:center;color:#7b5cff;font-family:'IBM Plex Mono'}
+.note{border-left:2px solid #7b5cff;padding:4px 0 4px 16px;margin:18px 0}
+.verdict{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.v-yes{color:#9aab97}.v-no{color:#cf9a9a}.v-flag{color:#d9bd82}
+footer{margin-top:96px;padding:36px 0 40px;border-top:1px solid #232327;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px 32px}
+footer p{font-size:14px;line-height:1.55;color:#a2a7b0;max-width:52ch}footer nav a{min-height:44px;padding:0 10px;color:#cdd5e2;font-size:14.5px;font-weight:600;display:inline-flex;align-items:center}
+@media(max-width:860px){.grid3,.grid4{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.chip{white-space:normal;min-height:0;padding:4px 9px;line-height:1.4}.idcard-desc{display:none}.led{display:none}table{font-size:14px}th,td{padding:9px 8px}.stat{font-size:32px}.wrap{padding:0 16px 80px}h1{font-size:36px}.grid2,.grid3,.grid4{grid-template-columns:minmax(0,1fr)}.arrow{display:none}.idcard-home{font-size:21px}}
+</style></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<div class="wrap"><div class="col">
+<header><div class="idcard">
+ <div class="idcard-top"><div class="idcard-l"><a class="idcard-home" href="index.html" aria-label="CELL // OS home"><span class="wm"><span class="wm-c">CELL</span><span class="wm-sl">//</span><span class="wm-os">OS</span></span></a>
+  <div><div class="idcard-name">Evidence</div><div class="idcard-desc">How claims are proven, and what has been measured</div></div></div>
+  <span class="led">Research page · independent work by Paul Russell</span></div>
+ <nav class="nav" aria-label="Primary"><div class="nav-l"><a class="ni" href="platform.html">Platform</a><a class="ni" href="products.html">Products</a><a class="ni" href="research.html">Research</a><a class="ni" href="sihre.html">SIHRE</a><a class="ni" href="evidence.html" aria-current="page">Evidence</a><a class="ni" href="status.html">Status</a></div>
+  <a class="cta" href="explore.html">Explore the demo <i>↗</i></a></nav>
+</div></header>
+<main id="main">
+<section class="hero">
+ <div class="eyerow"><span class="eyebrow">Resources · Research · Evidence</span><span class="chip c-author">Authored by Paul Russell</span></div>
+ <h1>Every claim carries its evidence, or says it has none</h1>
+ <p class="lead"><span class="wm"><span class="wm-c">CELL</span><span class="wm-sl">//</span><span class="wm-os">OS</span></span> is a research project in building systems that refuse to fool themselves. This page describes the method: how a result is allowed to count. It also lists what has actually been measured, kept separate from what is designed or still an idea.</p>
+ <div class="grid4" style="margin-top:28px">
+  <div class="card"><span class="eyebrow">Automated tests</span><div class="stat s-blue">1,400+</div><p class="small">Across three codebases (Python, TypeScript/React).</p></div>
+  <div class="card"><span class="eyebrow">Fault isolation</span><div class="stat s-good">18 / 19</div><p class="small">Suspected environmental failures confirmed environmental, one factor at a time, isolating a single real defect.</p></div>
+  <div class="card"><span class="eyebrow">Independent replication</span><div class="stat s-good">11 / 12</div><p class="small">Hashes reproduced by a checker written only from the spec; the 12th was the planted negative.</p></div>
+  <div class="card"><span class="eyebrow">Own-instrument flaw found</span><div class="stat s-amber">20%</div><p class="small">False-positive rate caught in my own UI-testing tool before any result was reported.</p></div>
+ </div>
+</section>
+
+<section id="method">
+ <div class="eyerow"><span class="eyebrow">The method</span></div><div class="rule"></div>
+ <h2>Six rules that decide whether a result counts</h2>
+ <div class="grid2">
+  <div class="card"><h3>1 · Decide the pass criteria before running</h3><p>Every gate states its pass criteria, inputs and prohibitions before it runs. The run happens once, against a hash-pinned commit, from a clean snapshot. No rerunning until green.</p></div>
+  <div class="card"><h3>2 · Prove the instrument can fail</h3><p>Every acceptance check is first shown to fire on a known-bad case (a negative control). A test that has never failed is a test that might not be looking.</p></div>
+  <div class="card"><h3>3 · Keep "zero" separate from "not measured"</h3><p>Results use five verdicts: PASS, FAIL, UNMEASURABLE, ERROR, NOT-RUN. A blind instrument's silence is never reported as a clean result.</p></div>
+  <div class="card"><h3>4 · Isolate causes one factor at a time</h3><p>When a run fails, each suspected cause is introduced alone, in its own disposable snapshot. In the 1,000-test verification this confirmed 18 of 19 suspected environmental failures as environmental.</p></div>
+  <div class="card"><h3>5 · Replicate independently</h3><p>A second implementation is written from the specification alone, and the two must agree. Where they don't, the specification is the thing under suspicion.</p></div>
+  <div class="card"><h3>6 · Seal the evidence</h3><p>Artefacts are sealed with SHA-256 manifests and external checksum sidecars, and superseded rather than overwritten. A result can be re-checked byte for byte, later, by someone else.</p></div>
+ </div>
+</section>
+
+<section id="record">
+ <div class="eyerow"><span class="eyebrow">The measured record</span><span class="chip c-measured">Measured</span></div><div class="rule"></div>
+ <h2>What has actually been measured</h2>
+ <div class="tablewrap"><table>
+  <tr><th>Run</th><th>What it showed</th><th>Basis</th></tr>
+  <tr><td><b>Controlled verification</b> of the agent-evaluation framework</td><td>1,000 tests collected: 964 passed, 21 failed. Single-factor interventions showed 18 of 19 suspected environmental failures were environmental (1 left unmeasured), leaving one real code defect behind two failing tests.</td><td>Counts agreed across two instruments: the JUnit XML and the terminal output.</td></tr>
+  <tr><td><b>Contract specification gate</b></td><td>17 JSON-Schema contracts; 27 of 27 fixtures behaved as expected (10 positive, 17 negative, each rejected for its intended reason only). 46 invariants are listed as "never made to fire" rather than counted as passing.</td><td>Schema validation plus positive controls on the scanners.</td></tr>
+  <tr><td><b>Reconciliation</b></td><td>A checker written only from the spec reproduced 11 of 12 DAG hashes; the 12th was the fixture built to differ. Reviewer findings were reproduced before being fixed.</td><td>Independent re-implementation.</td></tr>
+  <tr><td><b>Local proof of concept</b> (evidence workspace)</td><td>Unit and cross-browser tests pass from a fresh clone. A real clone exposed a line-ending hash defect that a copied-tree check had missed.</td><td>Fresh-clone runs on three browser engines.</td></tr>
+  <tr><td><b>SIHRE trust mechanism</b></td><td>Pre-registered; net Sharpe −0.02 → 0.30 vs equal weight on a 1975–2026 holdout; abstention falsified. <a href="sihre.html#test">Details →</a></td><td>Block-bootstrap CI; leakage control caught 25 of 25.</td></tr>
+ </table></div>
+ <p class="small" style="margin-top:10px">Technical checks in the source projects, not customer outcomes. The source repositories are private; code and evidence packs are available to reviewers on request.</p>
+</section>
+
+<section id="maturity">
+ <div class="eyerow"><span class="eyebrow">Built, designed, or an idea</span></div><div class="rule"></div>
+ <h2>Four labels, never blurred</h2>
+ <div class="grid4">
+  <div class="card"><span class="chip c-implemented">Implemented</span><p style="margin-top:10px">Built and usable in a named context: the evaluation framework, evidence-gated completion, sealed evidence, the local evidence workspace.</p></div>
+  <div class="card"><span class="chip c-validated">Demonstrated</span><p style="margin-top:10px">Explorable on fictional data in your browser: the <a href="explore.html">CELL-LIFT demo</a> and the <a href="cell-q-lab.html">CELL-Q lab</a>.</p></div>
+  <div class="card"><span class="chip c-designed">Designed</span><p style="margin-top:10px">Specified, not yet proven: the immutable run ledger, the canonical ontology and the provider-neutral adapters.</p></div>
+  <div class="card"><span class="chip c-research">Research</span><p style="margin-top:10px">Hypotheses: SIHRE as the reasoning kernel of every Operative, adaptive team composition, cross-product capability sharing.</p></div>
+ </div>
+ <p class="small" style="margin-top:12px">Approval is not implementation, implementation is not verification, and a demo is not validation. The full feature ledger is on the <a href="status.html#ledger">Status page</a>, with definitions <a href="status.html#definitions">here</a>.</p>
+</section>
+
+<section id="how">
+ <div class="eyerow"><span class="eyebrow">How this was built</span></div><div class="rule"></div>
+ <h2>Directed AI agents, held to the same standard</h2>
+ <p>Much of the code and research text in <span class="wm"><span class="wm-c">CELL</span><span class="wm-sl">//</span><span class="wm-os">OS</span></span> was produced by AI coding and research agents (Claude Code, Codex) working under my direction. My part was the part this page is about: deciding the questions, setting the evidence standards, designing the gates and controls, and accepting or rejecting each result. Agent output counts as a candidate until it passes the same gates as anything else. That is also why the record above includes the failures.</p>
+ <div class="grid3" style="margin-top:18px">
+  <a class="card" href="sihre.html"><span class="eyebrow">SIHRE</span><h3 style="margin-top:6px">The first measured result →</h3><p class="small">Trust supported, abstention falsified, a test flaw disclosed.</p></a>
+  <a class="card" href="research.html#loop"><span class="eyebrow">Research</span><h3 style="margin-top:6px">The research loop →</h3><p class="small">Run, record, verdict, finding, reconfigure, re-measure.</p></a>
+  <a class="card" href="status.html"><span class="eyebrow">Status</span><h3 style="margin-top:6px">What exists today →</h3><p class="small">The one authoritative availability page.</p></a>
+ </div>
+</section>
+</main>
+<footer><div><div style="font-size:22px"><span class="wm"><span class="wm-c">CELL</span><span class="wm-sl">//</span><span class="wm-os">OS</span></span></div>
+<p>Independent research by Paul Russell. Capabilities are labelled Implemented, Demonstrated, Designed or Research; measured results state their basis, period and controls. Nothing here is a customer outcome.</p></div>
+<nav aria-label="Footer"><a href="about.html">About</a><a href="research.html">Research</a><a href="sihre.html">SIHRE</a><a href="evidence.html">Evidence</a><a href="status.html">Status</a></nav></footer>
+</div></div></body></html>

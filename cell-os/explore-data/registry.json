@@ -1,0 +1,316 @@
+{
+  "registryVersion": "1.0.0",
+  "note": "Content registry for the Explore Workflows selector. Domains, businesses, niches and cross-domain capabilities are separate objects with stable ids. Add a vetted domain pack by adding one domain entry pointing at its folder; the interface is shared.",
+  "capabilities": [
+    {
+      "id": "cap-intake-support",
+      "label": "Intake & support"
+    },
+    {
+      "id": "cap-inventory-procurement",
+      "label": "Inventory & procurement"
+    },
+    {
+      "id": "cap-fulfilment",
+      "label": "Fulfilment"
+    },
+    {
+      "id": "cap-dispatch-coverage",
+      "label": "Dispatch & coverage"
+    },
+    {
+      "id": "cap-demand-campaigns",
+      "label": "Demand & campaigns"
+    },
+    {
+      "id": "cap-assurance",
+      "label": "Assurance"
+    },
+    {
+      "id": "cap-enquiry-triage",
+      "label": "Enquiry triage"
+    },
+    {
+      "id": "cap-publishing-gate",
+      "label": "Publishing gate"
+    },
+    {
+      "id": "cap-progress-compile",
+      "label": "Progress compile"
+    },
+    {
+      "id": "cap-study-design",
+      "label": "Study design"
+    },
+    {
+      "id": "cap-experiment-run",
+      "label": "Experiment run"
+    },
+    {
+      "id": "cap-independent-review",
+      "label": "Independent review"
+    },
+    {
+      "id": "cap-dossier-assembly",
+      "label": "Dossier assembly"
+    }
+  ],
+  "businessTypes": [
+    {
+      "id": "bt-small-retailer",
+      "label": "Small retailer"
+    },
+    {
+      "id": "bt-delivery-team",
+      "label": "Delivery team"
+    },
+    {
+      "id": "bt-solo-practitioner",
+      "label": "Solo practitioner"
+    },
+    {
+      "id": "bt-clinic",
+      "label": "Clinic / studio"
+    },
+    {
+      "id": "bt-research-studio",
+      "label": "Research studio"
+    }
+  ],
+  "domains": [
+    {
+      "id": "local-logistics",
+      "label": "CELL-LIFT // OS",
+      "product": "CELL-LIFT // OS",
+      "productExpansion": "Logistics, Inventory, Fulfilment & Tracking",
+      "brandingNote": "Customers may use their own platform name, logo and branding; the Powered by CELL-LIFT // OS attribution is retained. Configurable branding is product intent, not an implemented setting in this build.",
+      "subtitle": "Logistics, Inventory, Fulfilment & Tracking — procurement, teams, delivery and customer service",
+      "status": "INTERACTIVE_CANDIDATE",
+      "statusLabel": "Interactive candidate",
+      "packPath": "explore-data/local-logistics/",
+      "packVersion": "1.0.0",
+      "packStatus": "CANDIDATE_DEMO_ONLY",
+      "businessTypeIds": [
+        "bt-small-retailer",
+        "bt-delivery-team"
+      ],
+      "niches": [
+        {
+          "id": "niche-stationery",
+          "label": "Stationery & paper goods"
+        }
+      ],
+      "businesses": [
+        {
+          "id": "biz-demo-supply-co",
+          "label": "Demo Supply Co. (fictional)",
+          "nicheId": "niche-stationery",
+          "businessTypeIds": [
+            "bt-small-retailer",
+            "bt-delivery-team"
+          ],
+          "sells": "Notebooks, pens, folders and envelopes"
+        }
+      ],
+      "capabilityIds": [
+        "cap-intake-support",
+        "cap-inventory-procurement",
+        "cap-fulfilment",
+        "cap-dispatch-coverage",
+        "cap-demand-campaigns",
+        "cap-assurance"
+      ],
+      "useCases": [
+        {
+          "id": "WF-01",
+          "label": "Sample order to completed delivery",
+          "interactive": true,
+          "tab": "ops",
+          "persona": "customer"
+        },
+        {
+          "id": "WF-02",
+          "label": "Nearest worker is unavailable",
+          "interactive": true,
+          "tab": "ops",
+          "persona": "team_lead"
+        },
+        {
+          "id": "WF-03",
+          "label": "Stale location and manual review",
+          "interactive": true,
+          "tab": "ops",
+          "persona": "team_lead"
+        },
+        {
+          "id": "WF-04",
+          "label": "Stock shortage and cancellation",
+          "interactive": true,
+          "tab": "ops",
+          "persona": "customer"
+        },
+        {
+          "id": "WF-05",
+          "label": "Delivery exception and support",
+          "interactive": true,
+          "tab": "ops",
+          "persona": "employee"
+        },
+        {
+          "id": "WF-06",
+          "label": "Cross-team coverage assistance",
+          "interactive": false,
+          "tab": "ops",
+          "persona": "team_lead"
+        },
+        {
+          "id": "WF-07",
+          "label": "Purchase proposal and partial receipt",
+          "interactive": false,
+          "tab": "inventory",
+          "persona": "owner"
+        },
+        {
+          "id": "WF-08",
+          "label": "Geographic demand review",
+          "interactive": false,
+          "tab": "demand",
+          "persona": "owner"
+        },
+        {
+          "id": "WF-09",
+          "label": "Event validity check",
+          "interactive": true,
+          "tab": "demand",
+          "persona": "owner"
+        },
+        {
+          "id": "WF-10",
+          "label": "Guarded special deal",
+          "interactive": true,
+          "tab": "deals",
+          "persona": "owner"
+        },
+        {
+          "id": "WF-11",
+          "label": "Employee shift and visibility",
+          "interactive": false,
+          "tab": "ops",
+          "persona": "employee"
+        },
+        {
+          "id": "WF-12",
+          "label": "Scoped customer support",
+          "interactive": false,
+          "tab": "comms",
+          "persona": "customer"
+        }
+      ],
+      "searchTerms": [
+        "logistics",
+        "delivery",
+        "courier",
+        "dispatch",
+        "stock",
+        "inventory",
+        "warehouse",
+        "vancouver",
+        "stationery",
+        "orders",
+        "last mile",
+        "cell-lift",
+        "celllift",
+        "lift",
+        "fulfilment",
+        "fulfillment",
+        "tracking"
+      ]
+    },
+    {
+      "id": "cell-q-research",
+      "label": "CELL-Q // OS — Research Lab",
+      "subtitle": "Quantitative research on synthetic nonfinancial data, with review and dossiers",
+      "status": "SEPARATE_WORKSPACE",
+      "statusLabel": "End-state concept · opens its own workspace",
+      "href": "CELL-Q Research Lab (standalone).html",
+      "packPath": "explore-data/cell-q-research/",
+      "packVersion": "1.0.0",
+      "packStatus": "CANDIDATE_DEMO_ONLY",
+      "businessTypeIds": [
+        "bt-research-studio"
+      ],
+      "niches": [
+        {
+          "id": "niche-quant-research",
+          "label": "Educational quantitative research"
+        }
+      ],
+      "businesses": [
+        {
+          "id": "biz-example-research-studio",
+          "label": "Example Research Studio (fictional)",
+          "nicheId": "niche-quant-research",
+          "businessTypeIds": [
+            "bt-research-studio"
+          ],
+          "sells": "Reviewed research dossiers on synthetic series"
+        }
+      ],
+      "capabilityIds": [
+        "cap-study-design",
+        "cap-experiment-run",
+        "cap-independent-review",
+        "cap-dossier-assembly",
+        "cap-assurance"
+      ],
+      "useCases": [
+        {
+          "id": "Q-WF-01",
+          "label": "Question to reviewed research dossier",
+          "interactive": true,
+          "href": "CELL-Q Research Lab (standalone).html"
+        },
+        {
+          "id": "Q-TASK-DATA",
+          "label": "Check and revise a versioned dataset",
+          "interactive": true,
+          "href": "CELL-Q Research Lab (standalone).html"
+        },
+        {
+          "id": "Q-TASK-MODEL",
+          "label": "Inspect a method, its recipe and its comparison",
+          "interactive": true,
+          "href": "CELL-Q Research Lab (standalone).html"
+        },
+        {
+          "id": "Q-TASK-BUILD",
+          "label": "Build and validate a second research workflow",
+          "interactive": true,
+          "href": "CELL-Q Research Lab (standalone).html"
+        }
+      ],
+      "searchTerms": [
+        "research",
+        "cell-q",
+        "cellq",
+        "quant",
+        "quantitative",
+        "study",
+        "experiment",
+        "model",
+        "forecast",
+        "review",
+        "dossier",
+        "evidence",
+        "dataset"
+      ],
+      "notIncluded": [
+        "brokerage",
+        "trade execution",
+        "trading signals",
+        "financial backtesting",
+        "portfolio management"
+      ]
+    }
+  ]
+}

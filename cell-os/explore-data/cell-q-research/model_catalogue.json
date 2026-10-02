@@ -1,0 +1,57 @@
+{
+  "schemaVersion": "2.0.0",
+  "status": "EDUCATIONAL_PREDECLARED_METHODS",
+  "note": "These are simple predefined forecasting methods, not trained neural networks or AI-generated trading models. Results come from reference/demo_model.mjs on synthetic parcel counts.",
+  "models": [
+    {
+      "id": "MODEL-PREV-v1",
+      "name": "Previous observation",
+      "kind": "predefined baseline",
+      "methodId": "previous_observation",
+      "recipe": "Use the previous day count as the next one-day estimate.",
+      "learnedParameters": null,
+      "historyWindow": 1,
+      "createdBy": "Pack author; not an agent run",
+      "creationStudy": "Q-STUDY-01@v1",
+      "datasetRef": "DATA-PARCELS@v1",
+      "experimentRef": "EXP-01",
+      "validationMae": 1.5,
+      "units": "parcels per day",
+      "selectionState": "BASELINE_COMPARISON",
+      "experimentRevisionRef": "EXP-01@data1-study1"
+    },
+    {
+      "id": "MODEL-MEAN3-v1",
+      "name": "Trailing three mean",
+      "kind": "predefined comparison method",
+      "methodId": "trailing_three_mean",
+      "recipe": "Use the arithmetic mean of the three immediately preceding observed counts.",
+      "learnedParameters": null,
+      "historyWindow": 3,
+      "createdBy": "Pack author; not an agent run",
+      "creationStudy": "Q-STUDY-01@v1",
+      "datasetRef": "DATA-PARCELS@v1",
+      "experimentRef": "EXP-01",
+      "validationMae": 1,
+      "heldoutMae": 1,
+      "units": "parcels per day",
+      "selectionState": "SELECTED_ON_VALIDATION",
+      "experimentRevisionRef": "EXP-01@data1-study1"
+    }
+  ],
+  "inspectionTabs": [
+    "Overview",
+    "Recipe",
+    "Data",
+    "Results",
+    "Comparison",
+    "Creation history",
+    "Review"
+  ],
+  "unknowns": [
+    "Real-world accuracy",
+    "Agent-generated model quality",
+    "Operational cost or time saved"
+  ],
+  "scope": "Baseline v1 fixture catalogue only. Current views after data changes must use the current reducer result, not these scores."
+}

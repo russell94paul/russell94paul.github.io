@@ -1,0 +1,144 @@
+[
+  {
+    "id": "S01",
+    "title": "CELL_OS_Architecture_Atlas_v0_2_0_Candidate.docx",
+    "version": "0.2.0 candidate, 10 September 2026",
+    "inspected": "All extracted text and tables; complete 52-group component register. Embedded atlas figures were not separately visually audited.",
+    "authority": "Candidate synthesis; not an approval or current build audit.",
+    "use": "Primary coverage baseline, views 01–18 and CMP-01–52.",
+    "original_included": false,
+    "source_sha256": "92aed62b2eb1672ef694b1139ae2fea0302818fa71144befdd3c428c49abe88f"
+  },
+  {
+    "id": "S02",
+    "title": "CELL_OS_Entity_and_Concept_Register_v1.md",
+    "version": "1, 9 September 2026",
+    "inspected": "Complete register and naming crosswalk.",
+    "authority": "Candidate inventory; its 36 record templates overlap the supporting terminology.",
+    "use": "Definitions, facets, aliases and extended glossary.",
+    "original_included": false,
+    "source_sha256": "5b9e53203f3eb717875740a36d51b3599e25cc3096b8ebad0ec43ed168c65a09"
+  },
+  {
+    "id": "S03",
+    "title": "CELL_OS_Protocol_Architecture_Research_Brief_v0_1_Candidate.md",
+    "version": "0.1 candidate, 10 September 2026",
+    "inspected": "Complete research assignment.",
+    "authority": "Research questions and candidate hypotheses, not completed protocol research or adopted specification.",
+    "use": "Protocol alternatives, responsibility mapping, pre-release authorization and failure semantics.",
+    "original_included": false,
+    "source_sha256": "598dbb9e580e4b6cd51c95d8c5bf9ad6ddf242b403893278867ea1c4224b627d"
+  },
+  {
+    "id": "S04",
+    "title": "CELL_OS_Founder_Intent_Brief_v1.docx",
+    "version": "1, 6 September 2026",
+    "inspected": "Pages 1–10 and retrieved terminology/boundary excerpts.",
+    "authority": "Founder-confirmed planning boundary, subject to later applicable explicit decisions; not implementation proof.",
+    "use": "First-release endpoint, canonical terms, federated truth and public/private separation.",
+    "original_included": false
+  },
+  {
+    "id": "S05",
+    "title": "CELL_OS_Agentic_Paradigm_Deep_Research_Prompt_and_Context_v2.md",
+    "version": "2, 9 September 2026",
+    "inspected": "Opening 245 source lines and retrieved original-discussion excerpts.",
+    "authority": "Founder questions and a research assignment; no experiment results implied.",
+    "use": "O-MESH, Golden diagnostics, independent type dimensions, seven-layer ambiguity and visual preferences.",
+    "original_included": false
+  },
+  {
+    "id": "S06",
+    "title": "CELL_OS_Agentic_Architecture_Research_Pack_v1.zip",
+    "version": "1, 9 September 2026",
+    "inspected": "36-record JSON, all 30 pattern records, report architecture sections and six selected reference figures.",
+    "authority": "Prior candidate design; measured advantages not established.",
+    "use": "Existing editable reference diagrams, candidate pattern catalogue and record templates.",
+    "original_included": false,
+    "selected_members_included": [
+      "operative",
+      "cell",
+      "orthogonal",
+      "links",
+      "trigger",
+      "ecosystem"
+    ],
+    "source_sha256": "6401ad98179c64d2f67e9e88cb7bc91123809c29a894ec9ca00d07fa9ab9b527"
+  },
+  {
+    "id": "S07",
+    "title": "03_GATE_2_PROJECT_INTELLIGENCE_CONTRACT_SPECIFICATION_PROMPT.md",
+    "version": "Historical Gate 2 assignment",
+    "inspected": "Protocol, vocabulary and release-boundary excerpts.",
+    "authority": "Assignment requirements, not proof of completed conformance.",
+    "use": "Core Envelope, Domain Profiles, Provider Adapters and optional bindings.",
+    "original_included": false
+  },
+  {
+    "id": "S08",
+    "title": "CELL_OS_Product_Technical_Design_v0.1_Crossreference_Audit_v1.md",
+    "version": "Historical v1 audit recommendations",
+    "inspected": "Mesh taxonomy, Link Contract and eight-overlay excerpts.",
+    "authority": "Historical proposals; later governing decisions prevail.",
+    "use": "C/T/OS terminology variation and HyperMESH overlay coverage.",
+    "original_included": false
+  },
+  {
+    "id": "S09",
+    "title": "SIHRE_Integration_Candidate_v2.md",
+    "version": "2, 9 September 2026",
+    "inspected": "Candidate disposition, source/status and publication-boundary sections.",
+    "authority": "Historical integration proposal, not a current live-project or benchmark audit.",
+    "use": "Keep research project, optional cognition capability, product candidate and public projection separate. Private implementation details excluded.",
+    "original_included": false,
+    "source_sha256": "e205b86a27810e1fb407de998dbbc68c67b6864a564ece8fd1f8bc30562b387a"
+  },
+  {
+    "id": "W01",
+    "title": "LangGraph overview — official documentation",
+    "url": "https://docs.langchain.com/oss/python/langgraph/overview",
+    "inspected": "Overview of durable execution, human-in-the-loop and memory.",
+    "use": "Fair comparison; these capabilities are not exclusive to CELL.",
+    "authority": "External first-party documentation, not a CELL benchmark."
+  },
+  {
+    "id": "W02",
+    "title": "MCP architecture — current official specification",
+    "url": "https://modelcontextprotocol.io/specification/2026-07-28/architecture",
+    "inspected": "Architecture and host/client/server responsibilities.",
+    "use": "Optional external protocol integration, distinct from raw transport. No adoption or conformance claimed.",
+    "authority": "External specification."
+  },
+  {
+    "id": "W03",
+    "title": "A2A protocol — official specification",
+    "url": "https://a2a-protocol.org/latest/specification/",
+    "inspected": "Specification overview and task/message/artifact structure.",
+    "use": "Optional external agent protocol boundary, not internal governance replacement.",
+    "authority": "External specification; pin the implementation version during engineering."
+  },
+  {
+    "id": "W04",
+    "title": "W3C — prefers-reduced-motion technique C39",
+    "url": "https://www.w3.org/WAI/WCAG21/Techniques/css/C39",
+    "inspected": "Reduced-motion technique.",
+    "use": "Non-motion equivalents and system preference support.",
+    "authority": "Accessibility guidance; no compliance certification from this handoff."
+  },
+  {
+    "id": "W05",
+    "title": "W3C — Understanding Pause, Stop, Hide",
+    "url": "https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html",
+    "inspected": "User control of motion and automatically updating content.",
+    "use": "Pause/step controls and no mandatory autoplay.",
+    "authority": "Accessibility guidance; requires implementation testing."
+  },
+  {
+    "id": "P01",
+    "title": "This architecture-page handoff",
+    "version": "1, prepared 11 September 2026",
+    "inspected": "New deliverable.",
+    "authority": "Design recommendation only.",
+    "use": "Presentation lanes, 26 scenes, inspector fields, synthetic examples, interaction and motion contracts."
+  }
+]

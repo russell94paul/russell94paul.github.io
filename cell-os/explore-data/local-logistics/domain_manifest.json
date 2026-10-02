@@ -1,0 +1,47 @@
+{
+  "packSchemaVersion": "1.0.0",
+  "status": "CANDIDATE_DEMO_ONLY",
+  "domainId": "local-logistics",
+  "label": "Local Logistics & Delivery",
+  "description": "Procurement, teams, delivery and customer service",
+  "exampleBusiness": "Demo Supply Co. (fictional)",
+  "mode": "simulation",
+  "personas": [
+    "owner",
+    "team_lead",
+    "employee",
+    "customer"
+  ],
+  "defaultPersona": "owner",
+  "defaultScenario": "WF-01",
+  "defaultOrderId": "DEMO-1001",
+  "dataFiles": {
+    "fixtures": "data/fixtures.json",
+    "map": "data/schematic_map.json",
+    "workflows": "data/workflows.json"
+  },
+  "cellCandidates": [
+    "cell-intake",
+    "cell-inventory",
+    "cell-fulfilment",
+    "cell-dispatch",
+    "cell-demand",
+    "cell-assurance"
+  ],
+  "requiredBanner": "Interactive simulation — fictional business and data. No real orders, payments, messages or tracking.",
+  "hostContract": "PACK_LOCAL_PROPOSAL_NOT_CANONICAL_CELL_API",
+  "publication": "FOUNDER_REVIEW_REQUIRED",
+  "statePolicy": "IN_MEMORY_RESET_ON_REENTRY",
+  "forbiddenCapabilities": [
+    "REAL_ORDER_INTAKE",
+    "FREE_TEXT_PERSONAL_DATA_INPUT",
+    "PAYMENTS",
+    "LOCATION_PERMISSION",
+    "OUTGOING_MESSAGES",
+    "REMOTE_MAP_TILES",
+    "ACCOUNT_CREATION",
+    "SUPPLIER_PURCHASES",
+    "LIVE_RUNTIME",
+    "AUTO_PUBLICATION"
+  ]
+}

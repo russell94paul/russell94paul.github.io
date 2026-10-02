@@ -1,0 +1,1569 @@
+{
+  "schema_purpose": "DESIGN_CONTENT_ONLY_NOT_CELL_RUNTIME_SCHEMA",
+  "count": 52,
+  "note": "Source labels retained; presentation grouping is P01. Implementation is not audited.",
+  "components": [
+    {
+      "id": "CMP-01",
+      "label": "CELL // OS / CELL Core / product family",
+      "source_category_and_coverage": "Product boundary\nExplicit in S1",
+      "purpose": "Keep S1 family labels visible; decide their relationship to the single-platform founder model.",
+      "open_design_question": "Brand/product boundary and admission rule.",
+      "source_next_work_and_stage": "Decision\nPlanning",
+      "source_task_and_basis": "AT-003, AT-046\nS1 p1; S5 pp3-5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-01",
+      "presentation_lane": "L06",
+      "primary_diagram": "D24",
+      "related_diagrams": [
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-02",
+      "label": "Project Intelligence",
+      "source_category_and_coverage": "Governance capability\nMissing in S1",
+      "purpose": "Govern selected intent, evidence, decisions and immutable Mission plans; do not replace specialist sources.",
+      "open_design_question": "Object authority, source freshness and complete planning journey.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-008, AT-010, AT-022, AT-027\nS3 pp1-4, 5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-02",
+      "presentation_lane": "L02",
+      "primary_diagram": "D18",
+      "related_diagrams": [
+        "D18"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-03",
+      "label": "NERVE / shared shell / workspaces",
+      "source_category_and_coverage": "Experience\nImplicit in S1",
+      "purpose": "Treat NERVE as a provisional experience name, not a second control plane or a new required product.",
+      "open_design_question": "Map commands and views to canonical backend states.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-014, AT-027, AT-058\nS1 pp2-3; S2 slides4-7; S3 pp5,14",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-03",
+      "presentation_lane": "L01",
+      "primary_diagram": "D25",
+      "related_diagrams": [
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-04",
+      "label": "Initiative / Product / Project / Mission / WorkItem",
+      "source_category_and_coverage": "Canonical records\nPartial in S1",
+      "purpose": "Add enduring lineage and work references alongside Tenant/Workspace access scope.",
+      "open_design_question": "Ownership/cardinality and approved Gate 2 amendments must be reconciled.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-004, AT-008, AT-021\nS1 p6; S3 pp2-4,13; S6 section0.2",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-04",
+      "presentation_lane": "L02",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D11",
+        "D18"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-05",
+      "label": "Source intake / integrity / quarantine",
+      "source_category_and_coverage": "Governance service\nImplicit in S1",
+      "purpose": "Retain bytes and provenance; acceptance of declared integrity is not acceptance of semantic truth.",
+      "open_design_question": "Manifest binding, duplicate/conflicting declarations, parser isolation and quarantine.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-009, AT-020, AT-021\nS1 pp3,6-7; S3 pp3,7; S6 section0.2",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-05",
+      "presentation_lane": "L02",
+      "primary_diagram": "D17",
+      "related_diagrams": [
+        "D17",
+        "D18",
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-06",
+      "label": "Claims / evidence / assumptions / contradictions / lineage",
+      "source_category_and_coverage": "Canonical records\nPartial in S1",
+      "purpose": "Keep support, freshness, source authority and founder acceptance separate.",
+      "open_design_question": "Claim-level promotion, contradiction handling and material justification traversal.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-010, AT-022, AT-030\nS1 p6; S3 pp3-4,11-12",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-06",
+      "presentation_lane": "L02",
+      "primary_diagram": "D11",
+      "related_diagrams": [
+        "D11",
+        "D17",
+        "D18",
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-07",
+      "label": "Prompt Registry / planning Run Ledger",
+      "source_category_and_coverage": "Canonical records\nMissing in S1",
+      "purpose": "Bind exact prompt/input/model/tool snapshots to candidate outputs and evidence.",
+      "open_design_question": "Versioning, retention, access and reproducible planning-run export.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-013, AT-023\nS3 pp3,8",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-07",
+      "presentation_lane": "L02",
+      "primary_diagram": "D06",
+      "related_diagrams": [
+        "D06",
+        "D17",
+        "D18"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-08",
+      "label": "Intent / Mission contract / immutable DAG",
+      "source_category_and_coverage": "Plan contract\nPartial in S1",
+      "purpose": "Specify bounded outcomes, dependencies, authority and acceptance; dry-run before any future execution.",
+      "open_design_question": "Node schemas, effect declarations, lineage and unavailable-capability semantics.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-011, AT-025, AT-026\nS1 pp4,6; S3 pp10-12",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-08",
+      "presentation_lane": "L02",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D16",
+        "D18",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-09",
+      "label": "CELL Kernel / admission / identity / policy",
+      "source_category_and_coverage": "Control responsibility\nExplicit in S1",
+      "purpose": "Map the Kernel name to existing deterministic control-plane responsibilities.",
+      "open_design_question": "One enforcement boundary; explicit scope, expiry, revocation and protected fields.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-012, AT-019, AT-053\nS1 pp3,5,7; S2 slide12",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-09",
+      "presentation_lane": "L08",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D05",
+        "D14",
+        "D20",
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-10",
+      "label": "Approval / gates / Guardian role",
+      "source_category_and_coverage": "Control contract and role\nPartial in S1",
+      "purpose": "Gate is a protected transition; Guardian supplies review evidence; server enforces.",
+      "open_design_question": "Separate evaluation, accountable decision and dispatch checks; no prompt-only gate.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-012, AT-024, AT-042, AT-053\nS1 p5; S6 section8D",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-10",
+      "presentation_lane": "L08",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D07",
+        "D14",
+        "D15",
+        "D18",
+        "D19",
+        "D20"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-11",
+      "label": "Capability / tool / skill / gateway",
+      "source_category_and_coverage": "Interface and enforcement\nExplicit in S1",
+      "purpose": "Bound callable behaviour and adapters by versioned contracts and current authority.",
+      "open_design_question": "I/O, effects, permissions, errors, idempotency and credential mediation.",
+      "source_next_work_and_stage": "Design\nPlanning + runtime",
+      "source_task_and_basis": "AT-012, AT-036, AT-053, AT-055\nS1 pp3,5,7; S2 slide12",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-11",
+      "presentation_lane": "L08",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D05",
+        "D07",
+        "D12",
+        "D13",
+        "D14",
+        "D20"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-12",
+      "label": "Budget / lease / resource broker / quotas",
+      "source_category_and_coverage": "Control responsibility\nPartial in S1",
+      "purpose": "Separate accounting and resource ownership from graph connectivity.",
+      "open_design_question": "Reservations, cumulative spend, backpressure, expiry and child budgets.",
+      "source_next_work_and_stage": "Design\nRuntime",
+      "source_task_and_basis": "AT-012, AT-054\nS1 pp3,5; S2 slides12,18",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-12",
+      "presentation_lane": "L05",
+      "primary_diagram": "D05",
+      "related_diagrams": [
+        "D05",
+        "D07",
+        "D12",
+        "D16",
+        "D20"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-13",
+      "label": "Authoritative durable workflow engine",
+      "source_category_and_coverage": "Runtime authority\nExplicit in S1",
+      "purpose": "Keep one owner for authoritative workflow transitions.",
+      "open_design_question": "Persistence handoff, retry/cancel/recovery semantics and operator reconciliation.",
+      "source_next_work_and_stage": "Research + design\nRuntime",
+      "source_task_and_basis": "AT-040, AT-052, AT-059\nS1 pp3-5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-13",
+      "presentation_lane": "L05",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D14",
+        "D19"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-14",
+      "label": "ORCA / session and supervision adapter",
+      "source_category_and_coverage": "Runtime responsibility\nMissing in S1",
+      "purpose": "Provisional name for session/context/supervision integration under the workflow owner.",
+      "open_design_question": "Definition versus run; checkpoint and cancellation ownership; avoid a rival scheduler.",
+      "source_next_work_and_stage": "Design\nRuntime",
+      "source_task_and_basis": "AT-034, AT-040, AT-049, AT-052\nS2 slides5,12; S6 sections4,7",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-14",
+      "presentation_lane": "L05",
+      "primary_diagram": "D19",
+      "related_diagrams": [
+        "D19"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-15",
+      "label": "Operative definition / instance / run",
+      "source_category_and_coverage": "Worker abstraction\nMissing in S1",
+      "purpose": "A configured, versioned role with bounded capabilities and separate execution records.",
+      "open_design_question": "Identity, model profile, context, readiness, lifecycle and delegated authority.",
+      "source_next_work_and_stage": "Research + design\nRuntime",
+      "source_task_and_basis": "AT-034, AT-043, AT-049\nS2 slide13; S6 sections4-6",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-15",
+      "presentation_lane": "L03",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D16",
+        "D21"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-16",
+      "label": "Deterministic Worker",
+      "source_category_and_coverage": "Worker interface\nImplicit in S1",
+      "purpose": "Use ordinary deterministic code for checks and transformations that do not need model reasoning.",
+      "open_design_question": "Typed inputs/outputs, effects, evidence and lifecycle parity.",
+      "source_next_work_and_stage": "Design\nRuntime",
+      "source_task_and_basis": "AT-034, AT-049, AT-060\nS1 p3; S2 slide13; S6 section4",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-16",
+      "presentation_lane": "L03",
+      "primary_diagram": "D07",
+      "related_diagrams": [
+        "D07",
+        "D08",
+        "D19"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-17",
+      "label": "Operative Cell / Cell definition / instance / image",
+      "source_category_and_coverage": "Composition envelope\nMissing in S1",
+      "purpose": "Bound one or more Operatives/Workers with ports, context, policy and lifecycle.",
+      "open_design_question": "Membership, nesting, ownership, image identity and failure containment.",
+      "source_next_work_and_stage": "Research + design\nRuntime",
+      "source_task_and_basis": "AT-034, AT-039, AT-050\nS2 slides11,13; S6 sections4,8A",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-17",
+      "presentation_lane": "L03",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D06",
+        "D07",
+        "D08",
+        "D19",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-18",
+      "label": "MESH / Cell Mesh",
+      "source_category_and_coverage": "Typed topology\nMissing in S1",
+      "purpose": "Model selected typed relationships, not an all-to-all network or second execution engine.",
+      "open_design_question": "Topology versus work DAG, authority, context and supervision graphs.",
+      "source_next_work_and_stage": "Research + design\nParallel research; runtime later",
+      "source_task_and_basis": "AT-033, AT-035, AT-051\nS2 slide14; S4 DR-02,07; S6 sections8A-8C",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-18",
+      "presentation_lane": "L03",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D09",
+        "D10",
+        "D11",
+        "D16"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-19",
+      "label": "O-MESH",
+      "source_category_and_coverage": "Candidate scoped view\nMissing in S1",
+      "purpose": "Compare plain references, a permissioned Operative view and a dedicated local graph.",
+      "open_design_question": "Decide whether the term earns a distinct abstraction; no per-worker database assumption.",
+      "source_next_work_and_stage": "Research\nParallel research",
+      "source_task_and_basis": "AT-037, AT-038, AT-064\nS6 sections0.3,5,8A",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-19",
+      "presentation_lane": "L03",
+      "primary_diagram": "D09",
+      "related_diagrams": [
+        "D09"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-20",
+      "label": "C-MESH / T-MESH / OS-MESH",
+      "source_category_and_coverage": "Scope vocabulary\nMissing in S1",
+      "purpose": "Historical meanings: Cell-local, temporary mission/team, organization-wide; federation is optional.",
+      "open_design_question": "Resolve Cell Mesh/C-MESH ambiguity; explicit owner, membership and lifecycle.",
+      "source_next_work_and_stage": "Decision + design\nParallel research",
+      "source_task_and_basis": "AT-004, AT-033, AT-035, AT-078\nS2 slide14; S4 DR-07",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-20",
+      "presentation_lane": "L03",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D09",
+        "D10",
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-21",
+      "label": "Link / Link Contract / Link Type Registry",
+      "source_category_and_coverage": "Typed relationship contract\nMissing in S1",
+      "purpose": "Separate data, dependency, supervision, resource, evidence and communication relations.",
+      "open_design_question": "Direction, cardinality, schema, authority, ordering, expiry, failure and compatibility.",
+      "source_next_work_and_stage": "Research + design\nParallel research",
+      "source_task_and_basis": "AT-033, AT-035, AT-036, AT-051\nS2 slide14; S4 DR-02; S6 sections8A-8C",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-21",
+      "presentation_lane": "L03",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D04",
+        "D07",
+        "D10",
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-22",
+      "label": "CellBus / Link Fabric / events",
+      "source_category_and_coverage": "Transport responsibility\nMissing in S1",
+      "purpose": "Implement declared link semantics beneath control authority; transport creates no permission.",
+      "open_design_question": "Envelope identity, deduplication, ordering scope, retries, cancellation and dead-letter handling.",
+      "source_next_work_and_stage": "Design\nRuntime",
+      "source_task_and_basis": "AT-036, AT-051, AT-054\nS2 slide5; S4 DR-02",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-22",
+      "presentation_lane": "L05",
+      "primary_diagram": "D12",
+      "related_diagrams": [
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-23",
+      "label": "Mesh patterns / fixed and mutable dimensions",
+      "source_category_and_coverage": "Configuration catalogue\nMissing in S1",
+      "purpose": "Treat topology, scheduling, model choice, context and membership as separate dimensions.",
+      "open_design_question": "A small pattern schema, locked fields, selection criteria and baseline alternatives.",
+      "source_next_work_and_stage": "Research + design\nParallel research",
+      "source_task_and_basis": "AT-035, AT-051, AT-060\nS4 DR-07; S6 sections8B-8C",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-23",
+      "presentation_lane": "L03",
+      "primary_diagram": "D08",
+      "related_diagrams": [
+        "D08",
+        "D10"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-24",
+      "label": "Formation / adaptive MESH reconfiguration",
+      "source_category_and_coverage": "Candidate controller\nMissing in S1",
+      "purpose": "Start with static composition; later propose bounded context/edge/membership changes.",
+      "open_design_question": "Quiescence, lineage, stale events, oscillation, authority attenuation and recovery.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-044, AT-066, AT-071\nS2 slides9,18; S4 DR-07; S6 section8",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-24",
+      "presentation_lane": "L05",
+      "primary_diagram": "D10",
+      "related_diagrams": [
+        "D10",
+        "D15",
+        "D16"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-25",
+      "label": "Golden / decision / trigger cells",
+      "source_category_and_coverage": "Diagnostic hypothesis\nMissing in S1",
+      "purpose": "Use provisional wording for a check/result/event that may justify a better next decision.",
+      "open_design_question": "Causal value versus acquisition, validation and reconfiguration cost; reuse limits.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-044, AT-065\nS6 sections0.3,8",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-25",
+      "presentation_lane": "L05",
+      "primary_diagram": "D08",
+      "related_diagrams": [
+        "D08",
+        "D15",
+        "D16"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-26",
+      "label": "Context Compiler / Context VM",
+      "source_category_and_coverage": "Context responsibility\nMissing in S1",
+      "purpose": "Assemble an authorized versioned active-context snapshot from referenced sources.",
+      "open_design_question": "Token budget, source location, freshness, contradictions, eviction and prompt contamination.",
+      "source_next_work_and_stage": "Research + design\nPlanning minimal; runtime fuller",
+      "source_task_and_basis": "AT-013, AT-037, AT-038, AT-056\nS2 slides5,20; S4 DR-03; S6 section5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-26",
+      "presentation_lane": "L04",
+      "primary_diagram": "D05",
+      "related_diagrams": [
+        "D05",
+        "D07",
+        "D15",
+        "D16",
+        "D17",
+        "D18",
+        "D21"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-27",
+      "label": "HyperMESH / memory overlays",
+      "source_category_and_coverage": "Derived views\nMissing in S1",
+      "purpose": "Permissioned organization/knowledge/capability/temporal views over explicit authoritative stores.",
+      "open_design_question": "Rebuild, invalidation, retention, cross-scope leakage and query consistency.",
+      "source_next_work_and_stage": "Research + design\nParallel research",
+      "source_task_and_basis": "AT-037, AT-038, AT-056\nS2 slide15; S4 DR-03",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-27",
+      "presentation_lane": "L04",
+      "primary_diagram": "D03",
+      "related_diagrams": [
+        "D03",
+        "D09",
+        "D11",
+        "D17"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-28",
+      "label": "Knowledge packs / data catalogue / capability graph",
+      "source_category_and_coverage": "Versioned packages and projections\nImplicit in S1",
+      "purpose": "Package reusable source, tool, context and evaluation references; capability needs evidence.",
+      "open_design_question": "Rights, version compatibility, task applicability, freshness and reference semantics.",
+      "source_next_work_and_stage": "Design\nPlanning minimal; domain later",
+      "source_task_and_basis": "AT-013, AT-038, AT-046, AT-073\nS1 p1; S4 DR-03,08; S6 section4",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-28",
+      "presentation_lane": "L04",
+      "primary_diagram": "D05",
+      "related_diagrams": [
+        "D05",
+        "D11",
+        "D17"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-29",
+      "label": "Blueprint / Genome / Org-IR-lite / lock / Cell Image",
+      "source_category_and_coverage": "Compilation artifacts\nMissing in S1",
+      "purpose": "Resolve reusable pattern to pinned configuration; do not create a fourth synonymous genome.",
+      "open_design_question": "Thin assembler versus new language; digest, source maps, compatibility and invalid inputs.",
+      "source_next_work_and_stage": "Research + design\nParallel research",
+      "source_task_and_basis": "AT-039, AT-041, AT-050\nS2 slides8,11; S4 section4.3; S6 section7",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-29",
+      "presentation_lane": "L03",
+      "primary_diagram": "D06",
+      "related_diagrams": [
+        "D06",
+        "D13",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-30",
+      "label": "Registry / compatibility / capability readiness",
+      "source_category_and_coverage": "Catalogue and evidence records\nPartial in S1",
+      "purpose": "Versioned definitions and evaluations are distinct from granted authority and live instances.",
+      "open_design_question": "Admission, dependencies, revocation, deprecation and evidence applicability.",
+      "source_next_work_and_stage": "Design\nRuntime + domain",
+      "source_task_and_basis": "AT-039, AT-042, AT-050, AT-073\nS1 pp1,3,6; S2 slides8,19",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-30",
+      "presentation_lane": "L03",
+      "primary_diagram": "D06",
+      "related_diagrams": [
+        "D06",
+        "D22",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-31",
+      "label": "Crucible / Measurement Firewall / Assurance Receipt",
+      "source_category_and_coverage": "Independent evaluation responsibility\nImplicit in S1",
+      "purpose": "Separate producer, evaluator and promotion decision; keep named result evidence.",
+      "open_design_question": "Protected tests, evaluator identity, independence limits, result expiry and false permits.",
+      "source_next_work_and_stage": "Design\nPlanning checks; runtime fuller",
+      "source_task_and_basis": "AT-016, AT-042, AT-057, AT-060\nS1 pp3,5,8; S2 slide16",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-31",
+      "presentation_lane": "L07",
+      "primary_diagram": "D04",
+      "related_diagrams": [
+        "D04",
+        "D07",
+        "D15",
+        "D18",
+        "D19",
+        "D21",
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-32",
+      "label": "Observability / FinOps / metrics",
+      "source_category_and_coverage": "Measurement responsibility\nExplicit in S1",
+      "purpose": "Expose sources, populations and timestamps rather than decorative confidence or progress scores.",
+      "open_design_question": "Outcome/latency/cost/coordination measures; redaction and evidence invalidation.",
+      "source_next_work_and_stage": "Design\nPlanning + runtime",
+      "source_task_and_basis": "AT-013, AT-028, AT-042, AT-054, AT-086\nS1 pp3,7; S2 slides5,16",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-32",
+      "presentation_lane": "L07",
+      "primary_diagram": "D11",
+      "related_diagrams": [
+        "D11",
+        "D19",
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-33",
+      "label": "CELL ADAPT / Evolution Chamber",
+      "source_category_and_coverage": "Candidate optimization process\nMissing in S1",
+      "purpose": "Search only approved tunable fields; independent evaluation; new candidate version, never self-promotion.",
+      "open_design_question": "Frozen objectives, holdouts, ablations, constraints, canary and rollback.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-045, AT-067, AT-068, AT-069\nS2 slide17; S4 DR-06; S6 sections8-9",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-33",
+      "presentation_lane": "L07",
+      "primary_diagram": "D22",
+      "related_diagrams": [
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-34",
+      "label": "SIHRE / multi-model cognition",
+      "source_category_and_coverage": "Optional cognition profile\nMissing in S1",
+      "purpose": "Inspect original SIHRE source; compare direct model, routing, reviewer and ensemble designs.",
+      "open_design_question": "Correlated errors, calibration, stopping, abstention and matched-budget evaluation.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-043, AT-063\nS4 DR-05; S6 section8B",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-34",
+      "presentation_lane": "L04",
+      "primary_diagram": "D05",
+      "related_diagrams": [
+        "D05",
+        "D21"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-35",
+      "label": "Shadow Twin / simulation / Causal World Model",
+      "source_category_and_coverage": "Experimental model\nMissing in S1",
+      "purpose": "Keep contained simulated observations distinct from real runtime evidence.",
+      "open_design_question": "Fidelity and uncertainty validation; conditions under which a simulation can guide a decision.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-070, AT-085\nS2 slide17; S4 DR-03,07; S6 section9",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-35",
+      "presentation_lane": "L07",
+      "primary_diagram": "D22",
+      "related_diagrams": [
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-36",
+      "label": "Genesis / Seed / bounded child-cell lifecycle",
+      "source_category_and_coverage": "Candidate construction process\nMissing in S1",
+      "purpose": "Reuse before composing; child scope, budget and lifetime can only narrow.",
+      "open_design_question": "Descendant limits, provisioning, cleanup, custody, retirement and failed handoffs.",
+      "source_next_work_and_stage": "Research + experiment\nAdvanced",
+      "source_task_and_basis": "AT-071\nS2 slide18; S4 DR-04,07",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-36",
+      "presentation_lane": "L05",
+      "primary_diagram": "D16",
+      "related_diagrams": [
+        "D16",
+        "D20",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-37",
+      "label": "Experience-to-Doctrine / learning proposals",
+      "source_category_and_coverage": "Governed change process\nMissing in S1",
+      "purpose": "Turn observations into reviewable doctrine/configuration candidates, not automatic policy changes.",
+      "open_design_question": "Transfer, negative evidence, provenance, applicability and retirement.",
+      "source_next_work_and_stage": "Research + design\nAdvanced",
+      "source_task_and_basis": "AT-072\nS4 sections4.2, DR-03; S6 section9",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-37",
+      "presentation_lane": "L07",
+      "primary_diagram": "D22",
+      "related_diagrams": [
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-38",
+      "label": "CELL Foundry / MESA",
+      "source_category_and_coverage": "Research-to-package method\nMissing in S1",
+      "purpose": "Separate evidence, analogy and performance confidence; build reusable packages only when justified.",
+      "open_design_question": "Discover/translate/prove records and independent reuse evaluation.",
+      "source_next_work_and_stage": "Research + experiment\nFuture",
+      "source_task_and_basis": "AT-081\nS4 DR-07,10; S5 pp4-5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-38",
+      "presentation_lane": "L07",
+      "primary_diagram": "D23",
+      "related_diagrams": [
+        "D23",
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-39",
+      "label": "Domain Plane / profile / Domain Genome / data plane",
+      "source_category_and_coverage": "Versioned extension contract\nPartial in S1",
+      "purpose": "Domain semantics attach without bypassing shared control/evidence contracts.",
+      "open_design_question": "Profile/package boundary, source/data policies, evaluators and compatibility.",
+      "source_next_work_and_stage": "Research + design\nParallel research; future build",
+      "source_task_and_basis": "AT-046, AT-073, AT-076\nS1 pp1,3,6,8; S4 DR-08",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-39",
+      "presentation_lane": "L06",
+      "primary_diagram": "D13",
+      "related_diagrams": [
+        "D13",
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-40",
+      "label": "CELL-R // OS",
+      "source_category_and_coverage": "Domain product/profile\nExplicit in S1",
+      "purpose": "Preserve evidence-centered research label; define smallest source-to-reviewable-report workflow.",
+      "open_design_question": "Source assessment, claim review, contradiction resolution and export acceptance.",
+      "source_next_work_and_stage": "Design\nFuture domain",
+      "source_task_and_basis": "AT-046, AT-074\nS1 p1",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-40",
+      "presentation_lane": "L06",
+      "primary_diagram": "D24",
+      "related_diagrams": [
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-41",
+      "label": "CELL-Q // OS",
+      "source_category_and_coverage": "Offline research product/profile\nExplicit in S1",
+      "purpose": "Historical/synthetic/offline educational research only; no live execution or account bridge.",
+      "open_design_question": "Dataset vintages, experiment/model records, leakage checks and evidence limits.",
+      "source_next_work_and_stage": "Research + design\nFuture domain",
+      "source_task_and_basis": "AT-046, AT-075\nS1 p1; S2 slide19; S4 DR-09",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-41",
+      "presentation_lane": "L06",
+      "primary_diagram": "D24",
+      "related_diagrams": [
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-42",
+      "label": "Deployment / secrets / isolation / privacy",
+      "source_category_and_coverage": "Trust boundaries\nExplicit in S1",
+      "purpose": "Logical boundaries require actual server enforcement and isolated untrusted parsing/workers.",
+      "open_design_question": "Threat model, authentication, egress, secret separation and later tenancy.",
+      "source_next_work_and_stage": "Design + verification\nPlanning + runtime",
+      "source_task_and_basis": "AT-015, AT-019, AT-030, AT-079\nS1 p7; S3 pp5-9",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-42",
+      "presentation_lane": "L08",
+      "primary_diagram": "D14",
+      "related_diagrams": [
+        "D14",
+        "D20",
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-43",
+      "label": "Audit / backup / retention / export / recovery",
+      "source_category_and_coverage": "Durable evidence operations\nPartial in S1",
+      "purpose": "Protect append-only records and recovery checkpoints; test restore and provenance-preserving exports.",
+      "open_design_question": "Tamper detection, deletion/tombstone rules, independent backups and recovery exercises.",
+      "source_next_work_and_stage": "Design + verification\nPlanning",
+      "source_task_and_basis": "AT-015, AT-028, AT-059, AT-084\nS1 pp2,3,7; S3 pp3-4,9-10",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-43",
+      "presentation_lane": "L08",
+      "primary_diagram": "D06",
+      "related_diagrams": [
+        "D06",
+        "D17",
+        "D19",
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-44",
+      "label": "Qualification / conformance evidence",
+      "source_category_and_coverage": "Assurance programme\nExplicit in S1",
+      "purpose": "Recover actual C01-C12 and D01-D05 definitions; bind verdicts to build, profile and environment.",
+      "open_design_question": "Static validation versus runtime proof; expiration, regression and revocation.",
+      "source_next_work_and_stage": "Design + verification\nPlanning + later qualification",
+      "source_task_and_basis": "AT-001, AT-016, AT-062, AT-083\nS1 p8",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-44",
+      "presentation_lane": "L07",
+      "primary_diagram": "D22",
+      "related_diagrams": [
+        "D22"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-45",
+      "label": "Public site / sanitized publication projection",
+      "source_category_and_coverage": "Experience and publication\nMissing in S1",
+      "purpose": "Separate exact approved public output from private sources; no public intake or accounts in R1.",
+      "open_design_question": "Sensitivity, claims, rights checks, approval record and revocation.",
+      "source_next_work_and_stage": "Design\nPlanning",
+      "source_task_and_basis": "AT-029, AT-032\nS3 pp5,9-10",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-45",
+      "presentation_lane": "L01",
+      "primary_diagram": "D25",
+      "related_diagrams": [
+        "D25"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-46",
+      "label": "Product manifest / release / support lifecycle",
+      "source_category_and_coverage": "Versioned product record\nMissing in S1",
+      "purpose": "Later bind product, packages, build, evidence, owner, support and retirement without copying authority.",
+      "open_design_question": "Compatibility, upgrade, health, maintenance and rollback responsibilities.",
+      "source_next_work_and_stage": "Design\nFuture",
+      "source_task_and_basis": "AT-077, AT-082, AT-084\nS3 pp5-6; S5 pp4-5",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-46",
+      "presentation_lane": "L06",
+      "primary_diagram": "D24",
+      "related_diagrams": [
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-47",
+      "label": "OS-MESH federation / ecosystem",
+      "source_category_and_coverage": "Cross-organization boundary\nMissing in S1",
+      "purpose": "Multiple trust domains cooperate only through explicit contracts; no universal root controller.",
+      "open_design_question": "Identity, delegated scope, data rights, partial failures, revocation and exit.",
+      "source_next_work_and_stage": "Research + experiment\nFuture",
+      "source_task_and_basis": "AT-078, AT-082\nS2 slide14; S4 DR-07; S5 pp4,32",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-47",
+      "presentation_lane": "L06",
+      "primary_diagram": "D09",
+      "related_diagrams": [
+        "D09",
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-48",
+      "label": "Avatar World / spatial views",
+      "source_category_and_coverage": "Optional visualization\nMissing in S1",
+      "purpose": "Read derived snapshots; any commands return through normal authorization.",
+      "open_design_question": "Non-spatial parity, clear simulation labels and no credentials or direct side effects.",
+      "source_next_work_and_stage": "Design\nOptional future",
+      "source_task_and_basis": "AT-080\nS2 slide7",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-48",
+      "presentation_lane": "L01",
+      "primary_diagram": "D24",
+      "related_diagrams": [
+        "D24"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-49",
+      "label": "Frontier concepts / organizational debugger",
+      "source_category_and_coverage": "Research catalogue\nMissing in S1",
+      "purpose": "Catalogue temporal, cognition, stigmergy and organizational hypotheses without making each a service.",
+      "open_design_question": "Mechanism, conventional alternative, falsification and KEEP/MERGE/DEFER/REJECT decision.",
+      "source_next_work_and_stage": "Research\nParallel triage; future tests",
+      "source_task_and_basis": "AT-085\nS4 section4.2, DR-07; S6 section9",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-49",
+      "presentation_lane": "L07",
+      "primary_diagram": "D26",
+      "related_diagrams": [
+        "D26"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "RESEARCH_OR_FUTURE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-50",
+      "label": "External interoperability adapters",
+      "source_category_and_coverage": "Optional interfaces\nPartial in S1",
+      "purpose": "Compare protocol adapters behind versioned internal contracts; optional external agents remain out of initial scope.",
+      "open_design_question": "Current primary specifications, authority mapping, compatibility and error semantics.",
+      "source_next_work_and_stage": "Research + design\nRuntime/future",
+      "source_task_and_basis": "AT-036, AT-040, AT-055, AT-078\nS1 p2; S4 DR-02; S6 sections7,7A",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-50",
+      "presentation_lane": "L06",
+      "primary_diagram": "D12",
+      "related_diagrams": [
+        "D12",
+        "D13",
+        "D14"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PROPOSED_RUNTIME_OR_MIXED",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-51",
+      "label": "Specification registry / build CI / provenance",
+      "source_category_and_coverage": "Engineering toolchain\nImplicit in S1",
+      "purpose": "Preserve source/version history and verify existing implementation before adding replacement modules.",
+      "open_design_question": "Schema fixtures, build identity, dependency pinning, source maps and evidence ledger.",
+      "source_next_work_and_stage": "Audit + design\nPlanning",
+      "source_task_and_basis": "AT-001, AT-002, AT-006, AT-018, AT-050\nS1 pp6,8; S4 local gates; S6 section7A",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-51",
+      "presentation_lane": "L03",
+      "primary_diagram": "D06",
+      "related_diagrams": [
+        "D06",
+        "D13",
+        "D18",
+        "D23"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    },
+    {
+      "id": "CMP-52",
+      "label": "Delivery tracker / evidence-based forecast",
+      "source_category_and_coverage": "Derived planning view\nMissing in S1",
+      "purpose": "Maintain task dependencies, observed results and non-binding estimates separately.",
+      "open_design_question": "No invented due dates, percent readiness or automatic completion from task closure.",
+      "source_next_work_and_stage": "Design\nOngoing",
+      "source_task_and_basis": "AT-007, AT-086\nS3 pp3-4; S4 DR-10",
+      "source_refs": [
+        "S01"
+      ],
+      "source_locator": "Appendix A, CMP-52",
+      "presentation_lane": "L01",
+      "primary_diagram": "D18",
+      "related_diagrams": [
+        "D18"
+      ],
+      "reference_explorer_required": true,
+      "page_stage_filter": "PLANNING_BASELINE",
+      "status_axes": {
+        "source_disposition": "SOURCE_DESIGN_OR_INTENT; see named source",
+        "handoff_authority": "CANDIDATE_PRESENTATION",
+        "implementation_evidence": "NOT_ASSESSED_IN_THIS_HANDOFF",
+        "performance_evidence": "NOT_ESTABLISHED_BY_THIS_HANDOFF",
+        "publication": "DRAFT_ONLY; exact public approval required"
+      },
+      "do_not_infer": "A recovered label or planned responsibility does not establish implementation, approval, a separate service, or a measured advantage."
+    }
+  ]
+}

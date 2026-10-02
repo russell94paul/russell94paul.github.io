@@ -1,0 +1,2227 @@
+{
+  "status": "REFERENCE_GLOSSARY_NOT_CANONICAL_SCHEMA",
+  "count": 168,
+  "note": "Record templates and terminology entries overlap. Do not sum them with the 52 component groups. Source descriptions are summarized/transcribed from the user research for design reference, not an approved ontology.",
+  "entries": [
+    {
+      "id": "R01",
+      "label": "Ecosystem",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Connects participating organizations and their permitted exchanges.",
+      "representative_fields": "participant_refs; agreement_refs; discovery_policy_ref; boundary_rules",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 1",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R02",
+      "label": "Organization",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines a durable owner and operating boundary for people, policies, resources and Cells.",
+      "representative_fields": "principal_refs; policy_refs; resource_refs; cell_catalog_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 2",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R03",
+      "label": "Principal",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Identifies a human or service recognized by the authorization system.",
+      "representative_fields": "principal_type; issuer_ref; external_id_ref; authentication_policy_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 3",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R04",
+      "label": "OperatorProfile",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Stores the human operator's display, vocabulary and notification preferences.",
+      "representative_fields": "principal_ref; vocabulary_profile; view_preferences; notification_preferences",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 4",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R05",
+      "label": "Initiative",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Preserves the enduring lineage of an intent or problem through decisions, work and outcomes.",
+      "representative_fields": "intent_revision_ref; source_refs; decision_refs; outcome_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 5",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R06",
+      "label": "Product",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Represents a maintained output with its own lifecycle.",
+      "representative_fields": "purpose; user_scope; product_manifest_ref; lifecycle_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 6",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R07",
+      "label": "Project",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Organizes a bounded delivery effort linked to an Initiative; product linkage can be optional.",
+      "representative_fields": "initiative_ref; optional_product_refs; objective; mission_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 7",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R08",
+      "label": "Mission",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines an approved outcome-oriented unit of work, its scope and acceptance obligations.",
+      "representative_fields": "project_ref; objective; input_refs; constraints; acceptance_refs; stop_conditions",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 8",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R09",
+      "label": "PlanRevision",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Candidate record for an exact dependency/execution contract. Reconcile with the agreed DAG revision; Plan is not independently ratified as a core object.",
+      "representative_fields": "mission_ref; node_refs; dependency_refs; approval_ref; plan_digest",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 9",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": "PlanRevision must be reconciled with exact DAG Revision; no new canonical Plan object is ratified."
+    },
+    {
+      "id": "R10",
+      "label": "Assignment",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Allocates a specific obligation to an Operative or Cell.",
+      "representative_fields": "task_ref; assignee_ref; expected_output_ref; evidence_requirements; resource_envelope; escalation_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 10",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R11",
+      "label": "OperativeDefinition",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Specifies a reusable computational worker's models, instructions, capabilities, contracts and limits.",
+      "representative_fields": "model_policy_ref; capability_refs; instructions_ref; input_contract_ref; output_contract_ref; context_policy_ref; trigger_refs; operating_envelope",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 11",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R12",
+      "label": "OperativeInstance",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Represents a worker instantiated from an exact definition, with its own health and assignments.",
+      "representative_fields": "resolved_definition_ref; supervisor_ref; health_state; active_assignment_refs; runtime_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 12",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R13",
+      "label": "Run",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records one attempt at an assignment, including selected inputs, models, context, resource leases and outcomes.",
+      "representative_fields": "mission_ref; assignment_ref; input_snapshot_refs; model_profile_refs; context_snapshot_ref; lease_refs; event_position; outcome_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 13",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R14",
+      "label": "ModelProfile",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Describes an eligible model and adapter configuration; records assessed suitability separately.",
+      "representative_fields": "provider_ref; model_id; model_revision_if_available; adapter_ref; input_modes; context_limit; tool_constraints; settings; assessment_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 14",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R15",
+      "label": "CapabilityContract",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines an ability through typed inputs/outputs, preconditions, permitted effects and verification.",
+      "representative_fields": "input_schema_ref; output_schema_ref; preconditions; allowed_effects; resource_requirements; verification_contract_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 15",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R16",
+      "label": "Assessment",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records measured suitability of a capability or pattern for a specified task population.",
+      "representative_fields": "subject_ref; task_population_ref; evaluator_ref; metric_observations; uncertainty; limitations; validity_conditions",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 16",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R17",
+      "label": "CellDefinition",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Packages reusable members, interfaces, coordination, shared resources and acceptance rules.",
+      "representative_fields": "member_slots; port_contracts; coordination_pattern_ref; shared_resource_rules; acceptance_contract_ref; lifecycle_policy",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 17",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R18",
+      "label": "CellInstance",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Binds a Cell definition to actual workers, ports, resources and a particular scope.",
+      "representative_fields": "cell_definition_ref; member_bindings; port_bindings; supervisor_ref; run_refs; resource_envelope",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 18",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R19",
+      "label": "Team",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Groups participants around shared work and responsibility.",
+      "representative_fields": "purpose_ref; membership_refs; responsibility_assignments; collaboration_pattern_ref; coordination_owner_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 19",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R20",
+      "label": "Membership",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records who participates, in which role and scope, for which period, with handoff obligations.",
+      "representative_fields": "member_ref; team_or_cell_ref; role; assignment_scope; valid_from; valid_until; handoff_obligations",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 20",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R21",
+      "label": "MeshView",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Selects typed nodes and relationships for a purpose, with permissions and freshness rules.",
+      "representative_fields": "view_definition_ref; node_selector; link_selector; permission_filter_ref; snapshot_ref; freshness_policy",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 21",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R22",
+      "label": "MeshPattern",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines a reusable arrangement of roles, links, parameters, adaptation rules and evaluation obligations.",
+      "representative_fields": "purpose; applicability; anti_conditions; dimensions; role_slots; link_rules; parameter_schema; trigger_slots; evaluation_contract",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 22",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R23",
+      "label": "PatternInstance",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records the exact participants, parameters, grants and resources bound to a pattern.",
+      "representative_fields": "pattern_ref; participant_bindings; parameter_values; lock_manifest_ref; grant_refs; resource_bindings; run_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 23",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R24",
+      "label": "LinkContract",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines the meaning, endpoints, direction, payload, authority and failure rules of a connection.",
+      "representative_fields": "link_type; source_ref; target_ref; direction; payload_schema_ref; authority_ref; validity; delivery_semantics; timeout; retry_policy",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 24",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R25",
+      "label": "Resource",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Represents an owned asset or capacity such as data, compute, a tool endpoint or shared workspace.",
+      "representative_fields": "resource_type; endpoint_or_content_ref; access_modes; capacity; compatibility; observation_time; retention_policy",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 25",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R26",
+      "label": "ResourceLease",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Reserves or permits scoped use of a resource for a limited period.",
+      "representative_fields": "resource_ref; holder_ref; purpose_ref; access_mode; quantity; expiry; renewal_rule; fencing_token_if_needed",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 26",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R27",
+      "label": "AuthorityGrant",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "States exactly which effects a principal may perform, within which data, budget and time limits.",
+      "representative_fields": "issuer_ref; subject_ref; effect_set; parameter_bounds; data_scope; budget_ceiling; validity; delegation_bounds; revocation_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 27",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R28",
+      "label": "TriggerPolicy",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Maps a validated observation to an eligible transition, subject to preconditions, priorities and protected fields.",
+      "representative_fields": "event_schema_ref; applicability; preconditions; eligible_actions; protected_fields; priority; cooldown; fallback; evaluation_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 28",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R29",
+      "label": "Observation",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records a typed observed condition or result with time, run context and evidence.",
+      "representative_fields": "event_id; run_ref; event_time; causation_ref; correlation_ref; payload; instrument_ref; evidence_refs; validity",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 29",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R30",
+      "label": "ContextSnapshot",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records the exact required and optional source references selected for a step.",
+      "representative_fields": "run_ref; step_ref; required_refs; optional_refs; source_versions; selection_policy_ref; prior_snapshot_ref; delta_reason",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 30",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R31",
+      "label": "Artifact",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Identifies a versioned source or generated output and its content, producer and provenance.",
+      "representative_fields": "content_ref; content_digest; media_type; producer_run_ref; source_refs; classification; retention_policy",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 31",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R32",
+      "label": "VerificationResult",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records an instrument's result against a specified check, including limitations.",
+      "representative_fields": "instrument_ref; input_refs; expected_condition; observed_result; verdict; limitations; observation_time",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 32",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R33",
+      "label": "AcceptanceDecision",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records an authorized disposition of an exact output or obligation using its criteria and verification.",
+      "representative_fields": "subject_ref; criteria_ref; verification_refs; decision; decision_maker_ref; exact_version_ref; rationale",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 33",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R34",
+      "label": "Experiment",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Specifies a controlled comparison of a hypothesis against baselines and candidates.",
+      "representative_fields": "hypothesis; task_population_ref; baseline_refs; candidate_refs; controls; heldout_split; evaluator_ref; analysis_plan; result_refs",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 34",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R35",
+      "label": "GateDefinition",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Defines conditions required to permit a protected transition and behaviour when evidence is missing.",
+      "representative_fields": "transition_ref; policy_revision_ref; required_check_refs; approval_rule_ref; input_binding_rule; freshness_rule; enforcement_point_ref; on_unknown; exception_policy_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 35",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "R36",
+      "label": "GateEvaluation",
+      "kind": "CANDIDATE_RECORD_TEMPLATE",
+      "purpose": "Records one gate evaluation bound to exact evidence, subject revision and intended action.",
+      "representative_fields": "gate_definition_ref; input_snapshot_ref; subject_revision_ref; check_result_refs; decision; reason_codes; evaluated_at; expires_at; action_digest; consumed_action_ref",
+      "source_refs": [
+        "S02",
+        "S06"
+      ],
+      "source_locator": "36 proposed record types, row 36",
+      "status": "Source candidate; governing schemas take precedence",
+      "note": ""
+    },
+    {
+      "id": "T037",
+      "label": "CELL // OS",
+      "kind": "Platform",
+      "purpose": "The broader platform for creation, coordination, governance and product operations.",
+      "status": "Agreed core name",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T038",
+      "label": "Project Intelligence",
+      "kind": "Capability",
+      "purpose": "Organizes evidence, lineage, decisions and planning, including compilation and validation of Mission DAGs.",
+      "status": "Agreed core name",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T039",
+      "label": "Project Intelligence Workspace",
+      "kind": "Interface",
+      "purpose": "The founder-facing interface used to operate Project Intelligence.",
+      "status": "Defined interface label",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T040",
+      "label": "DAG / approved DAG revision",
+      "kind": "Work contract",
+      "purpose": "An immutable, versioned technical execution contract for a Mission; records nodes, dependencies and constraints.",
+      "status": "Agreed core name",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T041",
+      "label": "Intent / Intent Contract",
+      "kind": "Intent record",
+      "purpose": "Captures the requested outcome, scope, constraints, assumptions and evidence obligations for planning.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S3, S4, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T042",
+      "label": "WorkItem / Ticket / Task / MissionNode",
+      "kind": "Work record",
+      "purpose": "Represents or references a bounded item of work. Native ticket, imported reference and DAG-node identities require explicit mapping.",
+      "status": "WorkItem direction approved; mappings remain scoped",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "Conversation, S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T043",
+      "label": "Operation",
+      "kind": "Work grouping",
+      "purpose": "Historical label for a coordinated operation or collection of work; reconcile with Mission, task and run boundaries.",
+      "status": "Historical; boundary unresolved",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T044",
+      "label": "Dependency",
+      "kind": "Relationship",
+      "purpose": "States which output or prerequisite another work item requires.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T045",
+      "label": "Acceptance criterion / acceptance contract",
+      "kind": "Contract",
+      "purpose": "Specifies observable conditions required for an output to be accepted.",
+      "status": "Core planning requirement",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T046",
+      "label": "Outcome",
+      "kind": "Result record",
+      "purpose": "Records the achieved result and its relationship to the intended objective.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S1, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T047",
+      "label": "Roadmap",
+      "kind": "Planning view",
+      "purpose": "Sequences intended capabilities and delivery work through milestones and dependencies.",
+      "status": "Working planning view",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "Conversation, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T048",
+      "label": "Idea Inbox",
+      "kind": "Intake surface",
+      "purpose": "Captures ideas as candidates for later classification, review and promotion.",
+      "status": "Established planning workflow",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T049",
+      "label": "Product Manifest",
+      "kind": "Artifact",
+      "purpose": "Describes a versioned product and its declared relationship to CELL // OS and supporting capabilities.",
+      "status": "Proposed product linkage",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T050",
+      "label": "Federation / Federated Agent Armies",
+      "kind": "Relationship arrangement",
+      "purpose": "Connects independently governed organizations or nodes through explicit exchange and authority contracts.",
+      "status": "Future architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T051",
+      "label": "Organism",
+      "kind": "Metaphor",
+      "purpose": "Historical biological label for an adaptive organization; not an additional required owner or parent object.",
+      "status": "Historical terminology",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T052",
+      "label": "Ecosystem Cell",
+      "kind": "Composition hypothesis",
+      "purpose": "A Cell providing a bounded ecosystem service. The ecosystem itself need not be one parent worker.",
+      "status": "New proposal",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Platform, work and identity",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T053",
+      "label": "Agent / Agent interface",
+      "kind": "Abstraction",
+      "purpose": "Common worker interface or base abstraction. It does not force a particular inheritance model.",
+      "status": "Working model",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T054",
+      "label": "Operative / AI Operative",
+      "kind": "Worker concept",
+      "purpose": "A configurable worker using models, context and tools within explicit contracts and limits; see definition, instance and run records.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T055",
+      "label": "Worker / deterministic Worker",
+      "kind": "Execution component",
+      "purpose": "Executes specified non-LLM procedures, such as a transformation, schema validator or test runner.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T056",
+      "label": "Cell / Operative Cell",
+      "kind": "Capability unit",
+      "purpose": "A bounded reusable unit containing Operatives and/or deterministic Workers, interfaces, coordination, resources and verification.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S1, S2, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T057",
+      "label": "Role",
+      "kind": "Attribute/relationship",
+      "purpose": "States a participant's responsibility in a particular Cell, team or assignment.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T058",
+      "label": "Skill",
+      "kind": "Capability component",
+      "purpose": "Reusable instructions or procedures supporting an ability; actual competence needs evaluation evidence.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T059",
+      "label": "Tool",
+      "kind": "Callable component",
+      "purpose": "Exposes a bounded operation with specified inputs, outputs and effects.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T060",
+      "label": "Connector / driver / adapter",
+      "kind": "Integration component",
+      "purpose": "Connects an external system or runtime to a stable interface.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T061",
+      "label": "Model portfolio / model-selection policy",
+      "kind": "Configuration and policy",
+      "purpose": "Lists eligible model profiles and rules for selecting, switching or combining them.",
+      "status": "New proposed anatomy",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T062",
+      "label": "Knowledge Pack",
+      "kind": "Artifact bundle",
+      "purpose": "Packages domain knowledge and references for controlled reuse.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T063",
+      "label": "Memory / Episode / Procedure",
+      "kind": "Retained records",
+      "purpose": "Retains experience, observations and reusable procedures with provenance and scope.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T064",
+      "label": "Active context / context packet",
+      "kind": "Working state",
+      "purpose": "Contains the selected material made available for the current reasoning or work step.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T065",
+      "label": "Port / input-output contract",
+      "kind": "Interface",
+      "purpose": "Defines what a worker or Cell receives and returns, including schemas and obligations.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T066",
+      "label": "Resource binding / mount",
+      "kind": "Relationship",
+      "purpose": "Connects a worker or Cell to an available resource without implying ownership of it.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T067",
+      "label": "Session",
+      "kind": "Runtime context",
+      "purpose": "Provides an execution context for interactions and tool use; distinguish it from logical worker identity and an assignment run.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T068",
+      "label": "Supervisor / lifecycle controller / watchdog",
+      "kind": "Control component",
+      "purpose": "Coordinates start, pause, checkpoint, recovery, handoff and retirement within granted authority.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T069",
+      "label": "Guardian Operative",
+      "kind": "Role",
+      "purpose": "An Operative assigned to assess evidence or monitor constraints; enforcement remains with the gate/runtime.",
+      "status": "New proposed role",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T070",
+      "label": "Golden Cell / Decision Cell / Trigger Cell",
+      "kind": "Diagnostic concept",
+      "purpose": "A checkpoint whose result may justify a useful change. Separate the diagnostic capability, observation and reacting rule.",
+      "status": "New proposal; value unmeasured",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T071",
+      "label": "Trigger registry",
+      "kind": "Configuration collection",
+      "purpose": "Stores the applicable TriggerPolicy definitions and their versions.",
+      "status": "New proposed anatomy",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T072",
+      "label": "Checkpoint",
+      "kind": "Runtime record",
+      "purpose": "Retains state needed for recovery or controlled handoff.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Operative and Cell anatomy",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T073",
+      "label": "Mesh",
+      "kind": "Relationship model",
+      "purpose": "A scoped network of typed relationships between workers, Cells, knowledge, resources and work.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S2, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T074",
+      "label": "O-MESH",
+      "kind": "Scoped view",
+      "purpose": "Proposed Operative-level view of permitted and active knowledge, capabilities, resources and relationships.",
+      "status": "New proposal; name unresolved",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T075",
+      "label": "C-MESH / Cell Mesh",
+      "kind": "Scoped view",
+      "purpose": "Local Cell coordination and resource/context relationships. Older texts also include direct links between Cells.",
+      "status": "Provisional; historical scope variation",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T076",
+      "label": "T-MESH / Team-Task Mesh",
+      "kind": "Scoped view",
+      "purpose": "Temporary team or Mission coordination across Cells and specialists.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T077",
+      "label": "OS-MESH / Organization-System Mesh",
+      "kind": "Scoped view",
+      "purpose": "Organization-wide relationships and services, with optional explicitly governed federation.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T078",
+      "label": "HyperMESH",
+      "kind": "Multiple graph views",
+      "purpose": "Connects organization, work, communication, knowledge, capabilities, authority, resources and lineage through typed overlays.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T079",
+      "label": "Mission Hypergraph / WorkGraph",
+      "kind": "Work view",
+      "purpose": "Represents work dependencies and related Cells, artifacts, evidence and gates. A runtime work view is distinct from an immutable approved DAG.",
+      "status": "Proposed; terms require crosswalk",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T080",
+      "label": "Organization graph",
+      "kind": "Overlay",
+      "purpose": "Shows ownership, membership and responsibility relationships.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S2, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T081",
+      "label": "Communication graph",
+      "kind": "Overlay",
+      "purpose": "Shows message routes, topics, requests, handoffs and escalation.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T082",
+      "label": "Knowledge / Claims-Evidence / provenance graph",
+      "kind": "Overlay",
+      "purpose": "Connects sources, claims, support, contradictions, versions and provenance.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T083",
+      "label": "Capability graph",
+      "kind": "Overlay",
+      "purpose": "Supports discovery of skills, tools, compatibility, availability and capability evidence.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S4, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T084",
+      "label": "Authority / trust graph",
+      "kind": "Overlay",
+      "purpose": "Shows explicit permissions, delegation, scope and approval boundaries.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T085",
+      "label": "Runtime / resource graph",
+      "kind": "Overlay",
+      "purpose": "Shows workers, compute, queues, budgets, health and placement.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T086",
+      "label": "Temporal / lineage overlay",
+      "kind": "Overlay",
+      "purpose": "Connects events, versions, decisions and historical relationships.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T087",
+      "label": "Data link",
+      "kind": "Link type",
+      "purpose": "Carries or references data under a declared schema and scope.",
+      "status": "Working link semantics",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T088",
+      "label": "Hierarchy / supervision link",
+      "kind": "Link type",
+      "purpose": "Expresses organization or supervision; authority must be separately granted.",
+      "status": "Working link semantics",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T089",
+      "label": "Resource link",
+      "kind": "Link type",
+      "purpose": "References or allocates shared resources using explicit grants or leases.",
+      "status": "Working link semantics",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T090",
+      "label": "Evidence link",
+      "kind": "Link type",
+      "purpose": "Connects a claim or decision to supporting or contradicting material.",
+      "status": "Working link semantics",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T091",
+      "label": "Delegation link",
+      "kind": "Link type",
+      "purpose": "Records an explicitly bounded delegated obligation or permission.",
+      "status": "Working link semantics",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T092",
+      "label": "Route / routing policy",
+      "kind": "Coordination rule",
+      "purpose": "Chooses where messages, requests or capability calls are sent.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T093",
+      "label": "Subscription / advertisement",
+      "kind": "Coordination records",
+      "purpose": "Records interest in events or publishes a scoped capability/service description.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T094",
+      "label": "Link Fabric / CellBus",
+      "kind": "Coordination infrastructure",
+      "purpose": "Implements typed connections and message delivery; CellBus covers events, requests, handoffs, acknowledgements and escalation.",
+      "status": "Proposed; distinguish semantic contracts from transport",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T095",
+      "label": "Trust boundary",
+      "kind": "Scope boundary",
+      "purpose": "Marks where identity, data sharing or authority requires an explicit cross-boundary contract.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Meshes and links",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T096",
+      "label": "Cell Blueprint",
+      "kind": "Definition artifact",
+      "purpose": "Reusable Cell declaration; historical documents disagree on the exact boundary from Genome.",
+      "status": "Historical/provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T097",
+      "label": "Cell Genome / CELL-GENOME",
+      "kind": "Configuration artifact",
+      "purpose": "Concrete desired Cell configuration in one historical model; overlaps with Blueprint and Configuration Genome elsewhere.",
+      "status": "Provisional; terminology collision",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T098",
+      "label": "Configuration Genome / ConfigGenome",
+      "kind": "Optimization representation",
+      "purpose": "Describes configurable fields and bounded candidate search spaces across workers, Cells, links, context and runtime.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T099",
+      "label": "Genotype / phenotype / history / readiness",
+      "kind": "Attribute families",
+      "purpose": "Separate configuration, observed behaviour, retained experience and derived evaluation. Some older texts use phenotype for a resolved image; reconcile that collision.",
+      "status": "Historical analytical vocabulary",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T100",
+      "label": "Cell Image",
+      "kind": "Artifact",
+      "purpose": "Resolved immutable deployable Cell configuration.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T101",
+      "label": "ResolvedLock / ResolvedOrgLock",
+      "kind": "Artifact",
+      "purpose": "Pins exact dependency, configuration and policy versions used by a resolved organization or image.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T102",
+      "label": "Org-IR / Org-IR-lite",
+      "kind": "Intermediate representation",
+      "purpose": "Machine-readable organizational structure used for checking and compilation.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T103",
+      "label": "Organization Compiler / ORG-COMPILER",
+      "kind": "Compiler capability",
+      "purpose": "Validates organization definitions, resolves dependencies and emits locked configuration artifacts.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T104",
+      "label": "Mission Compiler",
+      "kind": "Compiler capability",
+      "purpose": "Translates a sufficiently specified Mission into a structured plan with dependencies and checks.",
+      "status": "Proposed capability; aligns with Project Intelligence planning",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S5, S6, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T105",
+      "label": "Ecosystem Compiler / Ecosystem Layer",
+      "kind": "Composition capability",
+      "purpose": "Candidate capability for selecting compatible domain and organizational components for a Mission. A permanent top-level controller is not an agreed requirement.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "Conversation, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T106",
+      "label": "CELL Kernel / Operative Kernel",
+      "kind": "Enforcement component",
+      "purpose": "Deterministically enforces applicable identity, admission, authority, budget and lifecycle rules; reconcile platform versus per-Operative scope.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T107",
+      "label": "ORCA — Operative Runtime, Context & Assurance",
+      "kind": "Runtime component",
+      "purpose": "Coordinates sessions, context delivery, execution and assurance hooks under Kernel rules.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T108",
+      "label": "Context VM / Context Compiler",
+      "kind": "Context capability",
+      "purpose": "Retrieves, selects, packages and manages permitted context, including freshness and invalidation.",
+      "status": "Proposed; related but not automatically identical components",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T109",
+      "label": "Cognitive HAL / Cognitive ABI",
+      "kind": "Interface concept",
+      "purpose": "Proposed boundary for cognitive providers/components; detailed contracts not recovered in this review.",
+      "status": "Historical research term",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T110",
+      "label": "Formation Controller",
+      "kind": "Controller concept",
+      "purpose": "Named formation-control component associated with organization assembly; exact contract not established in the inspected excerpt.",
+      "status": "Historical proposed component",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T111",
+      "label": "Resource Envelope / budget",
+      "kind": "Limits",
+      "purpose": "Sets compute, model, token, tool, time and concurrency allowances.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T112",
+      "label": "CapabilityLease / capability call",
+      "kind": "Access mechanism",
+      "purpose": "Scopes and limits use of a capability; calls remain subject to authorization and evidence requirements.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T113",
+      "label": "Policy / PolicyBundle / Constitution / AuthorityProfile",
+      "kind": "Governance records",
+      "purpose": "Declares operating constraints, protected rules and authority scopes.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T114",
+      "label": "Delegation / Earned Authority",
+      "kind": "Governance mechanism",
+      "purpose": "Delegation grants narrower rights explicitly; Earned Authority proposes evidence-informed permission changes through authorized decisions.",
+      "status": "Delegation working; Earned Authority research",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S3, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T115",
+      "label": "Event / command / CommandIntent",
+      "kind": "Runtime messages",
+      "purpose": "An event records something that happened; a command requests work; CommandIntent represents an operator-requested action for admission.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Configuration, runtime and compilation",
+      "source_secondary_refs": "S2, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T116",
+      "label": "Source / KnowledgeRecord",
+      "kind": "Evidence input",
+      "purpose": "Retains information with provenance, version and review status.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S1, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T117",
+      "label": "Claim / ClaimRecord",
+      "kind": "Assertion record",
+      "purpose": "Stores an assertion separately from its support, acceptance and uncertainty.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S1, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T118",
+      "label": "EvidenceObject / evidence ledger / Trace",
+      "kind": "Evidence records",
+      "purpose": "Retains observations, actions and supporting material so results can be inspected and traced.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T119",
+      "label": "DecisionRecord / HumanGate",
+      "kind": "Governance record",
+      "purpose": "Records a decision and its authority; a human gate requires the designated person's disposition before a transition.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S1, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T120",
+      "label": "Gate",
+      "kind": "Transition contract",
+      "purpose": "Permits, blocks or pauses a transition based on checks and approvals; see GateDefinition and GateEvaluation.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "Conversation, S2",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T121",
+      "label": "AssuranceReceipt / CertificationRecord",
+      "kind": "Assurance records",
+      "purpose": "Binds a verification or certification claim to exact artifacts, evaluators, conditions and scope.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T122",
+      "label": "Contradiction / ConflictSet / RetractionRecord",
+      "kind": "Knowledge records",
+      "purpose": "Preserves disagreement and withdrawn or invalidated claims without rewriting source history.",
+      "status": "Working architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T123",
+      "label": "Evaluation contract / evaluator principal",
+      "kind": "Evaluation boundary",
+      "purpose": "Specifies independent scoring methods and the identity authorized to assess them.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S2, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T124",
+      "label": "Capability Readiness",
+      "kind": "Assessment view",
+      "purpose": "Summarizes evidenced suitability for a particular task population and configuration.",
+      "status": "Proposed assessment concept",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S2, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T125",
+      "label": "Candidate / Baseline / Champion / Challenger",
+      "kind": "Experiment roles",
+      "purpose": "Distinguishes a proposed configuration from the comparison reference and deployed/current contender.",
+      "status": "Proposed experiment vocabulary",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T126",
+      "label": "PromotionDecision",
+      "kind": "Decision record",
+      "purpose": "Accepts a candidate for a stated scope and version using independent evidence and authority.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T127",
+      "label": "SIHRE — Self-Improving Heterogeneous Reasoning Ensemble",
+      "kind": "Cognitive framework",
+      "purpose": "Combines heterogeneous experts with orchestration, uncertainty, verification, disagreement and trust updates.",
+      "status": "Existing user framework; CELL integration proposed",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "Conversation, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T128",
+      "label": "NeuroFusion / Cognitive Governor / Epistemic Scheduler",
+      "kind": "Cognitive control concepts",
+      "purpose": "Historical proposed controls for selecting reasoning paths and when further cognition or verification is justified; relation to SIHRE needs explicit contracts.",
+      "status": "Proposed, not Kernel authority",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T129",
+      "label": "Collective Cognition Fabric / Global Workspace",
+      "kind": "Shared cognition capability",
+      "purpose": "Makes relevant claims, findings, disagreements and context visible to collaborating workers.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T130",
+      "label": "CELL ADAPT",
+      "kind": "Optimization capability",
+      "purpose": "Searches bounded configuration candidates and compares quality, cost and latency under protected constraints.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S1, S3, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T131",
+      "label": "Blackbox / AutoResearcher",
+      "kind": "Research capability",
+      "purpose": "Finds problems and proposes hypotheses or configuration candidates.",
+      "status": "Historical proposed component",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T132",
+      "label": "Evolution Chamber",
+      "kind": "Workbench",
+      "purpose": "Supports inspection and comparison of experiments and proposed promotions.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T133",
+      "label": "Shadow Twin / Shadow Execution Twin / Shadow Organization / Counterfactual Organization",
+      "kind": "Experimental environment",
+      "purpose": "Runs candidate configurations in contained test or replay conditions for comparison; Shadow Cell is the single-Cell scope.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T134",
+      "label": "Crucible",
+      "kind": "Evaluation surface",
+      "purpose": "Provides independent evaluation and assurance views/services, separate from the producer and promotion decision.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T135",
+      "label": "Measurement Firewall",
+      "kind": "Evaluation boundary",
+      "purpose": "Separates candidate/producer influence from protected measurements, evaluator versions and held-out data.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T136",
+      "label": "CELL Foundry / CMTE — Cross-Domain Mechanism Transfer Engine",
+      "kind": "Research capability",
+      "purpose": "Translates mechanisms from other disciplines into testable Operative traits, Cell patterns and doctrine.",
+      "status": "Proposed research capability",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S7",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T137",
+      "label": "MESA — Mechanism–Evidence–Structure–Adaptation",
+      "kind": "Synthesis method",
+      "purpose": "Maps source mechanisms and evidence into architecture candidates and falsifiable experiments.",
+      "status": "Proposed CELL-specific method",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S7",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T138",
+      "label": "CELL Genesis / Recursive Operative Genesis",
+      "kind": "Composition process",
+      "purpose": "Creates or proposes additional bounded Operatives/Cells when justified by capability gaps and authority.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T139",
+      "label": "Seed Operative / Genesis Controller",
+      "kind": "Role and control component",
+      "purpose": "The Seed Operative proposes an organization; the controller validates, compiles, provisions, leases and retires it.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T140",
+      "label": "Executable Doctrine / Experience-to-Doctrine Compiler",
+      "kind": "Learning artifacts/process",
+      "purpose": "Turns reviewed experience into reusable procedures or policy candidates through explicit approval.",
+      "status": "Research concept",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "Conversation, S3, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T141",
+      "label": "Mesh Gradient",
+      "kind": "Optimization research term",
+      "purpose": "A proposed analysis of how configuration/topology changes contribute to outcomes; no formal derivative or validated estimator recovered.",
+      "status": "Unresolved research concept",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T142",
+      "label": "Organizational Debugger / Replay / Profiler",
+      "kind": "Inspection capabilities",
+      "purpose": "Explains execution history, causation, coordination failures and resource costs.",
+      "status": "Proposed architecture",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Evidence, evaluation and improvement",
+      "source_secondary_refs": "S3, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T143",
+      "label": "Domain Plane",
+      "kind": "Domain capability bundle",
+      "purpose": "Adds domain ontology, data, skills, tools, policy, evaluations and views around generic platform contracts.",
+      "status": "Provisional",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S1, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T144",
+      "label": "Domain Genome / Domain Compiler",
+      "kind": "Configuration and compilation",
+      "purpose": "Describes and resolves a domain-specific configuration; detailed contracts remain proposed.",
+      "status": "Proposed external design",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T145",
+      "label": "Domain Fabric / Domain Data Plane",
+      "kind": "Integration/data concepts",
+      "purpose": "Proposed domain connection and data-management responsibilities; boundaries remain to be resolved.",
+      "status": "Proposed external design",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T146",
+      "label": "NERVE / legacy Switchboard",
+      "kind": "Operator interface",
+      "purpose": "Presents commands, attention, work, approvals, evidence and interventions. Switchboard is a historical implementation label.",
+      "status": "NERVE provisional; older shell names retained",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S1, S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T147",
+      "label": "Mission Control / Mission Cockpit",
+      "kind": "Workspace",
+      "purpose": "Shows Mission status, dependencies, blockers, results and interventions.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T148",
+      "label": "Universal Command Composer",
+      "kind": "Control surface",
+      "purpose": "Captures commands through natural language, voice or slash commands.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T149",
+      "label": "Needs-You / attention / approval queue",
+      "kind": "Review surface",
+      "purpose": "Collects questions, blockers and decisions requiring the operator.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T150",
+      "label": "Cell Studio",
+      "kind": "Design workspace",
+      "purpose": "Lets an operator configure Cells, members, models, policies and resolved images.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T151",
+      "label": "HyperMESH Explorer",
+      "kind": "Inspection workspace",
+      "purpose": "Shows scoped nodes, links, context and provenance.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S3, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T152",
+      "label": "Evidence Lens",
+      "kind": "Review workspace",
+      "purpose": "Shows claims, support, verification and assurance context.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T153",
+      "label": "Briefing Room",
+      "kind": "Workspace",
+      "purpose": "Historical contextual workspace for Mission briefing; exact current boundary remains open.",
+      "status": "Historical interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S3",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T154",
+      "label": "Domain Panes",
+      "kind": "Interface projections",
+      "purpose": "Present domain-specific information over the shared records.",
+      "status": "Proposed interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T155",
+      "label": "Avatar World",
+      "kind": "Optional visual surface",
+      "purpose": "Displays spatial organization views, blueprint previews or labelled contained simulations.",
+      "status": "Proposed optional interface",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T156",
+      "label": "Dynamic Due Date",
+      "kind": "Forecasting feature",
+      "purpose": "Updates a delivery estimate as dependencies, capacity and measured progress change.",
+      "status": "Research/planning feature; not a guarantee",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T157",
+      "label": "Stigmergic Fields",
+      "kind": "Coordination research",
+      "purpose": "Earlier working idea for coordination through shared environment/state signals; precise CELL contract not recovered.",
+      "status": "Exploratory interpretation",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S4",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T158",
+      "label": "Morphogenetic Teams",
+      "kind": "Adaptation research",
+      "purpose": "Earlier working idea for changing team composition or relationships in response to Mission conditions.",
+      "status": "Exploratory interpretation",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T159",
+      "label": "Cognitive Logistics",
+      "kind": "Context research",
+      "purpose": "Earlier working idea for delivering relevant information to the appropriate worker and step.",
+      "status": "Exploratory interpretation",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T160",
+      "label": "Temporal Echelons / Temporal Executive",
+      "kind": "Time-control research",
+      "purpose": "Earlier names for coordination at different time horizons and temporal control; exact distinction not recovered.",
+      "status": "Unresolved research terms",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S5, S6",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T161",
+      "label": "Staff Mesh",
+      "kind": "Coordination research",
+      "purpose": "Earlier named concept; detailed function and boundary not recovered, so no separate service or team type is assumed.",
+      "status": "Unresolved name",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T162",
+      "label": "Causal World Model",
+      "kind": "Reasoning research",
+      "purpose": "Proposed representation of causal relationships for predictions or counterfactual analysis; detailed contract not recovered.",
+      "status": "Proposed external design",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T163",
+      "label": "Operative Immune System",
+      "kind": "Reliability research",
+      "purpose": "Proposed detection and containment of unsafe or degrading behaviour; no biological mechanism or implemented service implied.",
+      "status": "Proposed external design",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T164",
+      "label": "Cognitive Economics Engine",
+      "kind": "Allocation research",
+      "purpose": "Proposed allocation of reasoning and verification effort against cost and benefit.",
+      "status": "Proposed external design",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "S5",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T165",
+      "label": "LAUNCH // OS / Initiative Compiler / Organizational Compiler",
+      "kind": "Naming and composition ideas",
+      "purpose": "Earlier ideas for progressing an intent into a bounded build plan; their relationship to current compilers needs reconciliation.",
+      "status": "Exploratory/historical",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T166",
+      "label": "QUANTA // OS / earlier QUANT // OS / CELL-Q",
+      "kind": "Domain-product names",
+      "purpose": "Names associated with proposed educational quantitative-research environments. Product names, not generic worker/entity types; equivalence is not assumed.",
+      "status": "Proposed products; naming reconciliation required",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation, S5, S8",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T167",
+      "label": "NEUROFIT // OS / NEUROFIT CCE // OS",
+      "kind": "Client-product names",
+      "purpose": "Historical client-product naming example. Use generic Product A in the public design unless exact branding permission is supplied.",
+      "status": "Proposed product names",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    },
+    {
+      "id": "T168",
+      "label": "OS-Product / OS-Client / CELL-connected product",
+      "kind": "Product relationship labels",
+      "purpose": "Earlier labels for products using declared CELL capabilities; no certification standard is established by the label.",
+      "status": "Proposed commercial vocabulary",
+      "source_refs": [
+        "S02"
+      ],
+      "source_locator": "Domain, interface and exploratory concepts",
+      "source_secondary_refs": "Conversation",
+      "note": "Source-specific wording. Related names in one row are not automatically accepted synonyms."
+    }
+  ]
+}

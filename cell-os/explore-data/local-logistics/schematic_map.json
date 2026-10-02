@@ -1,0 +1,111 @@
+{
+  "mode": "SCHEMATIC_NOT_GEOGRAPHIC",
+  "width": 1000,
+  "height": 650,
+  "caption": "Schematic Vancouver service map — not for navigation",
+  "source": "Author-created screen layout; no official geometry",
+  "features": [
+    {
+      "zoneId": "central",
+      "label": "Central",
+      "points": [
+        [
+          380,
+          70
+        ],
+        [
+          690,
+          70
+        ],
+        [
+          660,
+          225
+        ],
+        [
+          400,
+          210
+        ]
+      ]
+    },
+    {
+      "zoneId": "west",
+      "label": "West",
+      "points": [
+        [
+          90,
+          255
+        ],
+        [
+          450,
+          250
+        ],
+        [
+          435,
+          440
+        ],
+        [
+          100,
+          450
+        ]
+      ]
+    },
+    {
+      "zoneId": "east",
+      "label": "East",
+      "points": [
+        [
+          505,
+          255
+        ],
+        [
+          920,
+          250
+        ],
+        [
+          925,
+          440
+        ],
+        [
+          500,
+          440
+        ]
+      ]
+    },
+    {
+      "zoneId": "south",
+      "label": "South",
+      "points": [
+        [
+          160,
+          480
+        ],
+        [
+          900,
+          480
+        ],
+        [
+          870,
+          610
+        ],
+        [
+          185,
+          610
+        ]
+      ]
+    }
+  ],
+  "waterLabels": [
+    {
+      "label": "Illustrative water separation",
+      "x": 310,
+      "y": 235
+    }
+  ],
+  "legend": [
+    "Available",
+    "Assigned",
+    "Paused",
+    "Stale"
+  ],
+  "markerUnits": "normalized screen coordinates; not GPS"
+}

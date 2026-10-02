@@ -1,0 +1,53 @@
+Ported reference tests run in browser sandbox (not Node) — 2026-09-18T07:30:32.490Z
+PASS 51 / FAIL 0
+PASS fixtures initialize and remain independent
+PASS baseline metrics reconcile
+PASS on-time denominator and overdue work remain visible
+PASS empty worker cohort returns null rather than 100 percent
+PASS best eligible fixture for west is employee 02
+PASS nearby employee on break is excluded
+PASS full employee is excluded
+PASS stale position is excluded
+PASS unapproved coverage is excluded
+PASS future-dated position is invalid
+PASS customer must match the cart
+PASS team lead cannot mutate another territory
+PASS stale revision is rejected
+PASS assignment requires readiness
+PASS forbidden transition does not mutate source
+PASS repeated command is idempotent
+PASS same command ID with changed payload conflicts
+PASS normal path consumes stock exactly once
+PASS cancel releases held stock without changing on-hand
+PASS shortage does not reserve unavailable stock
+PASS multi-item reservation is atomic
+PASS a second distinct assignment is rejected
+PASS assignment to full worker is rejected
+PASS only assigned employee can confirm pickup
+PASS delivery exception does not increase completed
+PASS unknown exception reason is rejected
+PASS off-duty and paused workers have no map marker
+PASS team lead sees own team markers
+PASS employee sees only own marker
+PASS customer sees assigned sample delivery only
+PASS customer cannot select another customer order
+PASS stale marker remains explicitly stale
+PASS campaign needs current approval
+PASS owner approval allows eligible preview only
+PASS campaign edit clears approval and changes revision
+PASS non-owner cannot approve or edit campaign
+PASS cancelled event invalidates previously approved preview
+PASS stale event blocks preview
+PASS capacity loss blocks an approved campaign
+PASS stock loss blocks an approved campaign
+PASS unknown marketing eligibility cannot send
+PASS discount cost cannot exceed example budget
+PASS noncommercial patch cannot forge approval
+PASS non-synthetic input is rejected
+PASS negative price and inconsistent stock are rejected
+PASS unknown action is rejected without new audit entry
+PASS expected_metrics.json overall + byTeam + byWorker match
+PASS ext: break with active job needs handover
+PASS ext: start shift gives position; end shift removes it
+PASS ext: purchase approval does not raise stock; partial receipt raises by accepted only
+PASS ext: advance clock makes worker-02 stale after 3 min

@@ -1,0 +1,308 @@
+{
+  "status": "PROPOSED_SYNTHETIC_DEMO",
+  "workflows": [
+    {
+      "id": "WF-01",
+      "title": "Sample order to completed delivery",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Customer chooses a preset cart.",
+      "fixtureRefs": [
+        "DEMO-1001",
+        "SKU-NOTE",
+        "worker-02"
+      ],
+      "steps": [
+        "Confirm sample order",
+        "Reserve example stock",
+        "Start picking",
+        "Mark ready",
+        "Review eligible workers",
+        "Simulate assignment",
+        "Confirm sample pickup",
+        "Confirm sample delivery"
+      ],
+      "humanGates": [
+        "Customer confirms the structured cart",
+        "Owner/lead checks assignment",
+        "Assigned employee confirms own steps"
+      ],
+      "failureBehaviour": "Insufficient stock enters STOCK_EXCEPTION; no partial reserve.",
+      "evidence": "Order, reservation, assignment and activity revisions.",
+      "outcome": "One completed example; stock consumed once.",
+      "acceptanceMeasure": "Submitted, active and completed counts reconcile."
+    },
+    {
+      "id": "WF-02",
+      "title": "Nearest worker is unavailable",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "A ready order needs an assignment.",
+      "fixtureRefs": [
+        "DEMO-1002",
+        "worker-01",
+        "worker-02"
+      ],
+      "steps": [
+        "Inspect candidates",
+        "Explain nearby employee is on break",
+        "Select an eligible candidate",
+        "Simulate assignment"
+      ],
+      "humanGates": [
+        "Lead/owner selects an eligible worker"
+      ],
+      "failureBehaviour": "No eligible candidate leaves order READY with a needs-attention reason.",
+      "evidence": "Candidate eligibility reasons and assignment record.",
+      "outcome": "One active assignment only.",
+      "acceptanceMeasure": "No ineligible assignment; no duplicate effect."
+    },
+    {
+      "id": "WF-03",
+      "title": "Stale location and manual review",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "An employee location is outside the freshness threshold.",
+      "fixtureRefs": [
+        "worker-05",
+        "DEMO-1013"
+      ],
+      "steps": [
+        "Show stale marker/time",
+        "Exclude from recommendation",
+        "Show other candidates or manual-review state"
+      ],
+      "humanGates": [
+        "Lead reviews location uncertainty"
+      ],
+      "failureBehaviour": "Do not invent a current point, route or ETA.",
+      "evidence": "Position observedAt and proposed freshness policy.",
+      "outcome": "Stale information visibly limits automation.",
+      "acceptanceMeasure": "No stale marker labelled live."
+    },
+    {
+      "id": "WF-04",
+      "title": "Stock shortage and cancellation",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Available stock is less than the sample cart quantity.",
+      "fixtureRefs": [
+        "DEMO-1001",
+        "SKU-NOTE"
+      ],
+      "steps": [
+        "Load shortage scenario overlay",
+        "Confirm cart",
+        "Try reservation",
+        "Inspect exception",
+        "Choose canned cancellation"
+      ],
+      "humanGates": [
+        "Customer accepts cancellation or changed proposal"
+      ],
+      "failureBehaviour": "No negative stock or silent substitution.",
+      "evidence": "Stock preconditions and transition history.",
+      "outcome": "Unfulfilled order resolved without consuming stock.",
+      "acceptanceMeasure": "No over-reservation."
+    },
+    {
+      "id": "WF-05",
+      "title": "Delivery exception and support",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Assigned employee selects customer unavailable.",
+      "fixtureRefs": [
+        "DEMO-1005",
+        "worker-03"
+      ],
+      "steps": [
+        "Inspect assigned order",
+        "Report canned exception",
+        "Open support case preview",
+        "Show resolution choices"
+      ],
+      "humanGates": [
+        "Employee records outcome; staff owns resolution"
+      ],
+      "failureBehaviour": "Exception is not a completion and does not auto-penalize worker.",
+      "evidence": "Assigned worker, reason and owned case.",
+      "outcome": "Order remains DELIVERY_EXCEPTION pending review.",
+      "acceptanceMeasure": "Exception visible; completed count unchanged."
+    },
+    {
+      "id": "WF-06",
+      "title": "Cross-team coverage assistance",
+      "priority": "P1",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "A primary team has no eligible capacity.",
+      "fixtureRefs": [
+        "DEMO-1002",
+        "team-west",
+        "team-central"
+      ],
+      "steps": [
+        "Compare primary and approved overflow candidates",
+        "Show scope boundary",
+        "Request or use preset approved overflow",
+        "Simulate eligible assignment"
+      ],
+      "humanGates": [
+        "Lead/owner approves coverage assistance when not already permitted"
+      ],
+      "failureBehaviour": "No silent expansion into an unapproved zone.",
+      "evidence": "Allowed-zone policy and reason.",
+      "outcome": "Work has one owner across the handoff.",
+      "acceptanceMeasure": "No ownership gap or double assignment."
+    },
+    {
+      "id": "WF-07",
+      "title": "Purchase proposal and partial receipt",
+      "priority": "P1",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Inventory review triggers a replenishment suggestion.",
+      "fixtureRefs": [
+        "SKU-FOLDER",
+        "SUP-DEMO-01"
+      ],
+      "steps": [
+        "Draft example request",
+        "Show quantity and assumed cost",
+        "Approve simulated revision",
+        "Record partial receipt preview",
+        "Keep discrepancy open"
+      ],
+      "humanGates": [
+        "Owner approval; staff accepts received quantity"
+      ],
+      "failureBehaviour": "Approved purchase does not become stock until accepted receipt.",
+      "evidence": "Proposal/approval/receipt revisions.",
+      "outcome": "Only accepted receipt quantity increases stock.",
+      "acceptanceMeasure": "Availability reflects receipt, not purchase intent."
+    },
+    {
+      "id": "WF-08",
+      "title": "Geographic demand review",
+      "priority": "P1",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Owner opens the seven-day synthetic history.",
+      "fixtureRefs": [
+        "west",
+        "central",
+        "east",
+        "south"
+      ],
+      "steps": [
+        "Show area aggregates",
+        "Compare submissions, completions and coverage",
+        "Inspect stockout time",
+        "Draft opportunity hypothesis"
+      ],
+      "humanGates": [
+        "Owner reviews interpretation"
+      ],
+      "failureBehaviour": "Small/suppressed counts are not individual customer targeting.",
+      "evidence": "Historical fixture window, counts and assumptions.",
+      "outcome": "An explanation, not a real Vancouver demand claim.",
+      "acceptanceMeasure": "Metric denominators and period visible."
+    },
+    {
+      "id": "WF-09",
+      "title": "Event validity check",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "A promotion depends on an event.",
+      "fixtureRefs": [
+        "EVENT-DEMO-01",
+        "EVENT-DEMO-02",
+        "EVENT-DEMO-03"
+      ],
+      "steps": [
+        "Inspect fictional event/source/status",
+        "Compare checkedAt with virtual clock",
+        "Reject cancelled/stale dependencies"
+      ],
+      "humanGates": [
+        "Owner reviews unknown input"
+      ],
+      "failureBehaviour": "Unknown or stale information blocks rather than fabricates a current event.",
+      "evidence": "Event ID, status, source type and checkedAt.",
+      "outcome": "Only valid fixture supports preview.",
+      "acceptanceMeasure": "No cancelled/stale event treated as current."
+    },
+    {
+      "id": "WF-10",
+      "title": "Guarded special deal",
+      "priority": "P0",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Owner reviews an example notebook promotion.",
+      "fixtureRefs": [
+        "CAMPAIGN-DEMO-01",
+        "SKU-NOTE",
+        "EVENT-DEMO-01"
+      ],
+      "steps": [
+        "Review stock/capacity/audience/budget",
+        "Approve current revision",
+        "Edit and see approval cleared",
+        "Approve revised proposal",
+        "Preview with rechecked gates"
+      ],
+      "humanGates": [
+        "Owner approval bound to current revision"
+      ],
+      "failureBehaviour": "Cancelled event, stock/capacity loss or missing approval blocks preview.",
+      "evidence": "Campaign revision, approval and gate results.",
+      "outcome": "PREVIEW_ONLY; no messages sent.",
+      "acceptanceMeasure": "No effect without valid current approval."
+    },
+    {
+      "id": "WF-11",
+      "title": "Employee shift and visibility",
+      "priority": "P1",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "An employee changes availability.",
+      "fixtureRefs": [
+        "worker-01",
+        "worker-07"
+      ],
+      "steps": [
+        "Preview onboarding",
+        "Start example shift",
+        "Show availability",
+        "Pause for break",
+        "End shift"
+      ],
+      "humanGates": [
+        "Employee controls own status; unresolved jobs need handover"
+      ],
+      "failureBehaviour": "No off-duty marker and no abandoned active assignment.",
+      "evidence": "Own shift status and commitment count.",
+      "outcome": "Availability affects eligibility and map visibility.",
+      "acceptanceMeasure": "No off-duty tracking or assignment."
+    },
+    {
+      "id": "WF-12",
+      "title": "Scoped customer support",
+      "priority": "P1",
+      "implementationStatus": "UI_SPECIFICATION_WITH_PARTIAL_REFERENCE_HELPERS",
+      "trigger": "Customer selects an order-status question.",
+      "fixtureRefs": [
+        "DEMO-1005",
+        "customer-05"
+      ],
+      "steps": [
+        "Open own sample order",
+        "Use canned support choice",
+        "Read scoped response",
+        "Compare internal activity stream"
+      ],
+      "humanGates": [
+        "Customer chooses canned request; staff resolves material changes"
+      ],
+      "failureBehaviour": "No exposure of other customer records or full fleet.",
+      "evidence": "Own order and canned support case context.",
+      "outcome": "Clear customer communication with structured state intact.",
+      "acceptanceMeasure": "No chat message silently changes official status."
+    }
+  ]
+}

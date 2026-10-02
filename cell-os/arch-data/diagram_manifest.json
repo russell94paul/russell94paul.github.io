@@ -1,0 +1,3533 @@
+{
+  "status": "NEW_DESIGN_STORYBOARDS",
+  "count": 26,
+  "scenes": [
+    {
+      "id": "D01",
+      "title": "The platform at a glance",
+      "section": "Overview",
+      "visual_form": "Progressive-zoom system map",
+      "question": "What does each major part contribute?",
+      "component_ids": [
+        "CMP-01",
+        "CMP-02",
+        "CMP-03",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-08",
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-12",
+        "CMP-13",
+        "CMP-14",
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-18",
+        "CMP-19",
+        "CMP-20",
+        "CMP-21",
+        "CMP-22",
+        "CMP-23",
+        "CMP-24",
+        "CMP-25",
+        "CMP-26",
+        "CMP-27",
+        "CMP-28",
+        "CMP-29",
+        "CMP-30",
+        "CMP-31",
+        "CMP-32",
+        "CMP-33",
+        "CMP-34",
+        "CMP-35",
+        "CMP-36",
+        "CMP-37",
+        "CMP-38",
+        "CMP-39",
+        "CMP-40",
+        "CMP-41",
+        "CMP-42",
+        "CMP-43",
+        "CMP-44",
+        "CMP-45",
+        "CMP-46",
+        "CMP-47",
+        "CMP-48",
+        "CMP-49",
+        "CMP-50",
+        "CMP-51",
+        "CMP-52"
+      ],
+      "nodes": [
+        {
+          "id": "human",
+          "label": "Founder / operator",
+          "kind": "actor"
+        },
+        {
+          "id": "pi",
+          "label": "Project Intelligence",
+          "kind": "component"
+        },
+        {
+          "id": "mission",
+          "label": "Mission + exact DAG revision",
+          "kind": "record"
+        },
+        {
+          "id": "org",
+          "label": "Proposed Cell composition",
+          "kind": "component"
+        },
+        {
+          "id": "mesh",
+          "label": "MESH views + Link Contracts",
+          "kind": "component"
+        },
+        {
+          "id": "tools",
+          "label": "Authorized capabilities / sources",
+          "kind": "component"
+        },
+        {
+          "id": "evidence",
+          "label": "Evidence + acceptance",
+          "kind": "record"
+        },
+        {
+          "id": "product",
+          "label": "Later product / ecosystem",
+          "kind": "boundary"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D01-E01",
+          "source": "human",
+          "target": "pi",
+          "label": "governs intent",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E02",
+          "source": "pi",
+          "target": "mission",
+          "label": "records and compiles",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E03",
+          "source": "mission",
+          "target": "org",
+          "label": "later scoped assignment",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E04",
+          "source": "org",
+          "target": "mesh",
+          "label": "participation and relationships",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E05",
+          "source": "mesh",
+          "target": "tools",
+          "label": "only through declared boundaries",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E06",
+          "source": "org",
+          "target": "evidence",
+          "label": "produces candidate outputs",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E07",
+          "source": "evidence",
+          "target": "pi",
+          "label": "supports review; not auto-approval",
+          "kind": "relationship"
+        },
+        {
+          "id": "D01-E08",
+          "source": "product",
+          "target": "mesh",
+          "label": "future explicit contracts",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Click a family to zoom to its dedicated scene; show only 6–8 primary nodes. A separate component drawer covers all 52 groups.",
+      "animation_steps": [
+        "Reveal the planning path first.",
+        "Reveal the proposed static organization on request.",
+        "Reveal research/future layers last, retaining stage labels."
+      ],
+      "guardrail": "No master all-to-all graph and no claim that every displayed service is implemented.",
+      "source_refs": [
+        "S01",
+        "S04",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D01_the_platform_at_a_glance.mmd"
+    },
+    {
+      "id": "D02",
+      "title": "Logical layers, not a stack of workers",
+      "section": "Layers",
+      "visual_form": "Swimlane architecture with cross-cutting rails",
+      "question": "Where does a responsibility live?",
+      "component_ids": [
+        "CMP-01",
+        "CMP-02",
+        "CMP-03",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-08",
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-12",
+        "CMP-13",
+        "CMP-14",
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-18",
+        "CMP-19",
+        "CMP-20",
+        "CMP-21",
+        "CMP-22",
+        "CMP-23",
+        "CMP-24",
+        "CMP-25",
+        "CMP-26",
+        "CMP-27",
+        "CMP-28",
+        "CMP-29",
+        "CMP-30",
+        "CMP-31",
+        "CMP-32",
+        "CMP-33",
+        "CMP-34",
+        "CMP-35",
+        "CMP-36",
+        "CMP-37",
+        "CMP-38",
+        "CMP-39",
+        "CMP-40",
+        "CMP-41",
+        "CMP-42",
+        "CMP-43",
+        "CMP-44",
+        "CMP-45",
+        "CMP-46",
+        "CMP-47",
+        "CMP-48",
+        "CMP-49",
+        "CMP-50",
+        "CMP-51",
+        "CMP-52"
+      ],
+      "nodes": [
+        {
+          "id": "L01",
+          "label": "Experience and operator surfaces",
+          "kind": "component"
+        },
+        {
+          "id": "L02",
+          "label": "Project Intelligence and planning",
+          "kind": "component"
+        },
+        {
+          "id": "L03",
+          "label": "Composition and capability definitions",
+          "kind": "component"
+        },
+        {
+          "id": "L04",
+          "label": "Cognition and context",
+          "kind": "component"
+        },
+        {
+          "id": "L05",
+          "label": "Coordination and runtime",
+          "kind": "component"
+        },
+        {
+          "id": "L06",
+          "label": "Interoperability and domain extension",
+          "kind": "component"
+        },
+        {
+          "id": "L07",
+          "label": "Assurance and improvement",
+          "kind": "component"
+        },
+        {
+          "id": "L08",
+          "label": "Cross-cutting governance and resilience",
+          "kind": "component"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D02-E01",
+          "source": "L01",
+          "target": "L02",
+          "label": "presents governed records",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E02",
+          "source": "L02",
+          "target": "L03",
+          "label": "references definitions",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E03",
+          "source": "L03",
+          "target": "L04",
+          "label": "binds cognition/context",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E04",
+          "source": "L05",
+          "target": "L03",
+          "label": "uses exact resolved definitions",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E05",
+          "source": "L05",
+          "target": "L06",
+          "label": "mediated integrations",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E06",
+          "source": "L05",
+          "target": "L07",
+          "label": "emits observations",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E07",
+          "source": "L07",
+          "target": "L02",
+          "label": "evaluation evidence",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E08",
+          "source": "L08",
+          "target": "L02",
+          "label": "enforces applicable controls",
+          "kind": "relationship"
+        },
+        {
+          "id": "D02-E09",
+          "source": "L08",
+          "target": "L05",
+          "label": "enforces applicable controls",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "TB",
+      "interaction": "Lane selection filters the catalogue; the crosswalk labels historical, current baseline and proposed grouping separately.",
+      "animation_steps": [
+        "Show the eight proposed presentation lanes.",
+        "Highlight one responsibility and its dependencies.",
+        "Switch to the historical seven-platform-layer crosswalk."
+      ],
+      "guardrail": "CELL, MESH and LINK are not consecutive network layers. A lane is not a required microservice.",
+      "source_refs": [
+        "S01",
+        "S05",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D02_logical_layers_not_a_stack_of_workers.mmd"
+    },
+    {
+      "id": "D03",
+      "title": "Five graphs, five different questions",
+      "section": "Overview",
+      "visual_form": "Five synchronized small multiples",
+      "question": "Does changing a relationship change the approved plan?",
+      "component_ids": [
+        "CMP-04",
+        "CMP-08",
+        "CMP-13",
+        "CMP-18",
+        "CMP-20",
+        "CMP-21",
+        "CMP-27"
+      ],
+      "nodes": [
+        {
+          "id": "people",
+          "label": "Organization / membership",
+          "kind": "component"
+        },
+        {
+          "id": "dag",
+          "label": "Work dependencies",
+          "kind": "component"
+        },
+        {
+          "id": "comm",
+          "label": "Communication topology",
+          "kind": "component"
+        },
+        {
+          "id": "authority",
+          "label": "Authority / delegation",
+          "kind": "component"
+        },
+        {
+          "id": "knowledge",
+          "label": "Evidence / knowledge",
+          "kind": "component"
+        },
+        {
+          "id": "identities",
+          "label": "Shared stable references",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D03-E01",
+          "source": "identities",
+          "target": "people",
+          "label": "identifies participants",
+          "kind": "relationship"
+        },
+        {
+          "id": "D03-E02",
+          "source": "identities",
+          "target": "dag",
+          "label": "identifies work",
+          "kind": "relationship"
+        },
+        {
+          "id": "D03-E03",
+          "source": "identities",
+          "target": "comm",
+          "label": "identifies endpoints",
+          "kind": "relationship"
+        },
+        {
+          "id": "D03-E04",
+          "source": "identities",
+          "target": "authority",
+          "label": "identifies principals/scopes",
+          "kind": "relationship"
+        },
+        {
+          "id": "D03-E05",
+          "source": "identities",
+          "target": "knowledge",
+          "label": "identifies claims/sources",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Use tabs, fixed node positions where applicable and explicit edge legends. Show supervision as a separately selectable runtime view.",
+      "animation_steps": [
+        "Pin the same example participants.",
+        "Switch the selected graph meaning; redraw only its typed edges.",
+        "Show that a context edge change leaves the DAG revision unchanged."
+      ],
+      "guardrail": "Shared display references do not collapse membership, dependencies, messaging, evidence and permission into one graph.",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D03_five_graphs_five_different_questions.mmd"
+    },
+    {
+      "id": "D04",
+      "title": "From a minimal agent loop to governed composition",
+      "section": "Compare",
+      "visual_form": "Three-column comparison, not an evolution ranking",
+      "question": "What does CELL propose to standardize?",
+      "component_ids": [
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-15",
+        "CMP-17",
+        "CMP-21",
+        "CMP-31"
+      ],
+      "nodes": [
+        {
+          "id": "minimal",
+          "label": "Minimal agent loop",
+          "kind": "component"
+        },
+        {
+          "id": "framework",
+          "label": "Capable agent framework / workflow",
+          "kind": "component"
+        },
+        {
+          "id": "cell",
+          "label": "CELL proposed composition",
+          "kind": "component"
+        },
+        {
+          "id": "common",
+          "label": "Models, tools, memory, human review may exist in all",
+          "kind": "note"
+        },
+        {
+          "id": "contracts",
+          "label": "Versioned composition + typed links + evidence obligations",
+          "kind": "record"
+        },
+        {
+          "id": "cost",
+          "label": "Additional complexity requires evaluation",
+          "kind": "note"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D04-E01",
+          "source": "common",
+          "target": "minimal",
+          "label": "features depend on implementation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D04-E02",
+          "source": "common",
+          "target": "framework",
+          "label": "features depend on implementation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D04-E03",
+          "source": "common",
+          "target": "cell",
+          "label": "features depend on implementation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D04-E04",
+          "source": "cell",
+          "target": "contracts",
+          "label": "proposed integration target",
+          "kind": "relationship"
+        },
+        {
+          "id": "D04-E05",
+          "source": "contracts",
+          "target": "cost",
+          "label": "trade-off, not a measured win",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Toggle a simple evidence-report task; show “can be implemented” rather than misleading competitor crosses.",
+      "animation_steps": [
+        "Display the same bounded task across the three columns.",
+        "Expand one capability row and its mechanism.",
+        "Reveal the conventional equivalent and measurement needed."
+      ],
+      "guardrail": "Do not claim ordinary agents cannot have memory, identity, durable execution, permissions or evaluators. No novelty or uplift claim.",
+      "source_refs": [
+        "S02",
+        "W01",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D04_from_a_minimal_agent_loop_to_governed_composition.mmd"
+    },
+    {
+      "id": "D05",
+      "title": "Inside an Operative",
+      "section": "Components",
+      "visual_form": "Exploded anatomy with ownership categories",
+      "question": "What does an Operative own, reference, lease and load?",
+      "component_ids": [
+        "CMP-09",
+        "CMP-11",
+        "CMP-12",
+        "CMP-15",
+        "CMP-26",
+        "CMP-28",
+        "CMP-34"
+      ],
+      "nodes": [
+        {
+          "id": "op",
+          "label": "Operative instance",
+          "kind": "component"
+        },
+        {
+          "id": "def",
+          "label": "Exact definition revision",
+          "kind": "record"
+        },
+        {
+          "id": "model",
+          "label": "Eligible model / cognition policy",
+          "kind": "record"
+        },
+        {
+          "id": "ctx",
+          "label": "ContextSnapshot",
+          "kind": "record"
+        },
+        {
+          "id": "cap",
+          "label": "Capability contracts",
+          "kind": "record"
+        },
+        {
+          "id": "grant",
+          "label": "Current authority references",
+          "kind": "record"
+        },
+        {
+          "id": "lease",
+          "label": "Resource leases",
+          "kind": "record"
+        },
+        {
+          "id": "run",
+          "label": "Run + evidence obligations",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D05-E01",
+          "source": "op",
+          "target": "def",
+          "label": "instantiated from",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E02",
+          "source": "def",
+          "target": "model",
+          "label": "references eligible profiles",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E03",
+          "source": "op",
+          "target": "ctx",
+          "label": "loads for this step",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E04",
+          "source": "def",
+          "target": "cap",
+          "label": "requires capabilities",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E05",
+          "source": "op",
+          "target": "grant",
+          "label": "subject to; cannot self-issue",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E06",
+          "source": "op",
+          "target": "lease",
+          "label": "holds within limits",
+          "kind": "relationship"
+        },
+        {
+          "id": "D05-E07",
+          "source": "op",
+          "target": "run",
+          "label": "participates in",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Four tabs: Owns / References / Leases / Loads. Select an item for its version, owner, scope and evidence status.",
+      "animation_steps": [
+        "Start with the worker and exact definition.",
+        "Reveal references, then leased resources, then active context.",
+        "Select a revoked lease and show blocked use without deleting the worker."
+      ],
+      "guardrail": "A model list is not a claim of demonstrated expertise. Configuration is not model-weight training.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S05"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D05_inside_an_operative.mmd"
+    },
+    {
+      "id": "D06",
+      "title": "Definition, version, instance and run",
+      "section": "Components",
+      "visual_form": "Identity timeline with parallel instances",
+      "question": "Which object changes when configuration or work changes?",
+      "component_ids": [
+        "CMP-07",
+        "CMP-15",
+        "CMP-17",
+        "CMP-29",
+        "CMP-30",
+        "CMP-43",
+        "CMP-51"
+      ],
+      "nodes": [
+        {
+          "id": "def",
+          "label": "Reusable definition",
+          "kind": "record"
+        },
+        {
+          "id": "ver",
+          "label": "Immutable version / resolved lock",
+          "kind": "record"
+        },
+        {
+          "id": "a",
+          "label": "Instance A",
+          "kind": "component"
+        },
+        {
+          "id": "b",
+          "label": "Instance B",
+          "kind": "component"
+        },
+        {
+          "id": "session",
+          "label": "Session context",
+          "kind": "record"
+        },
+        {
+          "id": "run",
+          "label": "Run / logical action",
+          "kind": "record"
+        },
+        {
+          "id": "attempt",
+          "label": "Attempt",
+          "kind": "record"
+        },
+        {
+          "id": "artifact",
+          "label": "Artifact + verification",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D06-E01",
+          "source": "def",
+          "target": "ver",
+          "label": "revised into",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E02",
+          "source": "ver",
+          "target": "a",
+          "label": "instantiates",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E03",
+          "source": "ver",
+          "target": "b",
+          "label": "also instantiates",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E04",
+          "source": "a",
+          "target": "session",
+          "label": "uses",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E05",
+          "source": "session",
+          "target": "run",
+          "label": "associated with",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E06",
+          "source": "run",
+          "target": "attempt",
+          "label": "attempts recorded separately",
+          "kind": "relationship"
+        },
+        {
+          "id": "D06-E07",
+          "source": "attempt",
+          "target": "artifact",
+          "label": "produces / verifies",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Click identities to compare their stable ID, version, scope and run history.",
+      "animation_steps": [
+        "Instantiate two workers from one version.",
+        "Run one twice; retain separate attempt IDs.",
+        "Create a new definition version; keep old evidence bound to the old version."
+      ],
+      "guardrail": "Similar configuration does not inherit another instance’s approval, authority or assurance.",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D06_definition_version_instance_and_run.mmd"
+    },
+    {
+      "id": "D07",
+      "title": "Inside a CELL",
+      "section": "Components",
+      "visual_form": "Nested boundary with typed ports",
+      "question": "How is a Cell more than a group chat?",
+      "component_ids": [
+        "CMP-10",
+        "CMP-11",
+        "CMP-12",
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-21",
+        "CMP-26",
+        "CMP-31"
+      ],
+      "nodes": [
+        {
+          "id": "input",
+          "label": "Typed input port",
+          "kind": "port"
+        },
+        {
+          "id": "producer",
+          "label": "Producer Operative",
+          "kind": "component"
+        },
+        {
+          "id": "validator",
+          "label": "Deterministic Worker",
+          "kind": "component"
+        },
+        {
+          "id": "reviewer",
+          "label": "Reviewer / Guardian role",
+          "kind": "component"
+        },
+        {
+          "id": "contract",
+          "label": "Cell contract + limits",
+          "kind": "record"
+        },
+        {
+          "id": "snapshot",
+          "label": "Context / resource references",
+          "kind": "record"
+        },
+        {
+          "id": "out",
+          "label": "Typed output + evidence",
+          "kind": "port"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D07-E01",
+          "source": "input",
+          "target": "producer",
+          "label": "declared input",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E02",
+          "source": "producer",
+          "target": "validator",
+          "label": "candidate artifact",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E03",
+          "source": "validator",
+          "target": "reviewer",
+          "label": "check result + artifact",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E04",
+          "source": "reviewer",
+          "target": "out",
+          "label": "assessment; acceptance separate",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E05",
+          "source": "contract",
+          "target": "producer",
+          "label": "binds scope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E06",
+          "source": "contract",
+          "target": "validator",
+          "label": "binds scope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D07-E07",
+          "source": "snapshot",
+          "target": "producer",
+          "label": "permitted context",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [
+        {
+          "id": "cell",
+          "label": "Bounded Cell instance — proposed",
+          "members": [
+            "producer",
+            "validator",
+            "reviewer",
+            "contract",
+            "snapshot"
+          ]
+        }
+      ],
+      "mermaid_direction": "LR",
+      "interaction": "Collapse the Cell to one port-bearing unit; expand internal members without implying an independent deployment for each.",
+      "animation_steps": [
+        "Show the external input/output contract.",
+        "Open the boundary to reveal mixed members.",
+        "Trace an invalid output to the failure policy rather than the success port."
+      ],
+      "guardrail": "One-worker Cells, nesting and substitutability remain design decisions. A reviewer role alone does not prove independent assurance.",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D07_inside_a_cell.mmd"
+    },
+    {
+      "id": "D08",
+      "title": "Types are independent dimensions",
+      "section": "Types",
+      "visual_form": "Faceted builder with live summary",
+      "question": "Can one Operative be configured, event-driven and adaptive?",
+      "component_ids": [
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-23",
+        "CMP-25"
+      ],
+      "nodes": [
+        {
+          "id": "role",
+          "label": "Role: research / review / coordination",
+          "kind": "component"
+        },
+        {
+          "id": "activation",
+          "label": "Activation: request / event / schedule",
+          "kind": "component"
+        },
+        {
+          "id": "cognition",
+          "label": "Cognition: code / one model / routing / ensemble",
+          "kind": "component"
+        },
+        {
+          "id": "mutability",
+          "label": "Mutable fields: fixed / bounded adaptive",
+          "kind": "component"
+        },
+        {
+          "id": "life",
+          "label": "Lifetime: task / mission / service",
+          "kind": "component"
+        },
+        {
+          "id": "composition",
+          "label": "Cell composition: homogeneous / heterogeneous",
+          "kind": "component"
+        },
+        {
+          "id": "profile",
+          "label": "Illustrative profile",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D08-E01",
+          "source": "role",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        },
+        {
+          "id": "D08-E02",
+          "source": "activation",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        },
+        {
+          "id": "D08-E03",
+          "source": "cognition",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        },
+        {
+          "id": "D08-E04",
+          "source": "mutability",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        },
+        {
+          "id": "D08-E05",
+          "source": "life",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        },
+        {
+          "id": "D08-E06",
+          "source": "composition",
+          "target": "profile",
+          "label": "independent facet",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Generate a readable configuration summary; do not create a subclass for every combination.",
+      "animation_steps": [
+        "Select a role.",
+        "Add activation and cognition separately.",
+        "Lock protected fields while showing permitted runtime state changes."
+      ],
+      "guardrail": "“Static” locks named fields, not identical LLM output. Golden is not a certificate or mandatory new worker species.",
+      "source_refs": [
+        "S02",
+        "S05",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D08_types_are_independent_dimensions.mmd"
+    },
+    {
+      "id": "D09",
+      "title": "MESH scopes",
+      "section": "MESH",
+      "visual_form": "Scope lenses over shared records",
+      "question": "How do O-, C-, T- and OS-MESH differ?",
+      "component_ids": [
+        "CMP-18",
+        "CMP-19",
+        "CMP-20",
+        "CMP-27",
+        "CMP-47"
+      ],
+      "nodes": [
+        {
+          "id": "op",
+          "label": "Operative references",
+          "kind": "component"
+        },
+        {
+          "id": "om",
+          "label": "O-MESH candidate view",
+          "kind": "component"
+        },
+        {
+          "id": "cell",
+          "label": "Cell-local C-MESH",
+          "kind": "component"
+        },
+        {
+          "id": "team",
+          "label": "Mission / team T-MESH",
+          "kind": "component"
+        },
+        {
+          "id": "org",
+          "label": "Organization OS-MESH",
+          "kind": "component"
+        },
+        {
+          "id": "external",
+          "label": "Separate organization",
+          "kind": "boundary"
+        },
+        {
+          "id": "records",
+          "label": "Authoritative records",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D09-E01",
+          "source": "om",
+          "target": "op",
+          "label": "permission-filtered view option",
+          "kind": "relationship"
+        },
+        {
+          "id": "D09-E02",
+          "source": "cell",
+          "target": "op",
+          "label": "local coordination",
+          "kind": "relationship"
+        },
+        {
+          "id": "D09-E03",
+          "source": "team",
+          "target": "cell",
+          "label": "cross-Cell mission relationships",
+          "kind": "relationship"
+        },
+        {
+          "id": "D09-E04",
+          "source": "org",
+          "target": "team",
+          "label": "organization-scoped relationships",
+          "kind": "relationship"
+        },
+        {
+          "id": "D09-E05",
+          "source": "org",
+          "target": "external",
+          "label": "optional explicit federation contract",
+          "kind": "relationship"
+        },
+        {
+          "id": "D09-E06",
+          "source": "records",
+          "target": "om",
+          "label": "referenced, not copied by default",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "A scope selector changes visible relationships; show O-MESH alternatives in an inspector.",
+      "animation_steps": [
+        "Select an Operative lens.",
+        "Widen the selected scope to Cell, mission and organization.",
+        "Show a cross-organization boundary with no inherited root authority."
+      ],
+      "guardrail": "The nested lenses are a teaching view, not fixed containment cardinalities or a database per scope. C-MESH wording varies historically.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S08"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D09_mesh_scopes.mmd"
+    },
+    {
+      "id": "D10",
+      "title": "MESH pattern gallery",
+      "section": "MESH",
+      "visual_form": "Small-multiple topology cards",
+      "question": "Which arrangement fits a bounded problem?",
+      "component_ids": [
+        "CMP-18",
+        "CMP-20",
+        "CMP-21",
+        "CMP-23",
+        "CMP-24"
+      ],
+      "nodes": [
+        {
+          "id": "solo",
+          "label": "Solo",
+          "kind": "component"
+        },
+        {
+          "id": "pipe",
+          "label": "Pipeline",
+          "kind": "component"
+        },
+        {
+          "id": "parallel",
+          "label": "Parallel branches",
+          "kind": "component"
+        },
+        {
+          "id": "supervisor",
+          "label": "Supervisor / fixed branches",
+          "kind": "component"
+        },
+        {
+          "id": "review",
+          "label": "Review pair",
+          "kind": "component"
+        },
+        {
+          "id": "diagnostic",
+          "label": "Diagnostic branch",
+          "kind": "component"
+        },
+        {
+          "id": "more",
+          "label": "Advanced candidate catalogue",
+          "kind": "record"
+        }
+      ],
+      "edges": [],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Filters: scope, purpose, topology, composition, mutability and lifetime. Each card explains use, anti-use and simpler alternative.",
+      "animation_steps": [
+        "Display six simple baseline patterns first.",
+        "Open one and reveal roles, links, costs and failure points.",
+        "Compare with one of the 30 historical candidate templates."
+      ],
+      "guardrail": "A pattern’s existence is not performance evidence. Full mesh, swarms and adaptive formation are not defaults.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S06"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D10_mesh_pattern_gallery.mmd"
+    },
+    {
+      "id": "D11",
+      "title": "HyperMESH and typed overlays",
+      "section": "MESH",
+      "visual_form": "Multiplex overlay selector",
+      "question": "Which relationships are useful for this question?",
+      "component_ids": [
+        "CMP-04",
+        "CMP-06",
+        "CMP-18",
+        "CMP-27",
+        "CMP-28",
+        "CMP-32"
+      ],
+      "nodes": [
+        {
+          "id": "records",
+          "label": "Canonical records in their owning systems",
+          "kind": "record"
+        },
+        {
+          "id": "membership",
+          "label": "Organization / membership",
+          "kind": "component"
+        },
+        {
+          "id": "work",
+          "label": "Mission / work",
+          "kind": "component"
+        },
+        {
+          "id": "comm",
+          "label": "Communication",
+          "kind": "component"
+        },
+        {
+          "id": "knowledge",
+          "label": "Knowledge / evidence",
+          "kind": "component"
+        },
+        {
+          "id": "cap",
+          "label": "Capability discovery",
+          "kind": "component"
+        },
+        {
+          "id": "authority",
+          "label": "Authority / trust",
+          "kind": "component"
+        },
+        {
+          "id": "resources",
+          "label": "Resources / health / cost",
+          "kind": "component"
+        },
+        {
+          "id": "time",
+          "label": "Temporal / version lineage",
+          "kind": "component"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D11-E01",
+          "source": "records",
+          "target": "membership",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E02",
+          "source": "records",
+          "target": "work",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E03",
+          "source": "records",
+          "target": "comm",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E04",
+          "source": "records",
+          "target": "knowledge",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E05",
+          "source": "records",
+          "target": "cap",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E06",
+          "source": "records",
+          "target": "authority",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E07",
+          "source": "records",
+          "target": "resources",
+          "label": "governed projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D11-E08",
+          "source": "records",
+          "target": "time",
+          "label": "governed projection",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Legend filters edge types; inspection links to source version, permission and observation time.",
+      "animation_steps": [
+        "Start with one overlay.",
+        "Toggle a second using a distinct label and line style.",
+        "Show a stale projection and its refresh/unknown state."
+      ],
+      "guardrail": "HyperMESH is not one universal database. Projections must not overwrite authoritative records or silently share inaccessible data.",
+      "source_refs": [
+        "S01",
+        "S08"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D11_hypermesh_and_typed_overlays.mmd"
+    },
+    {
+      "id": "D12",
+      "title": "LINK anatomy and type system",
+      "section": "LINK",
+      "visual_form": "Edge-first inspector with endpoint contracts",
+      "question": "What does a connection permit and what does it merely describe?",
+      "component_ids": [
+        "CMP-11",
+        "CMP-12",
+        "CMP-21",
+        "CMP-22",
+        "CMP-50"
+      ],
+      "nodes": [
+        {
+          "id": "a",
+          "label": "Source endpoint",
+          "kind": "port"
+        },
+        {
+          "id": "contract",
+          "label": "Versioned Link Contract",
+          "kind": "record"
+        },
+        {
+          "id": "b",
+          "label": "Target endpoint",
+          "kind": "port"
+        },
+        {
+          "id": "schema",
+          "label": "Profile + payload schema",
+          "kind": "record"
+        },
+        {
+          "id": "policy",
+          "label": "Scope + current grants",
+          "kind": "record"
+        },
+        {
+          "id": "delivery",
+          "label": "Delivery / timeout / duplicate rules",
+          "kind": "record"
+        },
+        {
+          "id": "failure",
+          "label": "Failure / revocation / evidence",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D12-E01",
+          "source": "a",
+          "target": "contract",
+          "label": "declares outgoing relationship",
+          "kind": "relationship"
+        },
+        {
+          "id": "D12-E02",
+          "source": "contract",
+          "target": "b",
+          "label": "binds exact endpoint",
+          "kind": "relationship"
+        },
+        {
+          "id": "D12-E03",
+          "source": "schema",
+          "target": "contract",
+          "label": "describes information",
+          "kind": "relationship"
+        },
+        {
+          "id": "D12-E04",
+          "source": "policy",
+          "target": "contract",
+          "label": "constrains release and use",
+          "kind": "relationship"
+        },
+        {
+          "id": "D12-E05",
+          "source": "delivery",
+          "target": "contract",
+          "label": "defines interaction behavior",
+          "kind": "relationship"
+        },
+        {
+          "id": "D12-E06",
+          "source": "failure",
+          "target": "contract",
+          "label": "defines recovery obligations",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Inspect data/artifact, invocation/result, dependency, delegation, supervision, membership, resource, context, evidence, event and federation relationships.",
+      "animation_steps": [
+        "Select a data handoff edge.",
+        "Switch to a dependency edge: the pulse disappears because it is a record relationship.",
+        "Revoke a grant and show denial at the appropriate release/use boundary."
+      ],
+      "guardrail": "A Link is not an API, transport, permission grant or worker by definition; semantics determine the required implementation.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D12_link_anatomy_and_type_system.mmd"
+    },
+    {
+      "id": "D13",
+      "title": "The protocol family",
+      "section": "Protocol",
+      "visual_form": "Shared-core composition diagram with external boundary",
+      "question": "How can components interoperate without a different protocol for every app?",
+      "component_ids": [
+        "CMP-11",
+        "CMP-21",
+        "CMP-22",
+        "CMP-29",
+        "CMP-39",
+        "CMP-50",
+        "CMP-51"
+      ],
+      "nodes": [
+        {
+          "id": "core",
+          "label": "Shared semantic Core Envelope",
+          "kind": "record"
+        },
+        {
+          "id": "profiles",
+          "label": "Versioned interaction / domain profiles",
+          "kind": "record"
+        },
+        {
+          "id": "ports",
+          "label": "Operative and Cell port contracts",
+          "kind": "port"
+        },
+        {
+          "id": "adapters",
+          "label": "Provider / protocol adapters",
+          "kind": "component"
+        },
+        {
+          "id": "binding",
+          "label": "Local call / HTTP / file / messaging bindings",
+          "kind": "component"
+        },
+        {
+          "id": "external",
+          "label": "External tools, APIs, data and agents",
+          "kind": "boundary"
+        },
+        {
+          "id": "config",
+          "label": "Product-specific selected configuration",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D13-E01",
+          "source": "core",
+          "target": "profiles",
+          "label": "shared identity, scope and failure semantics",
+          "kind": "relationship"
+        },
+        {
+          "id": "D13-E02",
+          "source": "profiles",
+          "target": "ports",
+          "label": "select applicable behavior",
+          "kind": "relationship"
+        },
+        {
+          "id": "D13-E03",
+          "source": "profiles",
+          "target": "adapters",
+          "label": "map native semantics",
+          "kind": "relationship"
+        },
+        {
+          "id": "D13-E04",
+          "source": "adapters",
+          "target": "binding",
+          "label": "uses supported binding",
+          "kind": "relationship"
+        },
+        {
+          "id": "D13-E05",
+          "source": "binding",
+          "target": "external",
+          "label": "crosses declared boundary",
+          "kind": "relationship"
+        },
+        {
+          "id": "D13-E06",
+          "source": "config",
+          "target": "profiles",
+          "label": "selects compatible versions",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Click core/profile/adapter/binding to see the difference. Show MCP/A2A as optional external protocol adapters, not mandatory core layers.",
+      "animation_steps": [
+        "Show the common semantic core.",
+        "Select evidence-report or support-draft profiles.",
+        "Replace a provider adapter while preserving the selected internal obligations."
+      ],
+      "guardrail": "This is a candidate protocol family. Agnostic means explicit supported mappings, not automatic compatibility with every API or database.",
+      "source_refs": [
+        "S03",
+        "S07",
+        "W02",
+        "W03",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D13_the_protocol_family.mmd"
+    },
+    {
+      "id": "D14",
+      "title": "Protocol exchange and enforcement",
+      "section": "Protocol",
+      "visual_form": "Sequence diagram with two policy checkpoints",
+      "question": "Where are data release and action dispatch controlled?",
+      "component_ids": [
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-13",
+        "CMP-21",
+        "CMP-22",
+        "CMP-42",
+        "CMP-50"
+      ],
+      "nodes": [
+        {
+          "id": "sender",
+          "label": "Sender",
+          "kind": "component"
+        },
+        {
+          "id": "release",
+          "label": "Authorize data release",
+          "kind": "gate"
+        },
+        {
+          "id": "fabric",
+          "label": "Fabric / direct binding",
+          "kind": "component"
+        },
+        {
+          "id": "receiver",
+          "label": "Receive + validate",
+          "kind": "component"
+        },
+        {
+          "id": "dispatch",
+          "label": "Recheck action authority",
+          "kind": "gate"
+        },
+        {
+          "id": "worker",
+          "label": "Authorized handler",
+          "kind": "component"
+        },
+        {
+          "id": "ledger",
+          "label": "Result / audit ledger",
+          "kind": "record"
+        },
+        {
+          "id": "deny",
+          "label": "Deny / hold / reconcile",
+          "kind": "state"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D14-E01",
+          "source": "sender",
+          "target": "release",
+          "label": "profile-bound request",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E02",
+          "source": "release",
+          "target": "fabric",
+          "label": "only approved data",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E03",
+          "source": "release",
+          "target": "deny",
+          "label": "scope / privacy denial",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E04",
+          "source": "fabric",
+          "target": "receiver",
+          "label": "deliver request",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E05",
+          "source": "receiver",
+          "target": "dispatch",
+          "label": "validated operation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E06",
+          "source": "dispatch",
+          "target": "worker",
+          "label": "current allowed action",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E07",
+          "source": "dispatch",
+          "target": "deny",
+          "label": "expired / revoked / unsupported",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E08",
+          "source": "worker",
+          "target": "ledger",
+          "label": "typed result and effect state",
+          "kind": "relationship"
+        },
+        {
+          "id": "D14-E09",
+          "source": "ledger",
+          "target": "sender",
+          "label": "result reference",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Toggle normal, expired grant, incompatible schema, duplicate event and timeout cases. Provide an ordered sequence view as well as the topology.",
+      "animation_steps": [
+        "Bind identity, scope, profile and version.",
+        "Check data release before the boundary.",
+        "Validate receipt and current authority before effects.",
+        "Record the result; show lost acknowledgement as an uncertain outcome requiring reconciliation."
+      ],
+      "guardrail": "A bus before authorization can leak data. Delivery is not processing, effect completion or accepted truth; do not promise exactly-once external effects.",
+      "source_refs": [
+        "S01",
+        "S03"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D14_protocol_exchange_and_enforcement.mmd"
+    },
+    {
+      "id": "D15",
+      "title": "Golden Cell: a diagnostic hypothesis",
+      "section": "Golden Cell",
+      "visual_form": "Causal storyboard with an explicit blocked branch",
+      "question": "What does the diagnostic actually change?",
+      "component_ids": [
+        "CMP-10",
+        "CMP-24",
+        "CMP-25",
+        "CMP-26",
+        "CMP-31"
+      ],
+      "nodes": [
+        {
+          "id": "check",
+          "label": "Diagnostic check / role / Cell",
+          "kind": "component"
+        },
+        {
+          "id": "observation",
+          "label": "Typed observation + evidence",
+          "kind": "record"
+        },
+        {
+          "id": "policy",
+          "label": "TriggerPolicy evaluation",
+          "kind": "gate"
+        },
+        {
+          "id": "allowed",
+          "label": "Existing permitted transition",
+          "kind": "state"
+        },
+        {
+          "id": "proposal",
+          "label": "New protected revision candidate",
+          "kind": "record"
+        },
+        {
+          "id": "approval",
+          "label": "Exact-version decision",
+          "kind": "gate"
+        },
+        {
+          "id": "change",
+          "label": "Changed context / configuration snapshot",
+          "kind": "record"
+        },
+        {
+          "id": "hold",
+          "label": "Invalid / stale / rejected: hold",
+          "kind": "state"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D15-E01",
+          "source": "check",
+          "target": "observation",
+          "label": "produces result",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E02",
+          "source": "observation",
+          "target": "policy",
+          "label": "validate evidence and applicability",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E03",
+          "source": "policy",
+          "target": "allowed",
+          "label": "already authorized within envelope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E04",
+          "source": "policy",
+          "target": "proposal",
+          "label": "protected field would change",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E05",
+          "source": "proposal",
+          "target": "approval",
+          "label": "request decision",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E06",
+          "source": "approval",
+          "target": "change",
+          "label": "only after applicable approval",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E07",
+          "source": "allowed",
+          "target": "change",
+          "label": "record bounded delta",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E08",
+          "source": "policy",
+          "target": "hold",
+          "label": "fails check",
+          "kind": "relationship"
+        },
+        {
+          "id": "D15-E09",
+          "source": "approval",
+          "target": "hold",
+          "label": "not approved",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Buttons: Step / Back / Play example / Reset; toggle valid, stale and duplicate observation. Gold highlights the diagnostic only.",
+      "animation_steps": [
+        "Run an illustrative schema diagnostic.",
+        "Reveal the observation and supporting source.",
+        "Evaluate the trigger and highlight protected fields.",
+        "Choose the authorized context branch or pause on a proposed DAG change.",
+        "Show retained evidence and an auditable before/after snapshot."
+      ],
+      "guardrail": "Golden denotes a research hypothesis about useful information, not superior intelligence, certification or automatic authority. It may be a simple deterministic check.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S05",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D15_golden_cell_a_diagnostic_hypothesis.mmd"
+    },
+    {
+      "id": "D16",
+      "title": "Adaptive change without silent scope expansion",
+      "section": "Golden Cell",
+      "visual_form": "Before/after diff with independent graph tabs",
+      "question": "Which dimensions changed and which stayed locked?",
+      "component_ids": [
+        "CMP-08",
+        "CMP-12",
+        "CMP-15",
+        "CMP-18",
+        "CMP-24",
+        "CMP-25",
+        "CMP-26",
+        "CMP-36"
+      ],
+      "nodes": [
+        {
+          "id": "before",
+          "label": "Before: exact state snapshot",
+          "kind": "record"
+        },
+        {
+          "id": "delta",
+          "label": "Proposed bounded delta",
+          "kind": "record"
+        },
+        {
+          "id": "context",
+          "label": "Context references",
+          "kind": "component"
+        },
+        {
+          "id": "members",
+          "label": "Membership / topology",
+          "kind": "component"
+        },
+        {
+          "id": "model",
+          "label": "Model selection / resource allocation",
+          "kind": "component"
+        },
+        {
+          "id": "protected",
+          "label": "Objective, acceptance, authority, DAG",
+          "kind": "record"
+        },
+        {
+          "id": "review",
+          "label": "Policy / approval check",
+          "kind": "gate"
+        },
+        {
+          "id": "after",
+          "label": "After: new snapshot or revision",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D16-E01",
+          "source": "before",
+          "target": "delta",
+          "label": "observation-supported proposal",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E02",
+          "source": "delta",
+          "target": "context",
+          "label": "possible working-set change",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E03",
+          "source": "delta",
+          "target": "members",
+          "label": "separate change type",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E04",
+          "source": "delta",
+          "target": "model",
+          "label": "separate change type",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E05",
+          "source": "protected",
+          "target": "review",
+          "label": "locked fields and obligations",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E06",
+          "source": "delta",
+          "target": "review",
+          "label": "validate effect scope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D16-E07",
+          "source": "review",
+          "target": "after",
+          "label": "allowed change only",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Tabs for context, communication, membership, resources, cognition and DAG. Removed items remain inspectable in historical evidence.",
+      "animation_steps": [
+        "Highlight added/removed references in the context tab.",
+        "Keep the DAG hash unchanged for that example.",
+        "Switch to a protected-plan-change example and require a new approval."
+      ],
+      "guardrail": "Pruning context does not delete retained sources. Hierarchy cannot unlock protected fields or create broader child authority.",
+      "source_refs": [
+        "S01",
+        "S05"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D16_adaptive_change_without_silent_scope_expansion.mmd"
+    },
+    {
+      "id": "D17",
+      "title": "From source to usable context",
+      "section": "Evidence",
+      "visual_form": "Provenance flow with distinct stores and projections",
+      "question": "How is raw material kept separate from accepted knowledge?",
+      "component_ids": [
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-26",
+        "CMP-27",
+        "CMP-28",
+        "CMP-43"
+      ],
+      "nodes": [
+        {
+          "id": "raw",
+          "label": "Raw source snapshot",
+          "kind": "record"
+        },
+        {
+          "id": "integrity",
+          "label": "Integrity / quarantine",
+          "kind": "gate"
+        },
+        {
+          "id": "candidate",
+          "label": "Candidate interpretation",
+          "kind": "record"
+        },
+        {
+          "id": "review",
+          "label": "Claim support and founder review",
+          "kind": "gate"
+        },
+        {
+          "id": "accepted",
+          "label": "Accepted objects with lineage",
+          "kind": "record"
+        },
+        {
+          "id": "select",
+          "label": "Context Compiler selection",
+          "kind": "component"
+        },
+        {
+          "id": "snapshot",
+          "label": "Exact ContextSnapshot",
+          "kind": "record"
+        },
+        {
+          "id": "archive",
+          "label": "Retained versions / evidence",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D17-E01",
+          "source": "raw",
+          "target": "integrity",
+          "label": "declared bytes and scope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E02",
+          "source": "integrity",
+          "target": "candidate",
+          "label": "eligible parsing",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E03",
+          "source": "candidate",
+          "target": "review",
+          "label": "source-linked claim",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E04",
+          "source": "review",
+          "target": "accepted",
+          "label": "explicit disposition",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E05",
+          "source": "accepted",
+          "target": "select",
+          "label": "permitted evidence",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E06",
+          "source": "select",
+          "target": "snapshot",
+          "label": "for one task or step",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E07",
+          "source": "raw",
+          "target": "archive",
+          "label": "retained according to policy",
+          "kind": "relationship"
+        },
+        {
+          "id": "D17-E08",
+          "source": "snapshot",
+          "target": "archive",
+          "label": "snapshot reference",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Click any claim to trace source/version, assessment and decision. Search indexes appear as replaceable views.",
+      "animation_steps": [
+        "Show byte integrity as one gate, not a truth check.",
+        "Promote a claim only through the review path.",
+        "Inspect included, omitted, stale and contradictory material in the context snapshot."
+      ],
+      "guardrail": "Hash equality proves matching bytes, not factual correctness or acceptance. No cross-Initiative leakage.",
+      "source_refs": [
+        "S01",
+        "S04"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D17_from_source_to_usable_context.mmd"
+    },
+    {
+      "id": "D18",
+      "title": "Release one: source to an approved DAG",
+      "section": "Lifecycle",
+      "visual_form": "Work/evidence swimlane with an explicit endpoint",
+      "question": "What does the first planning release aim to complete?",
+      "component_ids": [
+        "CMP-02",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-08",
+        "CMP-10",
+        "CMP-26",
+        "CMP-31",
+        "CMP-51",
+        "CMP-52"
+      ],
+      "nodes": [
+        {
+          "id": "intent",
+          "label": "Initiative intent + permitted envelope",
+          "kind": "record"
+        },
+        {
+          "id": "sources",
+          "label": "Selected source snapshots",
+          "kind": "record"
+        },
+        {
+          "id": "claims",
+          "label": "Candidate claims / requirements",
+          "kind": "record"
+        },
+        {
+          "id": "decisions",
+          "label": "Founder dispositions",
+          "kind": "record"
+        },
+        {
+          "id": "mission",
+          "label": "Bounded Mission contract",
+          "kind": "record"
+        },
+        {
+          "id": "dag",
+          "label": "Exact immutable DAG revision",
+          "kind": "record"
+        },
+        {
+          "id": "check",
+          "label": "Compile / load / validate / dry-run",
+          "kind": "gate"
+        },
+        {
+          "id": "planning_end",
+          "label": "Planning endpoint — no operational effects",
+          "kind": "state"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D18-E01",
+          "source": "intent",
+          "target": "sources",
+          "label": "bounds selection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E02",
+          "source": "sources",
+          "target": "claims",
+          "label": "supports interpretation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E03",
+          "source": "claims",
+          "target": "decisions",
+          "label": "review with contradictions visible",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E04",
+          "source": "decisions",
+          "target": "mission",
+          "label": "governs scope",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E05",
+          "source": "mission",
+          "target": "dag",
+          "label": "compile candidate and approve exact version",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E06",
+          "source": "dag",
+          "target": "check",
+          "label": "non-mutating validation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D18-E07",
+          "source": "check",
+          "target": "planning_end",
+          "label": "record evidence; no real dispatch",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Stage labels remain visible. Show planning, simulation, dry-run and later execution as different modes.",
+      "animation_steps": [
+        "Move along the evidence-backed planning path.",
+        "Pause on missing material lineage or an unresolved contradiction.",
+        "End with a dry-run receipt, not a deployed product."
+      ],
+      "guardrail": "This depicts the founder-defined release boundary, not a claim that current implementation has passed it. Internal governance records can be written; operational mutations are outside this path.",
+      "source_refs": [
+        "S01",
+        "S04"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D18_release_one_source_to_an_approved_dag.mmd"
+    },
+    {
+      "id": "D19",
+      "title": "Later runtime and failure recovery",
+      "section": "Lifecycle",
+      "visual_form": "State machine and failure-path selector",
+      "question": "Who owns retries, cancellation and uncertain outcomes?",
+      "component_ids": [
+        "CMP-10",
+        "CMP-13",
+        "CMP-14",
+        "CMP-16",
+        "CMP-17",
+        "CMP-31",
+        "CMP-32",
+        "CMP-43"
+      ],
+      "nodes": [
+        {
+          "id": "admit",
+          "label": "Admitted",
+          "kind": "state"
+        },
+        {
+          "id": "run",
+          "label": "Running",
+          "kind": "state"
+        },
+        {
+          "id": "review",
+          "label": "Awaiting review",
+          "kind": "state"
+        },
+        {
+          "id": "success",
+          "label": "Succeeded with required evidence",
+          "kind": "state"
+        },
+        {
+          "id": "cancel",
+          "label": "Cancelling",
+          "kind": "state"
+        },
+        {
+          "id": "reconcile",
+          "label": "Suspended / reconcile unknown effect",
+          "kind": "state"
+        },
+        {
+          "id": "failed",
+          "label": "Failed / cancelled",
+          "kind": "state"
+        },
+        {
+          "id": "owner",
+          "label": "One authoritative lifecycle owner",
+          "kind": "component"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D19-E01",
+          "source": "admit",
+          "target": "run",
+          "label": "permitted dispatch",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E02",
+          "source": "run",
+          "target": "review",
+          "label": "human/evidence gate",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E03",
+          "source": "review",
+          "target": "run",
+          "label": "current authorization resumes",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E04",
+          "source": "run",
+          "target": "success",
+          "label": "criteria verified",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E05",
+          "source": "run",
+          "target": "cancel",
+          "label": "cancel request",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E06",
+          "source": "cancel",
+          "target": "failed",
+          "label": "effects reconciled / stopped",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E07",
+          "source": "run",
+          "target": "reconcile",
+          "label": "timeout or uncertain state",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E08",
+          "source": "reconcile",
+          "target": "review",
+          "label": "recovery decision",
+          "kind": "relationship"
+        },
+        {
+          "id": "D19-E09",
+          "source": "owner",
+          "target": "admit",
+          "label": "owns transition policy",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Failure selector with retry policy and owner inspector. A full transition specification is still required before runtime.",
+      "animation_steps": [
+        "Play the success path.",
+        "Replay with a lost acknowledgement; show uncertain, not magically rolled back.",
+        "Cancel and show cleanup, preserved attempts and a recovery decision."
+      ],
+      "guardrail": "This is a later-stage, simplified explanatory lifecycle, not a complete runtime state specification or execution authorization.",
+      "source_refs": [
+        "S01",
+        "S03"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D19_later_runtime_and_failure_recovery.mmd"
+    },
+    {
+      "id": "D20",
+      "title": "Authority, budgets and resources",
+      "section": "Governance",
+      "visual_form": "Constraint envelope plus allocation view",
+      "question": "Why does a connection not grant unlimited use?",
+      "component_ids": [
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-12",
+        "CMP-36",
+        "CMP-42"
+      ],
+      "nodes": [
+        {
+          "id": "mission",
+          "label": "Approved scope and limits",
+          "kind": "record"
+        },
+        {
+          "id": "owner",
+          "label": "Resource-owner conditions",
+          "kind": "record"
+        },
+        {
+          "id": "grant",
+          "label": "Current scoped grant",
+          "kind": "record"
+        },
+        {
+          "id": "gate",
+          "label": "Applicable constraints / current deny",
+          "kind": "gate"
+        },
+        {
+          "id": "child",
+          "label": "Bounded child allocation",
+          "kind": "record"
+        },
+        {
+          "id": "resource",
+          "label": "Tool / compute / data resource",
+          "kind": "component"
+        },
+        {
+          "id": "revoke",
+          "label": "Expiry / revocation",
+          "kind": "state"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D20-E01",
+          "source": "mission",
+          "target": "gate",
+          "label": "scope ceiling",
+          "kind": "relationship"
+        },
+        {
+          "id": "D20-E02",
+          "source": "owner",
+          "target": "gate",
+          "label": "resource conditions",
+          "kind": "relationship"
+        },
+        {
+          "id": "D20-E03",
+          "source": "grant",
+          "target": "gate",
+          "label": "current permission",
+          "kind": "relationship"
+        },
+        {
+          "id": "D20-E04",
+          "source": "gate",
+          "target": "child",
+          "label": "narrower permitted allocation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D20-E05",
+          "source": "child",
+          "target": "resource",
+          "label": "leased use",
+          "kind": "relationship"
+        },
+        {
+          "id": "D20-E06",
+          "source": "revoke",
+          "target": "gate",
+          "label": "blocks future release / dispatch",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Use qualitative usage indicators by default; any demo numbers must be labeled synthetic.",
+      "animation_steps": [
+        "Show the shared parent budget envelope.",
+        "Allocate bounded child work; totals remain within declared limits.",
+        "Revoke a grant and block new dispatch while showing recovery obligations."
+      ],
+      "guardrail": "Advertisements, membership and pinned configuration do not override denial. Quotas, grants and leases are separate records.",
+      "source_refs": [
+        "S01",
+        "S03"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D20_authority_budgets_and_resources.mmd"
+    },
+    {
+      "id": "D21",
+      "title": "Optional cognition and SIHRE",
+      "section": "Research",
+      "visual_form": "Alternative-routing panel with an assurance boundary",
+      "question": "Where might multiple models help, and what remains unproven?",
+      "component_ids": [
+        "CMP-15",
+        "CMP-26",
+        "CMP-31",
+        "CMP-34"
+      ],
+      "nodes": [
+        {
+          "id": "request",
+          "label": "Bounded reasoning request",
+          "kind": "record"
+        },
+        {
+          "id": "route",
+          "label": "Selected cognition policy",
+          "kind": "component"
+        },
+        {
+          "id": "single",
+          "label": "Single model",
+          "kind": "component"
+        },
+        {
+          "id": "sequential",
+          "label": "Sequential critique / refinement",
+          "kind": "component"
+        },
+        {
+          "id": "ensemble",
+          "label": "Heterogeneous ensemble candidate",
+          "kind": "component"
+        },
+        {
+          "id": "result",
+          "label": "Candidate result + uncertainty",
+          "kind": "record"
+        },
+        {
+          "id": "eval",
+          "label": "Separate evaluation",
+          "kind": "gate"
+        },
+        {
+          "id": "decision",
+          "label": "Accountable acceptance decision",
+          "kind": "gate"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D21-E01",
+          "source": "request",
+          "target": "route",
+          "label": "within limits",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E02",
+          "source": "route",
+          "target": "single",
+          "label": "simple option",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E03",
+          "source": "route",
+          "target": "sequential",
+          "label": "optional pattern",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E04",
+          "source": "route",
+          "target": "ensemble",
+          "label": "optional research pattern",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E05",
+          "source": "single",
+          "target": "result",
+          "label": "output",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E06",
+          "source": "sequential",
+          "target": "result",
+          "label": "output",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E07",
+          "source": "ensemble",
+          "target": "result",
+          "label": "output; disagreement retained",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E08",
+          "source": "result",
+          "target": "eval",
+          "label": "test exact output",
+          "kind": "relationship"
+        },
+        {
+          "id": "D21-E09",
+          "source": "eval",
+          "target": "decision",
+          "label": "evidence, not self-promotion",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Cognition selector, cost/quality question panel and a SIHRE research note. Keep internals high-level until original sources are reconciled.",
+      "animation_steps": [
+        "Start with the simplest cognition choice.",
+        "Switch to the candidate ensemble and show extra coordination steps.",
+        "Show disagreement, abstention and evaluation rather than a confidence victory badge."
+      ],
+      "guardrail": "This is not a source-complete SIHRE algorithm diagram, a benchmark or a prerequisite for CELL. A research Project is distinct from a runtime capability or Product.",
+      "source_refs": [
+        "S01",
+        "S09",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D21_optional_cognition_and_sihre.mmd"
+    },
+    {
+      "id": "D22",
+      "title": "ADAPT, assurance and bounded learning",
+      "section": "Research",
+      "visual_form": "Experiment-to-promotion loop outside production",
+      "question": "How can improvement be tested without self-approval?",
+      "component_ids": [
+        "CMP-30",
+        "CMP-31",
+        "CMP-32",
+        "CMP-33",
+        "CMP-35",
+        "CMP-37",
+        "CMP-44"
+      ],
+      "nodes": [
+        {
+          "id": "base",
+          "label": "Frozen baseline and objectives",
+          "kind": "record"
+        },
+        {
+          "id": "candidate",
+          "label": "Tunable configuration candidate",
+          "kind": "record"
+        },
+        {
+          "id": "lab",
+          "label": "Evolution Chamber / experiment",
+          "kind": "component"
+        },
+        {
+          "id": "holdout",
+          "label": "Protected evaluation",
+          "kind": "gate"
+        },
+        {
+          "id": "receipt",
+          "label": "Assurance evidence + limitations",
+          "kind": "record"
+        },
+        {
+          "id": "approve",
+          "label": "Independent review + authorized promotion",
+          "kind": "gate"
+        },
+        {
+          "id": "version",
+          "label": "New version / rollback target",
+          "kind": "record"
+        },
+        {
+          "id": "observed",
+          "label": "Observed outcomes / doctrine proposal",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D22-E01",
+          "source": "base",
+          "target": "candidate",
+          "label": "defines allowed search",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E02",
+          "source": "candidate",
+          "target": "lab",
+          "label": "evaluate within budget",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E03",
+          "source": "lab",
+          "target": "holdout",
+          "label": "test beyond producer control",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E04",
+          "source": "holdout",
+          "target": "receipt",
+          "label": "record failures and uncertainty",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E05",
+          "source": "receipt",
+          "target": "approve",
+          "label": "supports a decision",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E06",
+          "source": "approve",
+          "target": "version",
+          "label": "promote exact approved candidate",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E07",
+          "source": "version",
+          "target": "observed",
+          "label": "later observation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D22-E08",
+          "source": "observed",
+          "target": "candidate",
+          "label": "future proposal only",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Separate research, experiment, implementation and promotion readiness. Show Shadow Twin as a simulation option, not proof of real-world fidelity.",
+      "animation_steps": [
+        "Freeze objectives, limits and evaluator.",
+        "Show a candidate that fails and remains rejected.",
+        "Show a passing candidate still waiting for promotion."
+      ],
+      "guardrail": "An optimizer cannot rewrite success criteria or self-promote. Successful simulation is not observed production performance.",
+      "source_refs": [
+        "S01",
+        "S02"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D22_adapt_assurance_and_bounded_learning.mmd"
+    },
+    {
+      "id": "D23",
+      "title": "Configuration and compilation",
+      "section": "Composition",
+      "visual_form": "Two parallel compilation paths",
+      "question": "What can configuration express, and what still needs code?",
+      "component_ids": [
+        "CMP-08",
+        "CMP-17",
+        "CMP-29",
+        "CMP-30",
+        "CMP-36",
+        "CMP-38",
+        "CMP-51"
+      ],
+      "nodes": [
+        {
+          "id": "intent",
+          "label": "Accepted intent / requirements",
+          "kind": "record"
+        },
+        {
+          "id": "dag",
+          "label": "Mission DAG revision",
+          "kind": "record"
+        },
+        {
+          "id": "definitions",
+          "label": "Approved reusable definitions",
+          "kind": "record"
+        },
+        {
+          "id": "resolver",
+          "label": "Thin resolver / compiler",
+          "kind": "component"
+        },
+        {
+          "id": "lock",
+          "label": "Resolved configuration / dependency lock",
+          "kind": "record"
+        },
+        {
+          "id": "image",
+          "label": "Cell Image candidate",
+          "kind": "record"
+        },
+        {
+          "id": "implementation",
+          "label": "Implemented tools / adapters / algorithms",
+          "kind": "record"
+        },
+        {
+          "id": "review",
+          "label": "Validation + approval",
+          "kind": "gate"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D23-E01",
+          "source": "intent",
+          "target": "dag",
+          "label": "planning compilation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E02",
+          "source": "definitions",
+          "target": "resolver",
+          "label": "composition input",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E03",
+          "source": "implementation",
+          "target": "resolver",
+          "label": "available implementations",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E04",
+          "source": "resolver",
+          "target": "lock",
+          "label": "pins references",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E05",
+          "source": "lock",
+          "target": "image",
+          "label": "packages composition",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E06",
+          "source": "dag",
+          "target": "review",
+          "label": "plan validation",
+          "kind": "relationship"
+        },
+        {
+          "id": "D23-E07",
+          "source": "image",
+          "target": "review",
+          "label": "separate artifact validation",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Inspect version locks, compatibility and missing handlers. Explain Genesis and Foundry as optional later reuse/composition proposals.",
+      "animation_steps": [
+        "Show plan compilation separately from organization packaging.",
+        "Select an unimplemented capability; resolution reports unsupported.",
+        "Show Blueprint/Genome/Org-IR labels in an alias drawer, not all as mandatory steps."
+      ],
+      "guardrail": "Configuration cannot implement a new algorithm by naming it. Rust vs Python is an open engineering decision, not a page claim.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S05"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D23_configuration_and_compilation.mmd"
+    },
+    {
+      "id": "D24",
+      "title": "Ecosystem, domains and product relationships",
+      "section": "Ecosystem",
+      "visual_form": "Federated boundaries with manifest links",
+      "question": "How can independently owned products use shared capabilities?",
+      "component_ids": [
+        "CMP-01",
+        "CMP-20",
+        "CMP-38",
+        "CMP-39",
+        "CMP-40",
+        "CMP-41",
+        "CMP-46",
+        "CMP-47",
+        "CMP-48"
+      ],
+      "nodes": [
+        {
+          "id": "os",
+          "label": "CELL // OS platform boundary",
+          "kind": "boundary"
+        },
+        {
+          "id": "research",
+          "label": "Research-oriented domain profile",
+          "kind": "component"
+        },
+        {
+          "id": "quant",
+          "label": "Offline educational quantitative profile",
+          "kind": "component"
+        },
+        {
+          "id": "manifest",
+          "label": "Versioned product manifest",
+          "kind": "record"
+        },
+        {
+          "id": "product",
+          "label": "Customer-branded product",
+          "kind": "boundary"
+        },
+        {
+          "id": "peer",
+          "label": "Independently governed organization",
+          "kind": "boundary"
+        },
+        {
+          "id": "agreement",
+          "label": "Explicit exchange / trust contract",
+          "kind": "record"
+        },
+        {
+          "id": "registry",
+          "label": "Scoped discovery / compatibility",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D24-E01",
+          "source": "os",
+          "target": "research",
+          "label": "proposed domain attachment",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E02",
+          "source": "os",
+          "target": "quant",
+          "label": "proposed domain attachment",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E03",
+          "source": "product",
+          "target": "manifest",
+          "label": "declares exact relationship",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E04",
+          "source": "manifest",
+          "target": "os",
+          "label": "versioned supported capabilities",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E05",
+          "source": "os",
+          "target": "agreement",
+          "label": "local authority and data rules",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E06",
+          "source": "peer",
+          "target": "agreement",
+          "label": "independent authority and data rules",
+          "kind": "relationship"
+        },
+        {
+          "id": "D24-E07",
+          "source": "registry",
+          "target": "agreement",
+          "label": "discovery is not admission",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Filter platform, domain, product and ecosystem views. Keep family/Core/R/Q/QUANTA naming conflicts visible in details.",
+      "animation_steps": [
+        "Show one platform and optional domain profiles.",
+        "Connect one product through its manifest.",
+        "Add a peer boundary with an explicit contract and exit/revocation behavior."
+      ],
+      "guardrail": "This is a proposed relationship view, not an approved rebranding or universal ecosystem controller. No account or live trading bridge.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S04"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D24_ecosystem_domains_and_product_relationships.mmd"
+    },
+    {
+      "id": "D25",
+      "title": "Private sources and public explanations",
+      "section": "Governance",
+      "visual_form": "Two-zone publication boundary",
+      "question": "What may the Architecture page reveal?",
+      "component_ids": [
+        "CMP-03",
+        "CMP-05",
+        "CMP-06",
+        "CMP-09",
+        "CMP-42",
+        "CMP-43",
+        "CMP-45"
+      ],
+      "nodes": [
+        {
+          "id": "private",
+          "label": "Private research / governed records",
+          "kind": "boundary"
+        },
+        {
+          "id": "draft",
+          "label": "Sanitized high-level projection draft",
+          "kind": "record"
+        },
+        {
+          "id": "checks",
+          "label": "Claims, sensitivity and rights review",
+          "kind": "gate"
+        },
+        {
+          "id": "approval",
+          "label": "Exact-content founder approval",
+          "kind": "gate"
+        },
+        {
+          "id": "public",
+          "label": "Public Architecture page",
+          "kind": "boundary"
+        },
+        {
+          "id": "ledger",
+          "label": "Publication / revocation record",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D25-E01",
+          "source": "private",
+          "target": "draft",
+          "label": "derive only permitted information",
+          "kind": "relationship"
+        },
+        {
+          "id": "D25-E02",
+          "source": "draft",
+          "target": "checks",
+          "label": "review exact content",
+          "kind": "relationship"
+        },
+        {
+          "id": "D25-E03",
+          "source": "checks",
+          "target": "approval",
+          "label": "eligible projection",
+          "kind": "relationship"
+        },
+        {
+          "id": "D25-E04",
+          "source": "approval",
+          "target": "public",
+          "label": "separately authorized publication",
+          "kind": "relationship"
+        },
+        {
+          "id": "D25-E05",
+          "source": "public",
+          "target": "ledger",
+          "label": "version and status",
+          "kind": "relationship"
+        },
+        {
+          "id": "D25-E06",
+          "source": "ledger",
+          "target": "public",
+          "label": "correction / revocation",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Use source labels and summaries, not raw source downloads or confidential client details.",
+      "animation_steps": [
+        "Show the private source staying private.",
+        "Build a separate high-level draft.",
+        "Stop before publication until exact approval exists."
+      ],
+      "guardrail": "This handoff authorizes creation of a design candidate only. It neither publishes the page nor declassifies restricted IP.",
+      "source_refs": [
+        "S04",
+        "S09"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D25_private_sources_and_public_explanations.mmd"
+    },
+    {
+      "id": "D26",
+      "title": "The reference explorer",
+      "section": "Reference",
+      "visual_form": "Searchable catalogue with maturity matrix",
+      "question": "How can readers find every recovered component without a giant diagram?",
+      "component_ids": [
+        "CMP-01",
+        "CMP-02",
+        "CMP-03",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-08",
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-12",
+        "CMP-13",
+        "CMP-14",
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-18",
+        "CMP-19",
+        "CMP-20",
+        "CMP-21",
+        "CMP-22",
+        "CMP-23",
+        "CMP-24",
+        "CMP-25",
+        "CMP-26",
+        "CMP-27",
+        "CMP-28",
+        "CMP-29",
+        "CMP-30",
+        "CMP-31",
+        "CMP-32",
+        "CMP-33",
+        "CMP-34",
+        "CMP-35",
+        "CMP-36",
+        "CMP-37",
+        "CMP-38",
+        "CMP-39",
+        "CMP-40",
+        "CMP-41",
+        "CMP-42",
+        "CMP-43",
+        "CMP-44",
+        "CMP-45",
+        "CMP-46",
+        "CMP-47",
+        "CMP-48",
+        "CMP-49",
+        "CMP-50",
+        "CMP-51",
+        "CMP-52"
+      ],
+      "nodes": [
+        {
+          "id": "catalog",
+          "label": "52 component groups",
+          "kind": "record"
+        },
+        {
+          "id": "terms",
+          "label": "Records, terms and aliases",
+          "kind": "record"
+        },
+        {
+          "id": "types",
+          "label": "Independent facets + pattern catalogue",
+          "kind": "record"
+        },
+        {
+          "id": "scenes",
+          "label": "26 diagram scenes",
+          "kind": "record"
+        },
+        {
+          "id": "sources",
+          "label": "Source and uncertainty register",
+          "kind": "record"
+        },
+        {
+          "id": "status",
+          "label": "Separate scope / authority / evidence axes",
+          "kind": "record"
+        },
+        {
+          "id": "frontier",
+          "label": "Frontier research names",
+          "kind": "record"
+        }
+      ],
+      "edges": [
+        {
+          "id": "D26-E01",
+          "source": "catalog",
+          "target": "scenes",
+          "label": "mapped coverage",
+          "kind": "relationship"
+        },
+        {
+          "id": "D26-E02",
+          "source": "terms",
+          "target": "catalog",
+          "label": "related responsibilities; not unique service count",
+          "kind": "relationship"
+        },
+        {
+          "id": "D26-E03",
+          "source": "types",
+          "target": "catalog",
+          "label": "applies to multiple groups",
+          "kind": "relationship"
+        },
+        {
+          "id": "D26-E04",
+          "source": "sources",
+          "target": "catalog",
+          "label": "supports definitions",
+          "kind": "relationship"
+        },
+        {
+          "id": "D26-E05",
+          "source": "status",
+          "target": "catalog",
+          "label": "qualifies claims",
+          "kind": "relationship"
+        },
+        {
+          "id": "D26-E06",
+          "source": "frontier",
+          "target": "terms",
+          "label": "recoverable names; boundary may be unresolved",
+          "kind": "relationship"
+        }
+      ],
+      "groups": [],
+      "mermaid_direction": "LR",
+      "interaction": "Every CMP group is reachable; aliases preserve source wording. Add a glossary view and a text-only mode. No invented definitions for unresolved names.",
+      "animation_steps": [
+        "Search an exact name such as MESA or Context VM.",
+        "Show its category, source, parent group and uncertainty.",
+        "Open a deep link to its primary diagram and return without losing context."
+      ],
+      "guardrail": "The catalogue includes capabilities, records, views, controls, products and hypotheses—not 52 mandatory services or 52 implemented components.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "P01"
+      ],
+      "states": [
+        "idle",
+        "focused",
+        "selected",
+        "example_paused",
+        "example_complete"
+      ],
+      "evidence": "DESIGN_ONLY; no CELL runtime result measured by this scene",
+      "reduced_motion": "Present the same numbered states instantly. Preserve all labels, before/after changes and inspector content without motion.",
+      "text_alternative": "Provide an adjacent ordered explanation and node/relationship table generated from these same records.",
+      "mermaid_file": "diagrams/D26_the_reference_explorer.mmd"
+    }
+  ]
+}

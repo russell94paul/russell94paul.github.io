@@ -1,0 +1,1881 @@
+{
+  "schemaVersion": "2.0.0",
+  "sourceCount": 52,
+  "coverageClaim": "All 52 component groups in the supplied architecture catalogue are mapped; not a claim of universal/exhaustive future feature coverage or implementation.",
+  "features": [
+    {
+      "id": "CMP-01",
+      "label": "CELL // OS / CELL Core / product family",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-01",
+      "surface": "Platform overview",
+      "whyItMatters": "Understand platform, product and workspace boundaries",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL // OS / CELL Core / product family",
+      "purpose": "Understand platform, product and workspace boundaries",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-02",
+      "label": "Project Intelligence",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-02",
+      "surface": "Research / Evidence",
+      "whyItMatters": "Keep intent, evidence and decisions linked",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Project Intelligence",
+      "purpose": "Keep intent, evidence and decisions linked",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-03",
+      "label": "NERVE / shared shell / workspaces",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-03",
+      "surface": "Today / global shell",
+      "whyItMatters": "Give every role a clear next action",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "NERVE / shared shell / workspaces",
+      "purpose": "Give every role a clear next action",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-04",
+      "label": "Initiative / Product / Project / Mission / WorkItem",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-04",
+      "surface": "Creation history",
+      "whyItMatters": "Trace initiative through product, project, mission and work",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Initiative / Product / Project / Mission / WorkItem",
+      "purpose": "Trace initiative through product, project, mission and work",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-05",
+      "label": "Source intake / integrity / quarantine",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-05",
+      "surface": "Data checks",
+      "whyItMatters": "Inspect a source before using it",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Source intake / integrity / quarantine",
+      "purpose": "Inspect a source before using it",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-06",
+      "label": "Claims / evidence / assumptions / contradictions / lineage",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-06",
+      "surface": "Evidence drawer",
+      "whyItMatters": "See the claim, assumption and contradiction trail",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Claims / evidence / assumptions / contradictions / lineage",
+      "purpose": "See the claim, assumption and contradiction trail",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-07",
+      "label": "Prompt Registry / planning Run Ledger",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-07",
+      "surface": "Creation history / prompt registry",
+      "whyItMatters": "Explain the recorded specification and prompt context",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Prompt Registry / planning Run Ledger",
+      "purpose": "Explain the recorded specification and prompt context",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-08",
+      "label": "Intent / Mission contract / immutable DAG",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-08",
+      "surface": "Workflow builder",
+      "whyItMatters": "Inspect the exact bounded study and workflow revision",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Intent / Mission contract / immutable DAG",
+      "purpose": "Inspect the exact bounded study and workflow revision",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-09",
+      "label": "CELL Kernel / admission / identity / policy",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-09",
+      "surface": "Authority inspector",
+      "whyItMatters": "Explain entry checks and identity boundaries",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL Kernel / admission / identity / policy",
+      "purpose": "Explain entry checks and identity boundaries",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-10",
+      "label": "Approval / gates / Guardian role",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-10",
+      "surface": "Review",
+      "whyItMatters": "Pause for the right person at an explicit decision",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Approval / gates / Guardian role",
+      "purpose": "Pause for the right person at an explicit decision",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-11",
+      "label": "Capability / tool / skill / gateway",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-11",
+      "surface": "Step catalogue",
+      "whyItMatters": "Choose from supported tools and actions",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Capability / tool / skill / gateway",
+      "purpose": "Choose from supported tools and actions",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-12",
+      "label": "Budget / lease / resource broker / quotas",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-12",
+      "surface": "Run plan / resources",
+      "whyItMatters": "Inspect proposed budgets and limits; costs unmeasured",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Budget / lease / resource broker / quotas",
+      "purpose": "Inspect proposed budgets and limits; costs unmeasured",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-13",
+      "label": "Authoritative durable workflow engine",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-13",
+      "surface": "Run lifecycle",
+      "whyItMatters": "Explain durable state, retries and cancellation as intended runtime",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Authoritative durable workflow engine",
+      "purpose": "Explain durable state, retries and cancellation as intended runtime",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-14",
+      "label": "ORCA / session and supervision adapter",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-14",
+      "surface": "Session inspector",
+      "whyItMatters": "Explain provider session supervision",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "ORCA / session and supervision adapter",
+      "purpose": "Explain provider session supervision",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-15",
+      "label": "Operative definition / instance / run",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-15",
+      "surface": "Team inspector",
+      "whyItMatters": "Distinguish a worker definition, instance and run",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Operative definition / instance / run",
+      "purpose": "Distinguish a worker definition, instance and run",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-16",
+      "label": "Deterministic Worker",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-16",
+      "surface": "Models & Experiments",
+      "whyItMatters": "Calculate deterministic synthetic research results",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Deterministic Worker",
+      "purpose": "Calculate deterministic synthetic research results",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-17",
+      "label": "Operative Cell / Cell definition / instance / image",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-17",
+      "surface": "Team inspector",
+      "whyItMatters": "Group responsibilities into a bounded Cell",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Operative Cell / Cell definition / instance / image",
+      "purpose": "Group responsibilities into a bounded Cell",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-18",
+      "label": "MESH / Cell Mesh",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-18",
+      "surface": "Workflow graph",
+      "whyItMatters": "Show how Cells cooperate on the study",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "MESH / Cell Mesh",
+      "purpose": "Show how Cells cooperate on the study",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-19",
+      "label": "O-MESH",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-19",
+      "surface": "Operative profile",
+      "whyItMatters": "Inspect attributes and capabilities of an individual worker",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "O-MESH",
+      "purpose": "Inspect attributes and capabilities of an individual worker",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-20",
+      "label": "C-MESH / T-MESH / OS-MESH",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-20",
+      "surface": "Coordination lenses",
+      "whyItMatters": "Explain task, Cell and organizational coordination scopes",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "C-MESH / T-MESH / OS-MESH",
+      "purpose": "Explain task, Cell and organizational coordination scopes",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-21",
+      "label": "Link / Link Contract / Link Type Registry",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-21",
+      "surface": "Edge inspector",
+      "whyItMatters": "Inspect typed inputs, outputs and authority boundaries",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Link / Link Contract / Link Type Registry",
+      "purpose": "Inspect typed inputs, outputs and authority boundaries",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-22",
+      "label": "CellBus / Link Fabric / events",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-22",
+      "surface": "Event trace",
+      "whyItMatters": "Follow a local transition; future event fabric explained separately",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CellBus / Link Fabric / events",
+      "purpose": "Follow a local transition; future event fabric explained separately",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-23",
+      "label": "Mesh patterns / fixed and mutable dimensions",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-23",
+      "surface": "Workflow templates",
+      "whyItMatters": "Compare sequential and parallel research patterns",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Mesh patterns / fixed and mutable dimensions",
+      "purpose": "Compare sequential and parallel research patterns",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-24",
+      "label": "Formation / adaptive MESH reconfiguration",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-24",
+      "surface": "Revision proposal",
+      "whyItMatters": "Show a proposed topology change with required review",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Formation / adaptive MESH reconfiguration",
+      "purpose": "Show a proposed topology change with required review",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-25",
+      "label": "Golden / decision / trigger cells",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-25",
+      "surface": "Diagnostics",
+      "whyItMatters": "Propose an evidence or context correction when a check fails",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Golden / decision / trigger cells",
+      "purpose": "Propose an evidence or context correction when a check fails",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-26",
+      "label": "Context Compiler / Context VM",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-26",
+      "surface": "Context inspector",
+      "whyItMatters": "Show which allowed sources inform a task",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Context Compiler / Context VM",
+      "purpose": "Show which allowed sources inform a task",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-27",
+      "label": "HyperMESH / memory overlays",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-27",
+      "surface": "Knowledge relationships",
+      "whyItMatters": "Explain optional memory overlays without shared private memory claims",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "HyperMESH / memory overlays",
+      "purpose": "Explain optional memory overlays without shared private memory claims",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-28",
+      "label": "Knowledge packs / data catalogue / capability graph",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-28",
+      "surface": "Data & knowledge catalogue",
+      "whyItMatters": "Inspect versioned domain context and allowed sources",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Knowledge packs / data catalogue / capability graph",
+      "purpose": "Inspect versioned domain context and allowed sources",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-29",
+      "label": "Blueprint / Genome / Org-IR-lite / lock / Cell Image",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-29",
+      "surface": "Template details",
+      "whyItMatters": "Explain definition, resolved configuration and revision locking",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Blueprint / Genome / Org-IR-lite / lock / Cell Image",
+      "purpose": "Explain definition, resolved configuration and revision locking",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-30",
+      "label": "Registry / compatibility / capability readiness",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-30",
+      "surface": "Model & workflow library",
+      "whyItMatters": "Inspect compatibility and qualification before reuse",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Registry / compatibility / capability readiness",
+      "purpose": "Inspect compatibility and qualification before reuse",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-31",
+      "label": "Crucible / Measurement Firewall / Assurance Receipt",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-31",
+      "surface": "Evaluation / evidence receipt",
+      "whyItMatters": "Show what was checked and what remains unmeasured",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Crucible / Measurement Firewall / Assurance Receipt",
+      "purpose": "Show what was checked and what remains unmeasured",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-32",
+      "label": "Observability / FinOps / metrics",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-32",
+      "surface": "Business value / Run metrics",
+      "whyItMatters": "Separate local state counts from measured operational outcomes",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Observability / FinOps / metrics",
+      "purpose": "Separate local state counts from measured operational outcomes",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-33",
+      "label": "CELL ADAPT / Evolution Chamber",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-33",
+      "surface": "Improvement proposal",
+      "whyItMatters": "Compare a proposed change, evaluate and seek requalification",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL ADAPT / Evolution Chamber",
+      "purpose": "Compare a proposed change, evaluate and seek requalification",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-34",
+      "label": "SIHRE / multi-model cognition",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-34",
+      "surface": "Reasoning comparison",
+      "whyItMatters": "Inspect illustrative proposal, challenge and synthesis with independent assessment",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "SIHRE / multi-model cognition",
+      "purpose": "Inspect illustrative proposal, challenge and synthesis with independent assessment",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-35",
+      "label": "Shadow Twin / simulation / Causal World Model",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-35",
+      "surface": "Rehearsal / dry run",
+      "whyItMatters": "Explore bounded local failure and revision scenarios",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Shadow Twin / simulation / Causal World Model",
+      "purpose": "Explore bounded local failure and revision scenarios",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-36",
+      "label": "Genesis / Seed / bounded child-cell lifecycle",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-36",
+      "surface": "Team lifecycle",
+      "whyItMatters": "Explain bounded child work creation and stopping conditions",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Genesis / Seed / bounded child-cell lifecycle",
+      "purpose": "Explain bounded child work creation and stopping conditions",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-37",
+      "label": "Experience-to-Doctrine / learning proposals",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-37",
+      "surface": "Lessons library",
+      "whyItMatters": "Record learning candidates with evidence and owner review",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Experience-to-Doctrine / learning proposals",
+      "purpose": "Record learning candidates with evidence and owner review",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-38",
+      "label": "CELL Foundry / MESA",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-38",
+      "surface": "How CELL built this product",
+      "whyItMatters": "Explain research, design, build and verification responsibilities",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL Foundry / MESA",
+      "purpose": "Explain research, design, build and verification responsibilities",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-39",
+      "label": "Domain Plane / profile / Domain Genome / data plane",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-39",
+      "surface": "Domain profile",
+      "whyItMatters": "Bind the research vocabulary, datasets, policies and views",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Domain Plane / profile / Domain Genome / data plane",
+      "purpose": "Bind the research vocabulary, datasets, policies and views",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-40",
+      "label": "CELL-R // OS",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-40",
+      "surface": "Related capabilities",
+      "whyItMatters": "Explain optional relationship to research-domain capabilities",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL-R // OS",
+      "purpose": "Explain optional relationship to research-domain capabilities",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-41",
+      "label": "CELL-Q // OS",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-41",
+      "surface": "CELL-Q product overview",
+      "whyItMatters": "Describe this proposed quantitative research workspace",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "CELL-Q // OS",
+      "purpose": "Describe this proposed quantitative research workspace",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-42",
+      "label": "Deployment / secrets / isolation / privacy",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-42",
+      "surface": "Operational design",
+      "whyItMatters": "Explain isolation and secret references without real connections",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Deployment / secrets / isolation / privacy",
+      "purpose": "Explain isolation and secret references without real connections",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-43",
+      "label": "Audit / backup / retention / export / recovery",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-43",
+      "surface": "History / Recovery",
+      "whyItMatters": "Inspect local history; explain intended protected backup and recovery",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Audit / backup / retention / export / recovery",
+      "purpose": "Inspect local history; explain intended protected backup and recovery",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-44",
+      "label": "Qualification / conformance evidence",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-44",
+      "surface": "Qualification receipt",
+      "whyItMatters": "Open checks and limitations before accepting a capability",
+      "mode": "DETERMINISTIC_SIMULATION",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "BOUNDED_LOCAL_ILLUSTRATION",
+      "verificationStatus": "SEE_REFERENCE_TESTS_FOR_LOCAL_SUBSET",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Qualification / conformance evidence",
+      "purpose": "Open checks and limitations before accepting a capability",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-45",
+      "label": "Public site / sanitized publication projection",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-45",
+      "surface": "Shareable projection preview",
+      "whyItMatters": "Inspect a sanitized proposed publication without publishing",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Public site / sanitized publication projection",
+      "purpose": "Inspect a sanitized proposed publication without publishing",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-46",
+      "label": "Product manifest / release / support lifecycle",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-46",
+      "surface": "Product lifecycle",
+      "whyItMatters": "Connect versions, support and maintenance to accepted artifacts",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Product manifest / release / support lifecycle",
+      "purpose": "Connect versions, support and maintenance to accepted artifacts",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-47",
+      "label": "OS-MESH federation / ecosystem",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-47",
+      "surface": "Ecosystem concept",
+      "whyItMatters": "Explain independently qualified reusable capabilities",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "OS-MESH federation / ecosystem",
+      "purpose": "Explain independently qualified reusable capabilities",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-48",
+      "label": "Avatar World / spatial views",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-48",
+      "surface": "Optional spatial view",
+      "whyItMatters": "Explain why avatar/spatial views are not required for this research task",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Avatar World / spatial views",
+      "purpose": "Explain why avatar/spatial views are not required for this research task",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-49",
+      "label": "Frontier concepts / organizational debugger",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-49",
+      "surface": "Advanced research catalogue",
+      "whyItMatters": "Keep frontier ideas discoverable and clearly experimental",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "OPTIONAL_OR_CONTEXTUAL",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Frontier concepts / organizational debugger",
+      "purpose": "Keep frontier ideas discoverable and clearly experimental",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-50",
+      "label": "External interoperability adapters",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-50",
+      "surface": "Adapter catalogue",
+      "whyItMatters": "Inspect interface requirements; all connections remain off",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "External interoperability adapters",
+      "purpose": "Inspect interface requirements; all connections remain off",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-51",
+      "label": "Specification registry / build CI / provenance",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-51",
+      "surface": "Build provenance",
+      "whyItMatters": "Link proposed implementation changes to specification and test evidence",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Specification registry / build CI / provenance",
+      "purpose": "Link proposed implementation changes to specification and test evidence",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    },
+    {
+      "id": "CMP-52",
+      "label": "Delivery tracker / evidence-based forecast",
+      "sourceRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json#CMP-52",
+      "surface": "Delivery plan",
+      "whyItMatters": "Inspect work readiness and evidence without invented finish dates",
+      "mode": "CONCEPT_PREVIEW",
+      "featureStage": "END_STATE_CONCEPT",
+      "applicability": "CORE_RESEARCH_EXPERIENCE",
+      "approvalStatus": "PROPOSED_MAPPING",
+      "implementationStatus": "CONCEPT_ONLY_IN_THIS_PACK",
+      "verificationStatus": "NOT_MEASURED",
+      "note": "A local illustration of part of a component does not establish the complete CELL component or a production runtime.",
+      "name": "Delivery tracker / evidence-based forecast",
+      "purpose": "Inspect work readiness and evidence without invented finish dates",
+      "terminologyStatus": "SOURCE_LABEL_PRESERVED_NOT_NEW_APPROVAL",
+      "workflowRefs": [
+        "Q-WF-01"
+      ],
+      "scenarioRefs": [
+        "CELL-Q-SYNTHETIC-PARCELS-01"
+      ],
+      "nodeRefs": [],
+      "exampleInputs": [
+        "Study and dataset references"
+      ],
+      "exampleOutputs": [
+        "Inspectable artifact, explanation or bounded revision proposal"
+      ],
+      "responsibleRole": "research_lead",
+      "reviewBehaviour": "Review exact scope/evidence before any promotion; unsupported capability remains a concept preview.",
+      "refusalBehaviour": "Show missing evidence or unsupported implementation; no silent promotion.",
+      "evidenceRefs": [
+        "verification/RECEIPT.md"
+      ]
+    }
+  ],
+  "catalogueRef": "UPLOADED_ZIP:arch-data/architecture_catalog.json",
+  "catalogueVersion": "Uploaded design v1 snapshot; reviewed 2026-09-19"
+}

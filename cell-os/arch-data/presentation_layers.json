@@ -1,0 +1,129 @@
+{
+  "status": "NEW_PRESENTATION_GROUPING_NOT_ADOPTED_STACK",
+  "source_refs": [
+    "S01",
+    "S05",
+    "P01"
+  ],
+  "note": "These lanes organize the page. Their order is not a mandatory call path, deployment boundary or hierarchy of authority.",
+  "lanes": [
+    {
+      "id": "L01",
+      "label": "Experience and operator surfaces",
+      "purpose": "Commands, inspection, explanations, guided examples and accessible navigation.",
+      "component_ids": [
+        "CMP-03",
+        "CMP-45",
+        "CMP-48",
+        "CMP-52"
+      ]
+    },
+    {
+      "id": "L02",
+      "label": "Project Intelligence and planning",
+      "purpose": "Intent, evidence, review, decisions and exact Mission/DAG revisions.",
+      "component_ids": [
+        "CMP-02",
+        "CMP-04",
+        "CMP-05",
+        "CMP-06",
+        "CMP-07",
+        "CMP-08"
+      ]
+    },
+    {
+      "id": "L03",
+      "label": "Composition and capability definitions",
+      "purpose": "Worker and Cell definitions, topology, links, registries and resolved configuration.",
+      "component_ids": [
+        "CMP-15",
+        "CMP-16",
+        "CMP-17",
+        "CMP-18",
+        "CMP-19",
+        "CMP-20",
+        "CMP-21",
+        "CMP-23",
+        "CMP-29",
+        "CMP-30",
+        "CMP-51"
+      ]
+    },
+    {
+      "id": "L04",
+      "label": "Cognition and context",
+      "purpose": "Selected knowledge, reasoning profiles and optional research mechanisms.",
+      "component_ids": [
+        "CMP-26",
+        "CMP-27",
+        "CMP-28",
+        "CMP-34"
+      ]
+    },
+    {
+      "id": "L05",
+      "label": "Coordination and runtime",
+      "purpose": "One workflow lifecycle owner, sessions, event delivery, resource use and bounded lifecycle changes.",
+      "component_ids": [
+        "CMP-12",
+        "CMP-13",
+        "CMP-14",
+        "CMP-22",
+        "CMP-24",
+        "CMP-25",
+        "CMP-36"
+      ]
+    },
+    {
+      "id": "L06",
+      "label": "Interoperability and domain extension",
+      "purpose": "Provider adapters, domain profiles, product relationships and ecosystem boundaries.",
+      "component_ids": [
+        "CMP-01",
+        "CMP-39",
+        "CMP-40",
+        "CMP-41",
+        "CMP-46",
+        "CMP-47",
+        "CMP-50"
+      ]
+    },
+    {
+      "id": "L07",
+      "label": "Assurance and improvement",
+      "purpose": "Evaluation, observability, experiment candidates, learning and research tooling.",
+      "component_ids": [
+        "CMP-31",
+        "CMP-32",
+        "CMP-33",
+        "CMP-35",
+        "CMP-37",
+        "CMP-38",
+        "CMP-44",
+        "CMP-49"
+      ]
+    },
+    {
+      "id": "L08",
+      "label": "Cross-cutting governance and resilience",
+      "purpose": "Identity, policy, current grants, gates, isolation, retention and recovery across every lane.",
+      "component_ids": [
+        "CMP-09",
+        "CMP-10",
+        "CMP-11",
+        "CMP-42",
+        "CMP-43"
+      ]
+    }
+  ],
+  "historical_seven_platform_layers": [
+    "Experience",
+    "Interface & Integration",
+    "Cognitive Core",
+    "Coordination & Platform Services",
+    "Memory & Data",
+    "Event & Telemetry",
+    "Runtime & Foundation"
+  ],
+  "historical_warning": "The source record mentions seven PLATFORM layers. The original seven-layer AGENT was not recovered; do not invent or substitute one."
+}

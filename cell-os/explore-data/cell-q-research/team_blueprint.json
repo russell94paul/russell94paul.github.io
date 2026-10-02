@@ -1,0 +1,313 @@
+{
+  "schemaVersion": "2.0.0",
+  "id": "TEAM-Q-DEMO-01",
+  "revision": 1,
+  "mode": "END_STATE_CONCEPT_WITH_BOUNDED_LOCAL_REFERENCE",
+  "missionId": "MISSION-Q-DEMO-01",
+  "studyRef": "Q-STUDY-01@v1",
+  "goal": "Compare two predeclared methods on synthetic parcel data and produce a reviewed dossier",
+  "authority": "No live authority; demo roles and local supported actions only",
+  "operatives": [
+    {
+      "id": "OP-DATA-DEMO",
+      "name": "Data-quality assistant",
+      "kind": "AI_OPERATIVE_CONCEPT",
+      "cellId": "CELL-DATA-DEMO",
+      "contextRefs": [
+        "DATA-PARCELS@v1"
+      ],
+      "allowedActions": [
+        "explain_data_issue"
+      ],
+      "implementation": "SCRIPTED_ILLUSTRATION",
+      "configuration": {
+        "speciality": "Data-quality assistant",
+        "activation": "on request",
+        "lifetime": "one study",
+        "mechanism": "scripted specialist concept",
+        "providerSelection": "Not selected; no model call occurs",
+        "authority": "Advisory draft only",
+        "oMeshRepresentation": {
+          "choice": "Operative-scoped view of permitted references and capabilities",
+          "status": "CANDIDATE_REPRESENTATION_NOT_CANONICAL_TYPE",
+          "alternatives": [
+            "plain references",
+            "dedicated local graph"
+          ],
+          "why": "Makes allowed context inspectable without assuming a per-worker database."
+        },
+        "resourcePolicy": "No external resources; operational cost unmeasured",
+        "whyChosen": "Illustrates a specialist explanation or review responsibility.",
+        "whenToReconsider": "Only after an explicit revised requirement and comparative evidence."
+      }
+    },
+    {
+      "id": "WORKER-DATA-DEMO",
+      "name": "Dataset checker",
+      "kind": "DETERMINISTIC_WORKER",
+      "cellId": "CELL-DATA-DEMO",
+      "contextRefs": [
+        "DATA-PARCELS@v1",
+        "Q-STUDY-01@v1"
+      ],
+      "allowedActions": [
+        "validate_data"
+      ],
+      "implementation": "REFERENCE_REDUCER",
+      "configuration": {
+        "speciality": "Dataset checker",
+        "activation": "on request",
+        "lifetime": "one study",
+        "mechanism": "deterministic code",
+        "providerSelection": "Not applicable",
+        "authority": "Only declared demo operations",
+        "oMeshRepresentation": {
+          "choice": "Operative-scoped view of permitted references and capabilities",
+          "status": "CANDIDATE_REPRESENTATION_NOT_CANONICAL_TYPE",
+          "alternatives": [
+            "plain references",
+            "dedicated local graph"
+          ],
+          "why": "Makes allowed context inspectable without assuming a per-worker database."
+        },
+        "resourcePolicy": "No external resources; operational cost unmeasured",
+        "whyChosen": "Explicit arithmetic/checks can be reproduced.",
+        "whenToReconsider": "Only after an explicit revised requirement and comparative evidence."
+      }
+    },
+    {
+      "id": "OP-STUDY-DEMO",
+      "name": "Study planning assistant",
+      "kind": "AI_OPERATIVE_CONCEPT",
+      "cellId": "CELL-RESEARCH-DEMO",
+      "contextRefs": [
+        "Q-STUDY-01@v1"
+      ],
+      "allowedActions": [
+        "draft_study_explanation"
+      ],
+      "implementation": "SCRIPTED_ILLUSTRATION",
+      "configuration": {
+        "speciality": "Study planning assistant",
+        "activation": "on request",
+        "lifetime": "one study",
+        "mechanism": "scripted specialist concept",
+        "providerSelection": "Not selected; no model call occurs",
+        "authority": "Advisory draft only",
+        "oMeshRepresentation": {
+          "choice": "Operative-scoped view of permitted references and capabilities",
+          "status": "CANDIDATE_REPRESENTATION_NOT_CANONICAL_TYPE",
+          "alternatives": [
+            "plain references",
+            "dedicated local graph"
+          ],
+          "why": "Makes allowed context inspectable without assuming a per-worker database."
+        },
+        "resourcePolicy": "No external resources; operational cost unmeasured",
+        "whyChosen": "Illustrates a specialist explanation or review responsibility.",
+        "whenToReconsider": "Only after an explicit revised requirement and comparative evidence."
+      }
+    },
+    {
+      "id": "WORKER-EXPERIMENT-DEMO",
+      "name": "Comparison worker",
+      "kind": "DETERMINISTIC_WORKER",
+      "cellId": "CELL-RESEARCH-DEMO",
+      "contextRefs": [
+        "DATA-PARCELS@v1",
+        "Q-STUDY-01@v1"
+      ],
+      "allowedActions": [
+        "run_experiment"
+      ],
+      "implementation": "REFERENCE_REDUCER",
+      "configuration": {
+        "speciality": "Comparison worker",
+        "activation": "on request",
+        "lifetime": "one study",
+        "mechanism": "deterministic code",
+        "providerSelection": "Not applicable",
+        "authority": "Only declared demo operations",
+        "oMeshRepresentation": {
+          "choice": "Operative-scoped view of permitted references and capabilities",
+          "status": "CANDIDATE_REPRESENTATION_NOT_CANONICAL_TYPE",
+          "alternatives": [
+            "plain references",
+            "dedicated local graph"
+          ],
+          "why": "Makes allowed context inspectable without assuming a per-worker database."
+        },
+        "resourcePolicy": "No external resources; operational cost unmeasured",
+        "whyChosen": "Explicit arithmetic/checks can be reproduced.",
+        "whenToReconsider": "Only after an explicit revised requirement and comparative evidence."
+      }
+    },
+    {
+      "id": "OP-REVIEW-DEMO",
+      "name": "Evidence review assistant",
+      "kind": "AI_OPERATIVE_CONCEPT",
+      "cellId": "CELL-REVIEW-DEMO",
+      "contextRefs": [
+        "EXP-01@data1-study1"
+      ],
+      "allowedActions": [
+        "draft_evidence_finding"
+      ],
+      "implementation": "SCRIPTED_ILLUSTRATION",
+      "configuration": {
+        "speciality": "Evidence review assistant",
+        "activation": "on request",
+        "lifetime": "one study",
+        "mechanism": "scripted specialist concept",
+        "providerSelection": "Not selected; no model call occurs",
+        "authority": "Advisory draft only",
+        "oMeshRepresentation": {
+          "choice": "Operative-scoped view of permitted references and capabilities",
+          "status": "CANDIDATE_REPRESENTATION_NOT_CANONICAL_TYPE",
+          "alternatives": [
+            "plain references",
+            "dedicated local graph"
+          ],
+          "why": "Makes allowed context inspectable without assuming a per-worker database."
+        },
+        "resourcePolicy": "No external resources; operational cost unmeasured",
+        "whyChosen": "Illustrates a specialist explanation or review responsibility.",
+        "whenToReconsider": "Only after an explicit revised requirement and comparative evidence."
+      }
+    }
+  ],
+  "cells": [
+    {
+      "id": "CELL-DATA-DEMO",
+      "name": "Data Cell",
+      "memberIds": [
+        "OP-DATA-DEMO",
+        "WORKER-DATA-DEMO"
+      ],
+      "inputTypes": [
+        "DatasetSnapshot"
+      ],
+      "outputTypes": [
+        "DataCheck"
+      ],
+      "humanOwnerRole": "data_steward"
+    },
+    {
+      "id": "CELL-RESEARCH-DEMO",
+      "name": "Research Cell",
+      "memberIds": [
+        "OP-STUDY-DEMO",
+        "WORKER-EXPERIMENT-DEMO"
+      ],
+      "inputTypes": [
+        "DataCheck",
+        "StudyApproval",
+        "DatasetSnapshot"
+      ],
+      "outputTypes": [
+        "ExperimentRecord"
+      ],
+      "humanOwnerRole": "researcher"
+    },
+    {
+      "id": "CELL-REVIEW-DEMO",
+      "name": "Review Cell",
+      "memberIds": [
+        "OP-REVIEW-DEMO"
+      ],
+      "inputTypes": [
+        "ExperimentRecord"
+      ],
+      "outputTypes": [
+        "ReviewRecord"
+      ],
+      "humanOwnerRole": "reviewer"
+    }
+  ],
+  "mesh": {
+    "id": "MESH-Q-DEMO-01",
+    "topology": "sequential_with_human_gates",
+    "cellIds": [
+      "CELL-DATA-DEMO",
+      "CELL-RESEARCH-DEMO",
+      "CELL-REVIEW-DEMO"
+    ],
+    "links": [
+      {
+        "id": "LINK-DATA-RESEARCH",
+        "from": "CELL-DATA-DEMO",
+        "to": "CELL-RESEARCH-DEMO",
+        "relationship": "artifact",
+        "payloadType": "DataCheck",
+        "grantsAuthority": false
+      },
+      {
+        "id": "LINK-RESEARCH-REVIEW",
+        "from": "CELL-RESEARCH-DEMO",
+        "to": "CELL-REVIEW-DEMO",
+        "relationship": "artifact",
+        "payloadType": "ExperimentRecord",
+        "grantsAuthority": false
+      }
+    ]
+  },
+  "humanDecisions": [
+    {
+      "actionId": "approve_study",
+      "role": "research_lead"
+    },
+    {
+      "actionId": "review_experiment",
+      "role": "reviewer",
+      "cannotBeProducer": true
+    }
+  ],
+  "outputRef": "REPORT-01@data1-study1",
+  "validationRules": [
+    "All referenced cells and members exist",
+    "Every supported action has an accountable role",
+    "Independent review cannot be assigned to the producer identity",
+    "Missing or unsupported capabilities block ready state",
+    "Draft edits invalidate current validation"
+  ],
+  "goldenCellDiagnostic": {
+    "id": "GOLDEN-DIAGNOSTIC-DEMO-01",
+    "status": "CONCEPT_PREVIEW",
+    "trigger": "Reviewer reports missing dataset provenance",
+    "permittedContext": [
+      "DATA-PARCELS@v1"
+    ],
+    "permittedAction": "Propose attaching already-permitted manifest reference",
+    "prohibitedActions": [
+      "expand permissions",
+      "change mission intent",
+      "accept its own proposal",
+      "approve experiment",
+      "claim measured performance improvement"
+    ],
+    "nextOwner": "reviewer",
+    "successCondition": "Required evidence is inspected; independent acceptance remains separate"
+  },
+  "scopeViews": [
+    {
+      "plainLabel": "Operative context/capability view",
+      "historicalTerm": "O-MESH candidate",
+      "status": "UNRESOLVED_SOURCE_CONCEPT"
+    },
+    {
+      "plainLabel": "Cell-local coordination",
+      "historicalTerm": "C-MESH",
+      "status": "HISTORICAL_SCOPE_VOCABULARY"
+    },
+    {
+      "plainLabel": "Mission team coordination",
+      "historicalTerm": "T-MESH",
+      "status": "HISTORICAL_SCOPE_VOCABULARY"
+    },
+    {
+      "plainLabel": "Organization capability map",
+      "historicalTerm": "OS-MESH",
+      "status": "HISTORICAL_SCOPE_VOCABULARY"
+    }
+  ]
+}

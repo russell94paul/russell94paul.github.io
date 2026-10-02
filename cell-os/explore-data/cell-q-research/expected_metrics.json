@@ -1,0 +1,188 @@
+{
+  "status": "FIXTURE_EXPECTATIONS_CHECKED",
+  "note": "Computed reference snapshots; MAE scalars independently checked by hand and in tests. Not business benchmarks.",
+  "initial": {
+    "records": 20,
+    "dataIssues": null,
+    "currentExperiments": 0,
+    "acceptedCurrentExperiments": 0,
+    "historicalExperiments": 0,
+    "currentDossiers": 0,
+    "heldoutMae": null,
+    "businessSavings": null,
+    "realWorldPerformance": null,
+    "roleActionTypes": null
+  },
+  "completed": {
+    "records": 20,
+    "dataIssues": 0,
+    "currentExperiments": 1,
+    "acceptedCurrentExperiments": 1,
+    "historicalExperiments": 0,
+    "currentDossiers": 1,
+    "heldoutMae": 1,
+    "businessSavings": null,
+    "realWorldPerformance": null,
+    "roleActionTypes": null
+  },
+  "byRole": {
+    "research_lead": {
+      "records": 20,
+      "dataIssues": 0,
+      "currentExperiments": 1,
+      "acceptedCurrentExperiments": 1,
+      "historicalExperiments": 0,
+      "currentDossiers": 1,
+      "heldoutMae": 1,
+      "businessSavings": null,
+      "realWorldPerformance": null,
+      "roleActionTypes": 2
+    },
+    "researcher": {
+      "records": 20,
+      "dataIssues": 0,
+      "currentExperiments": 1,
+      "acceptedCurrentExperiments": 1,
+      "historicalExperiments": 0,
+      "currentDossiers": 1,
+      "heldoutMae": 1,
+      "businessSavings": null,
+      "realWorldPerformance": null,
+      "roleActionTypes": 2
+    },
+    "data_steward": {
+      "records": 20,
+      "dataIssues": 0,
+      "currentExperiments": 1,
+      "acceptedCurrentExperiments": 1,
+      "historicalExperiments": 0,
+      "currentDossiers": 1,
+      "heldoutMae": 1,
+      "businessSavings": null,
+      "realWorldPerformance": null,
+      "roleActionTypes": 2
+    },
+    "reviewer": {
+      "records": 20,
+      "dataIssues": 0,
+      "currentExperiments": 1,
+      "acceptedCurrentExperiments": 1,
+      "historicalExperiments": 0,
+      "currentDossiers": 1,
+      "heldoutMae": 1,
+      "businessSavings": null,
+      "realWorldPerformance": null,
+      "roleActionTypes": 1
+    }
+  },
+  "experiment": {
+    "id": "EXP-01",
+    "ref": "EXP-01@data1-study1",
+    "datasetRef": "DATA-PARCELS@v1",
+    "studyRef": "Q-STUDY-01@v1",
+    "validation": {
+      "previous_observation": {
+        "n": 4,
+        "mae": 1.5,
+        "rmse": 1.5811388300841898,
+        "predictions": [
+          {
+            "day": "2026-08-13",
+            "actual": 28,
+            "estimate": 29,
+            "absoluteError": 1
+          },
+          {
+            "day": "2026-08-14",
+            "actual": 30,
+            "estimate": 28,
+            "absoluteError": 2
+          },
+          {
+            "day": "2026-08-15",
+            "actual": 29,
+            "estimate": 30,
+            "absoluteError": 1
+          },
+          {
+            "day": "2026-08-16",
+            "actual": 31,
+            "estimate": 29,
+            "absoluteError": 2
+          }
+        ]
+      },
+      "trailing_three_mean": {
+        "n": 4,
+        "mae": 1,
+        "rmse": 1.4142135623730951,
+        "predictions": [
+          {
+            "day": "2026-08-13",
+            "actual": 28,
+            "estimate": 28,
+            "absoluteError": 0
+          },
+          {
+            "day": "2026-08-14",
+            "actual": 30,
+            "estimate": 28,
+            "absoluteError": 2
+          },
+          {
+            "day": "2026-08-15",
+            "actual": 29,
+            "estimate": 29,
+            "absoluteError": 0
+          },
+          {
+            "day": "2026-08-16",
+            "actual": 31,
+            "estimate": 29,
+            "absoluteError": 2
+          }
+        ]
+      }
+    },
+    "selected": "trailing_three_mean",
+    "heldout": {
+      "n": 4,
+      "mae": 1,
+      "rmse": 1.4142135623730951,
+      "predictions": [
+        {
+          "day": "2026-08-17",
+          "actual": 30,
+          "estimate": 30,
+          "absoluteError": 0
+        },
+        {
+          "day": "2026-08-18",
+          "actual": 32,
+          "estimate": 30,
+          "absoluteError": 2
+        },
+        {
+          "day": "2026-08-19",
+          "actual": 31,
+          "estimate": 31,
+          "absoluteError": 0
+        },
+        {
+          "day": "2026-08-20",
+          "actual": 33,
+          "estimate": 31,
+          "absoluteError": 2
+        }
+      ]
+    },
+    "evaluationMode": "Rolling one-day forecast; each prior actual is available before the next forecast.",
+    "selectionRule": "Select on validation MAE only; tie chooses previous observation. Held-out results do not tune parameters.",
+    "limitations": [
+      "Synthetic nonfinancial series",
+      "Tiny educational sample",
+      "No real-world predictive claim",
+      "No trading performance"
+    ]
+  }
+}
