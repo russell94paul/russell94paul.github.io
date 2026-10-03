@@ -232,7 +232,7 @@
       "subtitle": "Quantitative research on synthetic nonfinancial data, with review and dossiers",
       "status": "SEPARATE_WORKSPACE",
       "statusLabel": "End-state concept · opens its own workspace",
-      "href": "CELL-Q Research Lab (standalone).html",
+      "href": "cell-q-lab.html",
       "packPath": "explore-data/cell-q-research/",
       "packVersion": "1.0.0",
       "packStatus": "CANDIDATE_DEMO_ONLY",
@@ -268,25 +268,25 @@
           "id": "Q-WF-01",
           "label": "Question to reviewed research dossier",
           "interactive": true,
-          "href": "CELL-Q Research Lab (standalone).html"
+          "href": "cell-q-lab.html"
         },
         {
           "id": "Q-TASK-DATA",
           "label": "Check and revise a versioned dataset",
           "interactive": true,
-          "href": "CELL-Q Research Lab (standalone).html"
+          "href": "cell-q-lab.html"
         },
         {
           "id": "Q-TASK-MODEL",
           "label": "Inspect a method, its recipe and its comparison",
           "interactive": true,
-          "href": "CELL-Q Research Lab (standalone).html"
+          "href": "cell-q-lab.html"
         },
         {
           "id": "Q-TASK-BUILD",
           "label": "Build and validate a second research workflow",
           "interactive": true,
-          "href": "CELL-Q Research Lab (standalone).html"
+          "href": "cell-q-lab.html"
         }
       ],
       "searchTerms": [
